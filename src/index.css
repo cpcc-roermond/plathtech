@@ -1,0 +1,280 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* 60-30-10 Color System Implementation */
+    /* 60% - Main Color (Navy dark background) */
+    --color-main: 222 45% 8%;
+    --color-main-light: 222 35% 12%;
+    --color-main-dark: 222 55% 4%;
+    
+    /* 30% - Secondary Color (Warm grays and lighter backgrounds) */
+    --color-secondary: 220 15% 25%;
+    --color-secondary-light: 220 10% 35%;
+    --color-secondary-dark: 220 20% 15%;
+    
+    /* 10% - Accent Color (Gold for CTAs and highlights) */
+    --color-accent: 43 74% 66%;
+    --color-accent-light: 43 74% 76%;
+    --color-accent-dark: 43 74% 56%;
+
+    /* Design System Colors */
+    --background: var(--color-main);
+    --foreground: 210 40% 98%;
+
+    --card: var(--color-main-light);
+    --card-foreground: 210 40% 98%;
+
+    --popover: var(--color-main-light);
+    --popover-foreground: 210 40% 98%;
+
+    --primary: var(--color-accent);
+    --primary-foreground: var(--color-main-dark);
+
+    --secondary: var(--color-secondary);
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: var(--color-secondary-dark);
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: var(--color-accent);
+    --accent-foreground: var(--color-main-dark);
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: var(--color-secondary-dark);
+    --input: var(--color-secondary);
+    --ring: var(--color-accent);
+
+    --sidebar-background: var(--color-main);
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: var(--color-accent);
+    --sidebar-primary-foreground: var(--color-main-dark);
+    --sidebar-accent: var(--color-secondary);
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: var(--color-secondary-dark);
+    --sidebar-ring: var(--color-accent);
+
+    --radius: 0.5rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-inter;
+    overflow-x: hidden;
+    line-height: 1.7; /* Better text readability */
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .glass-morphism {
+    @apply backdrop-blur-xl bg-white/10 border border-white/20;
+    box-shadow: 
+      0 8px 32px rgba(0, 0, 0, 0.3),
+      inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+  
+  .neumorphism-gold {
+    background: linear-gradient(145deg, #BFA77A, #A6916B);
+    box-shadow: 
+      12px 12px 24px rgba(0, 0, 0, 0.4),
+      -12px -12px 24px rgba(255, 255, 255, 0.1),
+      inset 2px 2px 4px rgba(255, 255, 255, 0.1),
+      inset -2px -2px 4px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s ease;
+  }
+  
+  .neumorphism-gold:hover {
+    box-shadow: 
+      16px 16px 32px rgba(0, 0, 0, 0.5),
+      -16px -16px 32px rgba(255, 255, 255, 0.15),
+      inset 3px 3px 6px rgba(255, 255, 255, 0.15),
+      inset -3px -3px 6px rgba(0, 0, 0, 0.4),
+      0 0 30px rgba(191, 167, 122, 0.4);
+    transform: translateY(-3px);
+  }
+
+  .text-gold {
+    color: #BFA77A;
+  }
+
+  .bg-gold {
+    background-color: #BFA77A;
+  }
+
+  .border-gold {
+    border-color: #BFA77A;
+  }
+
+  .heading-style {
+    @apply font-playfair font-semibold tracking-tight-3 leading-tight;
+  }
+
+  .body-style {
+    @apply font-inter font-light opacity-90 leading-relaxed;
+    max-width: 65ch; /* Optimal reading width 50-75 characters */
+  }
+
+  .nav-style {
+    @apply font-inter font-medium;
+  }
+
+  .display-style {
+    @apply font-playfair font-bold tracking-tight-3 leading-tight;
+  }
+
+  .section-spacing {
+    @apply py-20 md:py-24; /* Consistent section spacing */
+  }
+
+  .element-spacing {
+    @apply mb-8; /* Standard element spacing */
+  }
+
+  .large-spacing {
+    @apply mb-16; /* Double spacing for major sections */
+  }
+
+  .cta-button {
+    @apply inline-flex items-center px-8 py-4 text-lg font-medium bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl;
+  }
+}
+
+/* Enhanced Animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes glow {
+  0%, 100% { filter: drop-shadow(0 0 5px rgba(191, 167, 122, 0.3)); }
+  50% { filter: drop-shadow(0 0 20px rgba(191, 167, 122, 0.6)); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes pulse-line {
+  0%, 100% { opacity: 0.1; }
+  50% { opacity: 0.6; }
+}
+
+.float-animation {
+  animation: float 6s ease-in-out infinite;
+}
+
+.glow-animation {
+  animation: glow 3s ease-in-out infinite;
+}
+
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(191, 167, 122, 0.2),
+    transparent
+  );
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+.animate-pulse-line {
+  animation: pulse-line 3s ease-in-out infinite;
+}
+
+/* RTL Support for Arabic */
+[dir="rtl"] {
+  text-align: right;
+}
+
+[dir="rtl"] .space-x-3 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 1;
+}
+
+[dir="rtl"] .space-x-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 1;
+}
+
+[dir="rtl"] .space-x-6 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 1;
+}
+
+[dir="rtl"] .space-x-8 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 1;
+}
+
+[dir="rtl"] .ml-2 {
+  margin-left: 0;
+  margin-right: 0.5rem;
+}
+
+[dir="rtl"] .mr-2 {
+  margin-right: 0;
+  margin-left: 0.5rem;
+}
+
+[dir="rtl"] .ml-3 {
+  margin-left: 0;
+  margin-right: 0.75rem;
+}
+
+[dir="rtl"] .mr-3 {
+  margin-right: 0;
+  margin-left: 0.75rem;
+}
+
+[dir="rtl"] .ml-4 {
+  margin-left: 0;
+  margin-right: 1rem;
+}
+
+[dir="rtl"] .mr-4 {
+  margin-right: 0;
+  margin-left: 1rem;
+}
+
+[dir="rtl"] .pl-4 {
+  padding-left: 0;
+  padding-right: 1rem;
+}
+
+[dir="rtl"] .pr-4 {
+  padding-right: 0;
+  padding-left: 1rem;
+}
+
+[dir="rtl"] .left-0 {
+  left: auto;
+  right: 0;
+}
+
+[dir="rtl"] .right-0 {
+  right: auto;
+  left: 0;
+}
+
+[dir="rtl"] .text-left {
+  text-align: right;
+}
+
+[dir="rtl"] .text-right {
+  text-align: left;
+}
+
+/* Flip arrows and directional icons in RTL */
+[dir="rtl"] .rotate-180-rtl {
+  transform: rotate(180deg);
+}
