@@ -10,6 +10,7 @@ import Index from "./pages/Index";
 import Privacy from "./pages/Privacy";
 import ContactForm from "./pages/ContactForm";
 import AboutMe from "./pages/AboutMe";
+import KIStarthilfe from "./pages/KIStarthilfe";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -39,6 +40,7 @@ const App = () => (
               <Route path="/datenschutz" element={<Privacy />} />
               <Route path="/kontakt" element={<ContactForm />} />
               <Route path="/ueber-mich" element={<AboutMe />} />
+              <Route path="/ki-starthilfe" element={<KIStarthilfe />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>

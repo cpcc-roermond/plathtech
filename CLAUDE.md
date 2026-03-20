@@ -13,13 +13,50 @@ npm run preview   # Preview production build
 
 No test framework is currently configured.
 
+## Hosting & Deployment
+
+### Production Environment
+
+- **Hosting**: Vercel (free tier)
+- **Domain**: cp-cc.com (registered at Wix, DNS points to Vercel)
+- **GitHub Repository**: https://github.com/cpcc-roermond/cpcc-homepage
+
+### Deployment Workflow
+
+```
+Local changes → git push → Vercel auto-deploys → Live on cp-cc.com
+```
+
+To deploy changes:
+```bash
+git add .
+git commit -m "Beschreibung der Änderungen"
+git push
+```
+
+Vercel automatically builds and deploys on every push to `main`. No manual deployment needed.
+
+### DNS Configuration (at Wix)
+
+| Type | Host | Value |
+|------|------|-------|
+| A | cp-cc.com | 216.198.79.1 |
+| CNAME | www.cp-cc.com | e24821f476c068a7.vercel-dns-017.com |
+
+### History
+
+- Originally created with Wix (domain registration)
+- Rebuilt with Lovable (React/Vite app)
+- Exported from Lovable to GitHub
+- Now hosted on Vercel with custom domain
+
 ## Architecture Overview
 
 This is a **React 18 + TypeScript + Vite** single-page application for Christian Plath Consulting Company B.V. - a boutique consulting firm landing page.
 
 ### Key Directories
 
-- `src/pages/` - Route components (Index, ContactForm, Privacy, AboutMe, NotFound)
+- `src/pages/` - Route components (Index, ContactForm, Privacy, AboutMe, KIStarthilfe, NotFound)
 - `src/components/` - Landing page sections (Header, Hero, About, KISparring, Products, Contact, Footer)
 - `src/components/ui/` - shadcn/ui components (60+ pre-built components)
 - `src/contexts/` - React Context (LanguageContext for i18n)
@@ -34,6 +71,7 @@ This is a **React 18 + TypeScript + Vite** single-page application for Christian
 /datenschutz   → Privacy policy
 /kontakt       → Contact form
 /ueber-mich    → AboutMe (founder profile, project experience timeline)
+/ki-starthilfe → KIStarthilfe (service detail page, fully multilingual)
 *              → NotFound (404)
 ```
 
@@ -46,7 +84,7 @@ Custom strongly-typed i18n implementation (no external library):
 ```tsx
 const { language } = useLanguage();
 const t = useTranslations(language);
-// Access: t.hero.title, t.nav.about, t.contactForm.fields.name, t.aboutMe.projects.*, etc.
+// Access: t.hero.title, t.nav.about, t.contactForm.fields.name, t.aboutMe.projects.*, t.kiStarthilfePage.*, etc.
 ```
 
 Supported languages:
@@ -192,12 +230,15 @@ Index.tsx uses IntersectionObserver with `animate-blur-to-clear` class for scrol
 
 ## SEO & Accessibility
 
+### Per-Page SEO (dynamic)
+Subpages update `document.title` and `meta[name="description"]` dynamically via `useEffect` on mount, and restore them on unmount. This works for Google (which executes JS) but not for social-media link previews (which read raw HTML). For full OG-tag support per page, `react-helmet-async` would be needed.
+
 ### Structured Data (JSON-LD)
 `index.html` includes comprehensive schema.org markup:
 - **Organization** - Company info, founder, contact points
 - **ProfessionalService** - Local business with geo coordinates
-- **Service** - Service catalog with all offerings
-- **FAQPage** - Common questions for AI search optimization
+- **Service** - Service catalog with all offerings, including `/ki-starthilfe` URL
+- **FAQPage** - Common questions for AI search optimization, including KI-Starthilfe FAQ entries
 - **WebSite** - Site metadata
 
 ### Semantic HTML
@@ -223,7 +264,7 @@ Index.tsx uses IntersectionObserver with `animate-blur-to-clear` class for scrol
 
 ### Files
 - `public/robots.txt` - Crawler permissions
-- `public/sitemap.xml` - Site structure for search engines
+- `public/sitemap.xml` - Site structure for search engines; includes `/`, `/kontakt`, `/datenschutz`, `/ki-starthilfe` (priority 0.9), `/ueber-mich`
 
 ## Content Guidelines
 
@@ -239,7 +280,7 @@ Index.tsx uses IntersectionObserver with `animate-blur-to-clear` class for scrol
 ## Project-Specific Notes
 
 - `References.tsx` and `Resources.tsx` exist but are not integrated in Index.tsx (German-only, not in i18n)
-- Product cards in `Products.tsx` are display-only (no detail pages exist)
+- Product cards in `Products.tsx`: **KI-Starthilfe** links to `/ki-starthilfe` (fully built, multilingual); all other product cards are still display-only (no detail pages yet)
 - Language defaults to 'de' and is not persisted across page reloads
 - `LoadingScreen.tsx` shows initial splash with language selection (5 flags: DE, EN, NL, AR, RU) before main content; only displays once per session (controlled by `hasCompletedLoading` in LanguageContext) - navigating back from subpages skips the loading screen
 - `Hero.tsx` has dynamic mouse-position-based gradient background via useEffect; founder description text is left-aligned for better readability
@@ -248,6 +289,7 @@ Index.tsx uses IntersectionObserver with `animate-blur-to-clear` class for scrol
 - `AboutMe.tsx` features an interactive project timeline with scroll animations, expandable items, and mouse-tracking gradient; linked from Hero.tsx founder card via "Mehr erfahren"
 - `Header.tsx` uses `useLocation()` to detect the current route; navigation links and CTA button are only shown on the homepage (`/`), while the LanguageSwitcher remains visible on all pages
 - `Contact.tsx` dialog description text is left-aligned within centered card for better readability
+- `KIStarthilfe.tsx` is the **reference implementation** for all future product detail pages. Uses: mouse-tracking gradient, IntersectionObserver scroll animations, inline SVG decorations (NeuralNet, Circuit, Compass), `t.kiStarthilfePage.*` namespace, dynamic `document.title`/meta-description per language, `<Link>` card in Products.tsx with hover arrow indicator. Use the `/new-product-page` skill to create further product pages following this pattern.
 
 ### Language Switcher Flags
 
@@ -280,3 +322,12 @@ Icons are chosen to semantically match their context:
 - AI projects → `Bot`, `Cpu` with gold highlight
 - Classic consulting → `Briefcase`, `Brain`, `Users`
 - Credentials → `Building2` (industries), `Award` (certifications), `GraduationCap` (education)
+
+**KIStarthilfe.tsx** (service detail page):
+- Hero background decoration → inline `NeuralNetSVG` (gold nodes/connections, 6% opacity)
+- Hero decorative element → `Rocket` (oversized, 5% opacity)
+- Highlight card → inline `CompassSVG` + `CircuitSVG`
+- Process steps → `Search` (Focus), `Map` (Setup), `Rocket` (Result)
+- Core questions → `Target` (needs), `TrendingUp` (strategy), `Users` (enablement)
+- Benefits section → `CheckCircle2`, `Brain`
+- CTA section → `Rocket`, `ChevronRight`

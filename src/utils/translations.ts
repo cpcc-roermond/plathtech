@@ -296,6 +296,46 @@ export interface Translations {
     message: string;
     backToHome: string;
   };
+
+  // KI-Starthilfe Page
+  kiStarthilfePage: {
+    pageTitle: string;
+    metaDescription: string;
+    backToHome: string;
+    heroHeading: string;
+    quote: string;
+    quoteHighlight: string;
+    intro: string;
+    highlightCard: string;
+    highlightCardHighlight: string;
+    process: {
+      title: string;
+      subtitle: string;
+      step1: { title: string; description: string; detail: string; };
+      step2: { title: string; description: string; detail: string; };
+      step3: { title: string; description: string; detail: string; };
+    };
+    coreQuestions: {
+      title: string;
+      subtitle: string;
+      q1: { title: string; questions: string[]; };
+      q2: { title: string; questions: string[]; };
+      q3: { title: string; questions: string[]; };
+    };
+    benefits: {
+      title: string;
+      items: string[];
+      closingText: string;
+      closingHighlight: string;
+    };
+    cta: {
+      heading: string;
+      headingHighlight: string;
+      text: string;
+      button: string;
+      tagline: string;
+    };
+  };
 }
 
 export const translations: Record<Language, Translations> = {
@@ -626,6 +666,44 @@ export const translations: Record<Language, Translations> = {
       title: 'Seite nicht gefunden',
       message: 'Die angeforderte Seite existiert leider nicht.',
       backToHome: 'Zurück zur Startseite'
+    },
+    kiStarthilfePage: {
+      pageTitle: 'KI-Starthilfe & Potentialanalyse | CPCC – Christian Plath Consulting Company',
+      metaDescription: 'CPCC KI-Starthilfe: Individuelle Potentialanalyse für Ihr Unternehmen. Wir identifizieren echte Pain Points, analysieren Ihren KI-Status-Quo und liefern einen klaren, realistischen KI-Fahrplan – ohne falsche Versprechen.',
+      backToHome: 'Zurück zur Startseite',
+      heroHeading: 'KI-Starthilfe',
+      quote: '„Wir wissen, dass KI wichtig ist – aber ',
+      quoteHighlight: 'wo fangen wir an?',
+      intro: 'Überall wird von KI gesprochen, doch was bringt das konkret für Ihr Unternehmen? Bevor teure Tools lizenziert oder planlose Projekte gestartet werden, braucht es Klarheit.',
+      highlightCard: 'Unsere Potentialanalyse ',
+      highlightCardHighlight: 'durchleuchtet Ihren Geschäftsbereich',
+      process: {
+        title: 'Wie die Analyse abläuft',
+        subtitle: 'Drei klar definierte Schritte – von der ersten Bestandsaufnahme bis zum fertigen Fahrplan.',
+        step1: { title: 'Fokus', description: 'Gezielte Identifikation von echten Pain Points, bei denen KI und Automatisierung eine entscheidende Rolle spielen können.', detail: 'Wir schauen genau hin – ohne Buzzwords, ohne Schönfärberei.' },
+        step2: { title: 'Das Setup', description: 'Gemeinsame Bestandsaufnahme Ihres aktuellen Status Quo – welche Tools sind bereits im Einsatz und welches Know-How ist im Team vorhanden?', detail: 'Analyse Ihrer digitalen Infrastruktur und Ihrer Mitarbeiterkompetenzen.' },
+        step3: { title: 'Das Ergebnis', description: 'Ein klarer Fahrplan, der aufzeigt, welche konkreten Auswirkungen KI auf Ihre Dienstleistungen hat und wie Sie Ihr Geschäftsmodell optimieren können.', detail: 'Konkret, realistisch, umsetzbar – kein Theorie-Papier.' },
+      },
+      coreQuestions: {
+        title: 'Kernfragen der Analyse',
+        subtitle: 'Drei zentrale Dimensionen, die wir gemeinsam mit Ihnen beleuchten.',
+        q1: { title: 'Bedarfsermittlung', questions: ['Welche Pain Points existieren in Ihrem Geschäftsbereich wirklich?', 'Welche Tools sind bereits im Einsatz?', 'Wo entstehen heute unnötige Reibungsverluste?'] },
+        q2: { title: 'Strategie', questions: ['Wo kann KI Prozesse und Personal unterstützen?', 'Wo kann KI tatsächlich ersetzen?', 'Was ist realistisch – heute und morgen?'] },
+        q3: { title: 'Befähigung', questions: ['Welches Know-How ist im Team vorhanden?', 'Wie können Mitarbeiter KI produktiv nutzen?', 'Welche Schulungen sind sinnvoll?'] },
+      },
+      benefits: {
+        title: 'Was Sie bekommen',
+        items: ['Ehrliche Einschätzung', 'Realistische Ziele', 'Individuelle Status-Quo-Analyse', 'Klarer KI-Fahrplan'],
+        closingText: 'Kein generisches Konzept von der Stange – sondern eine ',
+        closingHighlight: 'maßgeschneiderte Analyse',
+      },
+      cta: {
+        heading: 'Bereit für Ihren ',
+        headingHighlight: 'KI-Fahrplan?',
+        text: 'In einem unverbindlichen Erstgespräch klären wir gemeinsam, wie eine individuelle Potentialanalyse für Ihr Unternehmen aussehen kann.',
+        button: 'Kostenloses Erstgespräch vereinbaren',
+        tagline: 'Kostenlos · Unverbindlich · Persönlich',
+      },
     }
   },
   en: {
@@ -955,6 +1033,44 @@ export const translations: Record<Language, Translations> = {
       title: 'Page not found',
       message: 'The requested page does not exist.',
       backToHome: 'Back to homepage'
+    },
+    kiStarthilfePage: {
+      pageTitle: 'AI Kickstart & Potential Analysis | CPCC – Christian Plath Consulting Company',
+      metaDescription: 'CPCC AI Kickstart: Individual AI potential analysis for your business. We identify real pain points, assess your current AI landscape and deliver a clear, realistic AI roadmap – no empty promises.',
+      backToHome: 'Back to homepage',
+      heroHeading: 'AI Kickstart',
+      quote: '"We know AI matters – but ',
+      quoteHighlight: 'where do we start?',
+      intro: 'Everyone is talking about AI, but what does it actually mean for your business? Before licensing expensive tools or launching unfocused projects, you need clarity.',
+      highlightCard: 'Our potential analysis ',
+      highlightCardHighlight: 'examines your business in depth',
+      process: {
+        title: 'How the analysis works',
+        subtitle: 'Three clearly defined steps – from the initial stocktake to the finished roadmap.',
+        step1: { title: 'Focus', description: 'Targeted identification of real pain points where AI and automation can make a decisive difference.', detail: 'We look closely – no buzzwords, no sugarcoating.' },
+        step2: { title: 'The Assessment', description: 'A joint review of your current status quo – which tools are already in use and what AI knowledge exists within your team?', detail: 'Analysing your digital infrastructure and your team\'s capabilities.' },
+        step3: { title: 'The Outcome', description: 'A clear roadmap showing the concrete impact AI can have on your services and how you can optimise your business model.', detail: 'Concrete, realistic, actionable – not just a theory paper.' },
+      },
+      coreQuestions: {
+        title: 'Key areas of analysis',
+        subtitle: 'Three core dimensions we explore together with you.',
+        q1: { title: 'Needs Assessment', questions: ['Which pain points really exist in your business?', 'Which tools are already being used?', 'Where are unnecessary friction points today?'] },
+        q2: { title: 'Strategy', questions: ['Where can AI support processes and people?', 'Where can AI genuinely replace tasks?', 'What is realistic – today and tomorrow?'] },
+        q3: { title: 'Enablement', questions: ['What AI knowledge is available in your team?', 'How can your employees use AI productively?', 'Which training measures make sense?'] },
+      },
+      benefits: {
+        title: 'What you get',
+        items: ['Honest assessment', 'Realistic goals', 'Individual status quo analysis', 'A clear AI roadmap'],
+        closingText: 'No off-the-shelf concept – but a ',
+        closingHighlight: 'tailored analysis',
+      },
+      cta: {
+        heading: 'Ready for your ',
+        headingHighlight: 'AI roadmap?',
+        text: 'In a no-obligation initial conversation, we\'ll explore together what an individual potential analysis could look like for your business.',
+        button: 'Book a free initial consultation',
+        tagline: 'Free · No obligation · Personal',
+      },
     }
   },
   nl: {
@@ -1284,6 +1400,44 @@ export const translations: Record<Language, Translations> = {
       title: 'Pagina niet gevonden',
       message: 'De opgevraagde pagina bestaat niet.',
       backToHome: 'Terug naar homepage'
+    },
+    kiStarthilfePage: {
+      pageTitle: 'AI-Starthulp & Potentiaalanalyse | CPCC – Christian Plath Consulting Company',
+      metaDescription: 'CPCC AI-Starthulp: Individuele potentiaalanalyse voor uw organisatie. Wij identificeren echte knelpunten, analyseren uw huidige AI-situatie en leveren een helder, realistisch AI-stappenplan – zonder loze beloften.',
+      backToHome: 'Terug naar de startpagina',
+      heroHeading: 'AI-Starthulp',
+      quote: '"We weten dat AI belangrijk is – maar ',
+      quoteHighlight: 'waar beginnen we?',
+      intro: 'Iedereen heeft het over AI, maar wat levert het concreet op voor uw organisatie? Voordat dure tools worden gelicenseerd of ongestructureerde projecten worden opgestart, is helderheid nodig.',
+      highlightCard: 'Onze potentiaalanalyse ',
+      highlightCardHighlight: 'doorlicht uw bedrijfsdomein',
+      process: {
+        title: 'Hoe de analyse verloopt',
+        subtitle: 'Drie duidelijk omschreven stappen – van de eerste inventarisatie tot het afgeronde stappenplan.',
+        step1: { title: 'Focus', description: 'Gerichte identificatie van echte knelpunten waarbij AI en automatisering een doorslaggevende rol kunnen spelen.', detail: 'Wij kijken nauwkeurig – zonder buzzwords, zonder mooipraterij.' },
+        step2: { title: 'De inventarisatie', description: 'Gezamenlijke inventarisatie van uw huidige situatie – welke tools zijn al in gebruik en welke AI-kennis is aanwezig in uw team?', detail: 'Analyse van uw digitale infrastructuur en de competenties van uw medewerkers.' },
+        step3: { title: 'Het resultaat', description: 'Een helder stappenplan dat aantoont welke concrete impact AI heeft op uw dienstverlening en hoe u uw businessmodel kunt optimaliseren.', detail: 'Concreet, realistisch, uitvoerbaar – geen theoretisch rapport.' },
+      },
+      coreQuestions: {
+        title: 'Kernvragen van de analyse',
+        subtitle: 'Drie centrale dimensies die we samen met u in kaart brengen.',
+        q1: { title: 'Behoefteanalyse', questions: ['Welke knelpunten bestaan er werkelijk in uw bedrijfsdomein?', 'Welke tools zijn al in gebruik?', 'Waar ontstaan vandaag onnodige efficiëntieverliezen?'] },
+        q2: { title: 'Strategie', questions: ['Waar kan AI processen en medewerkers ondersteunen?', 'Waar kan AI taken daadwerkelijk vervangen?', 'Wat is realistisch – vandaag en morgen?'] },
+        q3: { title: 'Bekwaming', questions: ['Welke AI-kennis is aanwezig in uw team?', 'Hoe kunnen medewerkers AI productief inzetten?', 'Welke trainingen zijn zinvol?'] },
+      },
+      benefits: {
+        title: 'Wat u krijgt',
+        items: ['Eerlijke beoordeling', 'Realistische doelen', 'Individuele statusanalyse', 'Helder AI-stappenplan'],
+        closingText: 'Geen generiek concept van de plank – maar een ',
+        closingHighlight: 'maatwerkanalyse',
+      },
+      cta: {
+        heading: 'Klaar voor uw ',
+        headingHighlight: 'AI-stappenplan?',
+        text: 'In een vrijblijvend kennismakingsgesprek bespreken we samen hoe een individuele potentiaalanalyse voor uw organisatie eruit kan zien.',
+        button: 'Gratis kennismakingsgesprek inplannen',
+        tagline: 'Gratis · Vrijblijvend · Persoonlijk',
+      },
     }
   },
   ar: {
@@ -1613,6 +1767,44 @@ export const translations: Record<Language, Translations> = {
       title: 'الصفحة غير موجودة',
       message: 'الصفحة المطلوبة غير موجودة.',
       backToHome: 'العودة للصفحة الرئيسية'
+    },
+    kiStarthilfePage: {
+      pageTitle: 'بداية ذكية مع الذكاء الاصطناعي | CPCC',
+      metaDescription: 'CPCC: تحليل إمكانات الذكاء الاصطناعي لمؤسستك. نحدد نقاط الألم الحقيقية، ونحلل وضعكم الحالي، ونقدم خارطة طريق واقعية وواضحة – بدلاً من الوعود الفارغة.',
+      backToHome: 'العودة إلى الصفحة الرئيسية',
+      heroHeading: 'الانطلاقة الذكية',
+      quote: '«نعلم أن الذكاء الاصطناعي مهم – لكن ',
+      quoteHighlight: 'من أين نبدأ؟',
+      intro: 'يتحدث الجميع عن الذكاء الاصطناعي، لكن ما الفائدة الفعلية لمؤسستكم؟ قبل الاستثمار في أدوات مكلفة أو إطلاق مشاريع غير مدروسة، تحتاجون إلى وضوح حقيقي.',
+      highlightCard: 'يتناول تحليل الإمكانات لدينا ',
+      highlightCardHighlight: 'واقع عملكم بعمق',
+      process: {
+        title: 'كيف يسير التحليل',
+        subtitle: 'ثلاث خطوات محددة بوضوح – من الجرد الأولي إلى خارطة الطريق الجاهزة.',
+        step1: { title: 'التركيز', description: 'تحديد دقيق لنقاط الألم الحقيقية حيث يمكن للذكاء الاصطناعي والأتمتة أن يُحدثا فرقاً حاسماً.', detail: 'ننظر بعمق – دون مصطلحات رنانة، دون تجميل للواقع.' },
+        step2: { title: 'التقييم', description: 'جرد مشترك لوضعكم الحالي – أي الأدوات قيد الاستخدام وما مستوى الخبرة بالذكاء الاصطناعي لدى فريقكم؟', detail: 'تحليل بنيتكم الرقمية وكفاءات موظفيكم.' },
+        step3: { title: 'النتيجة', description: 'خارطة طريق واضحة توضح التأثير الفعلي للذكاء الاصطناعي على خدماتكم وكيفية تحسين نموذج أعمالكم.', detail: 'ملموس، واقعي، قابل للتنفيذ – لا مجرد ورقة نظرية.' },
+      },
+      coreQuestions: {
+        title: 'محاور التحليل الأساسية',
+        subtitle: 'ثلاثة أبعاد جوهرية نستكشفها معكم.',
+        q1: { title: 'تحديد الاحتياجات', questions: ['ما نقاط الألم الحقيقية في مجال عملكم؟', 'أي الأدوات قيد الاستخدام حالياً؟', 'أين تنشأ الاختناقات غير الضرورية اليوم؟'] },
+        q2: { title: 'الاستراتيجية', questions: ['أين يمكن للذكاء الاصطناعي دعم العمليات والكوادر؟', 'أين يمكنه الاستعاضة عن المهام فعلياً؟', 'ما الواقعي – اليوم وغداً؟'] },
+        q3: { title: 'التمكين', questions: ['ما مستوى معرفة فريقكم بالذكاء الاصطناعي؟', 'كيف يمكن لموظفيكم استخدامه بإنتاجية؟', 'أي برامج تدريب تستحق الاستثمار؟'] },
+      },
+      benefits: {
+        title: 'ما ستحصلون عليه',
+        items: ['تقييم صادق', 'أهداف واقعية', 'تحليل مخصص للوضع الراهن', 'خارطة طريق واضحة للذكاء الاصطناعي'],
+        closingText: 'لا قوالب جاهزة – بل ',
+        closingHighlight: 'تحليل مصمم خصيصاً',
+      },
+      cta: {
+        heading: 'مستعدون لـ',
+        headingHighlight: 'خارطة طريق الذكاء الاصطناعي؟',
+        text: 'في محادثة أولية غير ملزمة، نستكشف معاً كيف يمكن أن يبدو تحليل الإمكانات المخصص لمؤسستكم.',
+        button: 'احجز استشارتك الأولى المجانية',
+        tagline: 'مجاني · غير ملزم · شخصي',
+      },
     }
   },
   ru: {
@@ -1942,6 +2134,44 @@ export const translations: Record<Language, Translations> = {
       title: 'Страница не найдена',
       message: 'Запрошенная страница не существует.',
       backToHome: 'Вернуться на главную'
+    },
+    kiStarthilfePage: {
+      pageTitle: 'AI-Старт и анализ потенциала | CPCC – Christian Plath Consulting Company',
+      metaDescription: 'CPCC AI-Старт: индивидуальный анализ AI-потенциала вашего бизнеса. Выявляем реальные болевые точки, анализируем текущее состояние и предоставляем чёткую, реалистичную AI-дорожную карту — без пустых обещаний.',
+      backToHome: 'На главную',
+      heroHeading: 'AI-Старт',
+      quote: '«Мы понимаем, что ИИ важен – но ',
+      quoteHighlight: 'с чего начать?',
+      intro: 'Об искусственном интеллекте говорят все, но что это даст конкретно вашему бизнесу? Прежде чем лицензировать дорогостоящие инструменты или запускать непродуманные проекты, необходима чёткая картина.',
+      highlightCard: 'Наш анализ потенциала ',
+      highlightCardHighlight: 'глубоко изучает ваш бизнес',
+      process: {
+        title: 'Как проходит анализ',
+        subtitle: 'Три чётко определённых шага – от первичной диагностики до готовой дорожной карты.',
+        step1: { title: 'Фокус', description: 'Целенаправленное выявление реальных болевых точек, где ИИ и автоматизация могут сыграть решающую роль.', detail: 'Смотрим честно – без модных слов, без приукрашивания.' },
+        step2: { title: 'Диагностика', description: 'Совместная оценка вашего текущего положения – какие инструменты уже используются и каков уровень AI-компетенций в вашей команде?', detail: 'Анализ вашей цифровой инфраструктуры и навыков сотрудников.' },
+        step3: { title: 'Результат', description: 'Чёткая дорожная карта, показывающая конкретное влияние ИИ на ваши услуги и способы оптимизации бизнес-модели.', detail: 'Конкретно, реалистично, применимо – не теоретический документ.' },
+      },
+      coreQuestions: {
+        title: 'Ключевые вопросы анализа',
+        subtitle: 'Три центральных аспекта, которые мы рассматриваем вместе с вами.',
+        q1: { title: 'Анализ потребностей', questions: ['Какие реальные болевые точки существуют в вашем бизнесе?', 'Какие инструменты уже используются?', 'Где сегодня возникают лишние потери эффективности?'] },
+        q2: { title: 'Стратегия', questions: ['Где ИИ может поддержать процессы и сотрудников?', 'Где он может реально заменить задачи?', 'Что реалистично – сегодня и завтра?'] },
+        q3: { title: 'Развитие компетенций', questions: ['Каков текущий уровень AI-знаний вашей команды?', 'Как сотрудники могут продуктивно работать с ИИ?', 'Какие обучающие мероприятия целесообразны?'] },
+      },
+      benefits: {
+        title: 'Что вы получаете',
+        items: ['Честная оценка', 'Реалистичные цели', 'Индивидуальный анализ текущего состояния', 'Чёткая AI-дорожная карта'],
+        closingText: 'Никаких шаблонных решений – только ',
+        closingHighlight: 'индивидуальный анализ',
+      },
+      cta: {
+        heading: 'Готовы к своей ',
+        headingHighlight: 'AI-дорожной карте?',
+        text: 'В ходе ни к чему не обязывающей первичной консультации мы совместно определим, как может выглядеть индивидуальный анализ потенциала для вашего бизнеса.',
+        button: 'Записаться на бесплатную консультацию',
+        tagline: 'Бесплатно · Без обязательств · Лично',
+      },
     }
   }
 };
