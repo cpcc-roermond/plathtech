@@ -330,6 +330,8 @@ Subpages update `document.title` and `meta[name="description"]` dynamically via 
 - **Arabic (ar)** - UAE flag (green-white-black horizontal stripes with red vertical bar on left)
 - **Russian (ru)** - Russia flag (white-blue-red horizontal stripes)
 
+**Responsive sizing** (`LanguageSwitcher.tsx`): flags use `w-7 h-5` on mobile and `w-10 h-7 md:` on desktop; spacing is `space-x-1` on mobile and `space-x-3 md:` on desktop. This ensures all 5 flags fit in the mobile header alongside the hamburger button.
+
 ### Icon Usage (Lucide React)
 
 Icons are chosen to semantically match their context:
