@@ -86,7 +86,7 @@ const Products = () => {
                 </p>
                 {'link' in product && (
                   <div className="mt-5 flex items-center text-primary text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    Mehr erfahren <ArrowRight className="w-4 h-4 ml-1" />
+                    {t.aboutMe.learnMore} <ArrowRight className="w-4 h-4 ml-1" />
                   </div>
                 )}
               </>
