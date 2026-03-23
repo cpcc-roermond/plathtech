@@ -46,7 +46,7 @@ const Header = () => {
                   <img
                     src="/logos/logo1111.png"
                     alt="PLATHTECH - Innovation & AI Consultancy Logo"
-                    className="h-20 w-auto opacity-90 group-hover:opacity-100 transition-all duration-300 filter drop-shadow-lg"
+                    className="h-40 w-auto opacity-90 group-hover:opacity-100 transition-all duration-300 filter drop-shadow-lg"
                   />
                   <div className="absolute inset-0 bg-gold/20 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" aria-hidden="true"></div>
                 </div>
