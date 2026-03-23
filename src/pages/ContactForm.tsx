@@ -261,7 +261,7 @@ const ContactForm = () => {
               <div className="border-t border-white/20 pt-8 mt-8 text-center">
                 <p className="text-sm body-style text-white/80">
                   {t.contactForm.orContactDirectly}<br />
-                  <span className="text-gold">info@cp-cc.nl</span> |
+                  <span className="text-gold">info@plath-tech.com</span> |
                   <span className="text-gold"> +49-152-05198771 (DE)</span>
                 </p>
               </div>

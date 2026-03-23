@@ -54,10 +54,10 @@ const Contact = () => {
                 <div>
                   <h4 className="font-semibold mb-1">{t.contact.email}</h4>
                   <a
-                    href="mailto:info@cp-cc.nl"
+                    href="mailto:info@plath-tech.com"
                     className="body-style text-primary hover:text-primary/80 transition-colors duration-300 cursor-pointer"
                   >
-                    info@cp-cc.nl
+                    info@plath-tech.com
                   </a>
                 </div>
               </div>
