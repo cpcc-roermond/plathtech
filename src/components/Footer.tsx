@@ -43,7 +43,7 @@ const Footer = () => {
               <img
                 src="/logos/logo1.jpg"
                 alt="PLATHTECH - Innovation & AI Consultancy"
-                className="h-160 w-auto opacity-70 hover:opacity-90 transition-opacity duration-300"
+                className="h-160 w-auto opacity-70 hover:opacity-90 transition-opacity duration-300 mix-blend-screen"
                 loading="lazy"
               />
             </div>

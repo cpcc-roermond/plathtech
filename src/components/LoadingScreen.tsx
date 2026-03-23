@@ -40,7 +40,7 @@ const LoadingScreen = ({ onLoadingComplete }: { onLoadingComplete: () => void })
         <img
           src="/logos/logo1.jpg"
           alt="PLATHTECH - Innovation & AI Consultancy Logo"
-          className="w-96 h-96 object-contain animate-pulse"
+          className="w-96 h-96 object-contain animate-pulse mix-blend-screen"
         />
       </div>
 
