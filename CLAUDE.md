@@ -90,6 +90,17 @@ https://cp-cc.com/?lang=ru          → Russian homepage
 https://cp-cc.com/ki-starthilfe?lang=en  → English KI-Starthilfe directly
 ```
 
+Section anchors work combined with `?lang=`:
+
+```
+https://cp-cc.com/?lang=de#products    → German homepage, scrolled to products
+https://cp-cc.com/?lang=de#about       → scrolled to about section
+https://cp-cc.com/?lang=de#ki-sparring → scrolled to KI-Sparring section
+https://cp-cc.com/?lang=de#contact     → scrolled to contact section
+```
+
+All section anchor links are included in `public/sitemap.xml` for all 5 languages with appropriate priorities (products: 0.8, ki-sparring: 0.7, about/contact: 0.6).
+
 This is implemented in `LanguageContext.tsx`: on init, `getUrlLanguage()` reads `?lang=` from `window.location.search`. If valid, language is set and `hasCompletedLoading` is initialized to `true` (bypasses LoadingScreen). Works on all routes/subpages.
 
 ### SPA Routing (vercel.json)
