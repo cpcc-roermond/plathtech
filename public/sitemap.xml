@@ -58,6 +58,64 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cp-cc.com/ki-starthilfe?lang=de"/>
   </url>
 
+  <!-- Landing Page Sections (Scroll-Anker) -->
+
+  <!-- Produkte -->
+  <url>
+    <loc>https://cp-cc.com/?lang=de#products</loc>
+    <lastmod>2026-03-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de"        href="https://cp-cc.com/?lang=de#products"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://cp-cc.com/?lang=en#products"/>
+    <xhtml:link rel="alternate" hreflang="nl"        href="https://cp-cc.com/?lang=nl#products"/>
+    <xhtml:link rel="alternate" hreflang="ar"        href="https://cp-cc.com/?lang=ar#products"/>
+    <xhtml:link rel="alternate" hreflang="ru"        href="https://cp-cc.com/?lang=ru#products"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cp-cc.com/?lang=de#products"/>
+  </url>
+
+  <!-- Über uns / About -->
+  <url>
+    <loc>https://cp-cc.com/?lang=de#about</loc>
+    <lastmod>2026-03-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="de"        href="https://cp-cc.com/?lang=de#about"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://cp-cc.com/?lang=en#about"/>
+    <xhtml:link rel="alternate" hreflang="nl"        href="https://cp-cc.com/?lang=nl#about"/>
+    <xhtml:link rel="alternate" hreflang="ar"        href="https://cp-cc.com/?lang=ar#about"/>
+    <xhtml:link rel="alternate" hreflang="ru"        href="https://cp-cc.com/?lang=ru#about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cp-cc.com/?lang=de#about"/>
+  </url>
+
+  <!-- KI-Sparring -->
+  <url>
+    <loc>https://cp-cc.com/?lang=de#ki-sparring</loc>
+    <lastmod>2026-03-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de"        href="https://cp-cc.com/?lang=de#ki-sparring"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://cp-cc.com/?lang=en#ki-sparring"/>
+    <xhtml:link rel="alternate" hreflang="nl"        href="https://cp-cc.com/?lang=nl#ki-sparring"/>
+    <xhtml:link rel="alternate" hreflang="ar"        href="https://cp-cc.com/?lang=ar#ki-sparring"/>
+    <xhtml:link rel="alternate" hreflang="ru"        href="https://cp-cc.com/?lang=ru#ki-sparring"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cp-cc.com/?lang=de#ki-sparring"/>
+  </url>
+
+  <!-- Kontakt (Sektion) -->
+  <url>
+    <loc>https://cp-cc.com/?lang=de#contact</loc>
+    <lastmod>2026-03-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="de"        href="https://cp-cc.com/?lang=de#contact"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://cp-cc.com/?lang=en#contact"/>
+    <xhtml:link rel="alternate" hreflang="nl"        href="https://cp-cc.com/?lang=nl#contact"/>
+    <xhtml:link rel="alternate" hreflang="ar"        href="https://cp-cc.com/?lang=ar#contact"/>
+    <xhtml:link rel="alternate" hreflang="ru"        href="https://cp-cc.com/?lang=ru#contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cp-cc.com/?lang=de#contact"/>
+  </url>
+
   <!-- Über mich / Founder Profile -->
   <url>
     <loc>https://cp-cc.com/ueber-mich?lang=de</loc>
