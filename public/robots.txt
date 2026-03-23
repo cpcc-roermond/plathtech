@@ -63,4 +63,4 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://cp-cc.nl/sitemap.xml
+Sitemap: https://cp-cc.com/sitemap.xml
