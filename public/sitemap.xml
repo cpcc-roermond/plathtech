@@ -1,58 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
   <!-- Homepage -->
   <url>
-    <loc>https://cp-cc.nl/</loc>
-    <lastmod>2025-01-01</lastmod>
+    <loc>https://cp-cc.com/?lang=de</loc>
+    <lastmod>2026-03-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="de" href="https://cp-cc.nl/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://cp-cc.nl/"/>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://cp-cc.nl/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://cp-cc.nl/"/>
+    <xhtml:link rel="alternate" hreflang="de"        href="https://cp-cc.com/?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://cp-cc.com/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="nl"        href="https://cp-cc.com/?lang=nl"/>
+    <xhtml:link rel="alternate" hreflang="ar"        href="https://cp-cc.com/?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="ru"        href="https://cp-cc.com/?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cp-cc.com/?lang=de"/>
   </url>
 
   <!-- Contact Form Page -->
   <url>
-    <loc>https://cp-cc.nl/kontakt</loc>
-    <lastmod>2025-01-01</lastmod>
+    <loc>https://cp-cc.com/kontakt?lang=de</loc>
+    <lastmod>2026-03-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="de" href="https://cp-cc.nl/kontakt"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://cp-cc.nl/kontakt"/>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://cp-cc.nl/kontakt"/>
+    <xhtml:link rel="alternate" hreflang="de"        href="https://cp-cc.com/kontakt?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://cp-cc.com/kontakt?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="nl"        href="https://cp-cc.com/kontakt?lang=nl"/>
+    <xhtml:link rel="alternate" hreflang="ar"        href="https://cp-cc.com/kontakt?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="ru"        href="https://cp-cc.com/kontakt?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cp-cc.com/kontakt?lang=de"/>
   </url>
 
   <!-- Privacy Policy Page -->
   <url>
-    <loc>https://cp-cc.nl/datenschutz</loc>
-    <lastmod>2025-01-01</lastmod>
+    <loc>https://cp-cc.com/datenschutz?lang=de</loc>
+    <lastmod>2026-03-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
-    <xhtml:link rel="alternate" hreflang="de" href="https://cp-cc.nl/datenschutz"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://cp-cc.nl/datenschutz"/>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://cp-cc.nl/datenschutz"/>
+    <xhtml:link rel="alternate" hreflang="de"        href="https://cp-cc.com/datenschutz?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://cp-cc.com/datenschutz?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="nl"        href="https://cp-cc.com/datenschutz?lang=nl"/>
+    <xhtml:link rel="alternate" hreflang="ar"        href="https://cp-cc.com/datenschutz?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="ru"        href="https://cp-cc.com/datenschutz?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cp-cc.com/datenschutz?lang=de"/>
   </url>
 
   <!-- KI-Starthilfe / Potentialanalyse -->
   <url>
-    <loc>https://cp-cc.nl/ki-starthilfe</loc>
-    <lastmod>2026-03-20</lastmod>
+    <loc>https://cp-cc.com/ki-starthilfe?lang=de</loc>
+    <lastmod>2026-03-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="de" href="https://cp-cc.nl/ki-starthilfe"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://cp-cc.nl/ki-starthilfe"/>
+    <xhtml:link rel="alternate" hreflang="de"        href="https://cp-cc.com/ki-starthilfe?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://cp-cc.com/ki-starthilfe?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="nl"        href="https://cp-cc.com/ki-starthilfe?lang=nl"/>
+    <xhtml:link rel="alternate" hreflang="ar"        href="https://cp-cc.com/ki-starthilfe?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="ru"        href="https://cp-cc.com/ki-starthilfe?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cp-cc.com/ki-starthilfe?lang=de"/>
   </url>
 
   <!-- Über mich / Founder Profile -->
   <url>
-    <loc>https://cp-cc.nl/ueber-mich</loc>
-    <lastmod>2025-01-01</lastmod>
+    <loc>https://cp-cc.com/ueber-mich?lang=de</loc>
+    <lastmod>2026-03-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="de" href="https://cp-cc.nl/ueber-mich"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://cp-cc.nl/ueber-mich"/>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://cp-cc.nl/ueber-mich"/>
+    <xhtml:link rel="alternate" hreflang="de"        href="https://cp-cc.com/ueber-mich?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://cp-cc.com/ueber-mich?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="nl"        href="https://cp-cc.com/ueber-mich?lang=nl"/>
+    <xhtml:link rel="alternate" hreflang="ar"        href="https://cp-cc.com/ueber-mich?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="ru"        href="https://cp-cc.com/ueber-mich?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cp-cc.com/ueber-mich?lang=de"/>
   </url>
+
 </urlset>
