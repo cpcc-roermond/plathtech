@@ -113,9 +113,17 @@ All section anchor links are included in `public/sitemap.xml` for all 5 language
 
 This is implemented in `LanguageContext.tsx`: on init, `getUrlLanguage()` reads `?lang=` from `window.location.search`. If valid, language is set and `hasCompletedLoading` is initialized to `true` (bypasses LoadingScreen). Works on all routes/subpages.
 
+**Hash anchor scrolling**: `Index.tsx` includes a `useEffect` that reads `window.location.hash` and scrolls to the target element 800ms after load — after the fade-in animation completes. Without this delay, the browser jumped to the wrong section.
+
 ### SPA Routing (vercel.json)
 
 `vercel.json` in the root configures Vercel to rewrite all routes to `index.html`, enabling React Router to handle client-side navigation. Without this, direct URL access to subpages (e.g. `/ki-starthilfe`) returns 404.
+
+The rewrite rule explicitly excludes static files so they are served correctly:
+```json
+{ "source": "/((?!sitemap.xml|robots.txt|logos/).*)", "destination": "/index.html" }
+```
+Without this exclusion, `sitemap.xml` and `robots.txt` would be intercepted and served as the React app.
 
 ### Multi-Language System (DE/EN/NL/AR/RU)
 
@@ -344,9 +352,9 @@ Logos are stored in `public/logos/` (served as static assets):
 
 | File | Description | Used in |
 |------|-------------|---------|
-| `logo1.jpg` | Dark navy background, gold lion, white CPCC monogram, gold PLATHTECH text | Header, LoadingScreen, Footer, Favicon |
-| `logo2.jpg` | White background, ghost/faded CPCC, gold lion, gold PLATHTECH text | Hero background watermark (blurred) |
-| `logo3.jpg` | White background, black CPCC, grey lion, grey PLATHTECH text | Reserve / print use |
+| `logo1111.png` | Transparent, outlined CPCC monogram, gold lion, gold PLATHTECH text | Header, LoadingScreen, Favicon |
+| `logo2222.png` | Transparent, ghost/faded CPCC, gold lion, gold PLATHTECH text | Footer large decorative logo, Hero background watermark (4% opacity, blur-md) |
+| `logo33.png` | Transparent, black CPCC, grey lion — for light backgrounds | Reserve / print use |
 
 ### Language Switcher Flags
 
