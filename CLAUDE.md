@@ -316,7 +316,7 @@ Subpages update `document.title` and `meta[name="description"]` dynamically via 
 - `Hero.tsx` has dynamic mouse-position-based gradient background via useEffect; founder description text is left-aligned for better readability
 - `App.css` contains legacy Vite template styles (mostly unused, can be ignored)
 - `NotFound.tsx` uses the site's design system with Header/Footer and supports all five languages
-- `AboutMe.tsx` features an interactive project timeline with scroll animations, expandable items, and mouse-tracking gradient; linked from Hero.tsx founder card via "Mehr erfahren"
+- `AboutMe.tsx` features an interactive project timeline with scroll animations, expandable items, and mouse-tracking gradient; linked from Hero.tsx founder card via "Mehr erfahren". **Note**: Uses inline language ternaries (not `t.*`) for translations — all 5 languages (de/en/nl/ar/ru) must be explicitly handled; missing cases fall through to the last branch (previously caused Dutch to show for Arabic/Russian)
 - `Header.tsx` uses `useLocation()` to detect the current route; navigation links and CTA button are only shown on the homepage (`/`), while the LanguageSwitcher remains visible on all pages
 - `Contact.tsx` dialog description text is left-aligned within centered card for better readability
 - `KIStarthilfe.tsx` is the **reference implementation** for all future product detail pages. Uses: mouse-tracking gradient, IntersectionObserver scroll animations, inline SVG decorations (NeuralNet, Circuit, Compass), `t.kiStarthilfePage.*` namespace, dynamic `document.title`/meta-description per language, `<Link>` card in Products.tsx with hover arrow indicator. Use the `/new-product-page` skill to create further product pages following this pattern.

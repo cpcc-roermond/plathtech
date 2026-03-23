@@ -392,20 +392,32 @@ const AboutMe = () => {
           <div className="max-w-3xl mx-auto mt-20 text-center">
             <div className="glass-morphism rounded-2xl p-8 md:p-12">
               <h3 className="text-2xl md:text-3xl font-semibold mb-4 heading-style text-white">
-                {language === 'de' ? 'Bereit für Ihre KI-Transformation?' : language === 'en' ? 'Ready for your AI transformation?' : 'Klaar voor uw AI-transformatie?'}
+                {language === 'de' ? 'Bereit für Ihre KI-Transformation?' :
+                 language === 'en' ? 'Ready for your AI transformation?' :
+                 language === 'nl' ? 'Klaar voor uw AI-transformatie?' :
+                 language === 'ar' ? 'هل أنتم مستعدون لمرحلة الذكاء الاصطناعي؟' :
+                 'Готовы к AI-трансформации вашего бизнеса?'}
               </h3>
               <p className="body-style text-white/70 mb-6">
                 {language === 'de'
                   ? 'Lassen Sie uns gemeinsam herausfinden, wie KI Ihr Unternehmen voranbringen kann.'
                   : language === 'en'
                     ? 'Let\'s discover together how AI can drive your business forward.'
-                    : 'Laten we samen ontdekken hoe AI uw bedrijf vooruit kan helpen.'}
+                    : language === 'nl'
+                      ? 'Laten we samen ontdekken hoe AI uw bedrijf vooruit kan helpen.'
+                      : language === 'ar'
+                        ? 'دعنا نكتشف معاً كيف يمكن للذكاء الاصطناعي أن يرتقي بأعمالكم إلى مستويات جديدة.'
+                        : 'Давайте вместе разберёмся, как искусственный интеллект может вывести ваш бизнес на новый уровень.'}
               </p>
               <Link
                 to="/kontakt"
                 className="inline-flex items-center px-8 py-4 bg-gold text-navy font-semibold rounded-lg hover:bg-gold/90 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-gold/30"
               >
-                {language === 'de' ? 'Kontakt aufnehmen' : language === 'en' ? 'Get in touch' : 'Neem contact op'}
+                {language === 'de' ? 'Kontakt aufnehmen' :
+                 language === 'en' ? 'Get in touch' :
+                 language === 'nl' ? 'Neem contact op' :
+                 language === 'ar' ? 'تواصل معنا' :
+                 'Связаться с нами'}
               </Link>
             </div>
           </div>
