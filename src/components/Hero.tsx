@@ -44,7 +44,7 @@ const Hero = () => {
       {/* Enhanced Background Logo - Removed gray overlay */}
       <div className="absolute inset-0 flex items-center justify-center opacity-3 pointer-events-none" aria-hidden="true">
         <div className="relative">
-          <img src="/lovable-uploads/92a23c72-d137-4510-8e6f-e4966b4dfbfe.png" alt="" className="w-full h-full object-contain max-w-7xl filter blur-sm" loading="lazy" />
+          <img src="/logos/logo2222.png" alt="" className="w-full h-full object-contain max-w-7xl filter blur-sm" loading="lazy" />
         </div>
       </div>
 
