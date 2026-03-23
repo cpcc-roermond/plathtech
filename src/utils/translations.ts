@@ -336,6 +336,183 @@ export interface Translations {
       tagline: string;
     };
   };
+
+  // Projektmanagement 3.0 Page
+  projektmanagementPage: {
+    pageTitle: string;
+    metaDescription: string;
+    backToHome: string;
+    heroHeading: string;
+    quote: string;
+    intro: string;
+    problemStatement: string;
+    problemHighlight: string;
+    strips: {
+      focus: { label: string; text: string; };
+      setup: { label: string; text: string; };
+      result: { label: string; text: string; };
+    };
+    benefits: {
+      title: string;
+      subtitle: string;
+      card1: { title: string; description: string; };
+      card2: { title: string; description: string; };
+      card3: { title: string; description: string; };
+    };
+    tags: string[];
+    cta: {
+      heading: string;
+      headingHighlight: string;
+      text: string;
+      button: string;
+      tagline: string;
+    };
+  };
+
+  // KI-Geschäftsoptimierung Page
+  kiGeschaeftsoptimierungPage: {
+    pageTitle: string;
+    metaDescription: string;
+    backToHome: string;
+    heroHeading: string;
+    quote: string;
+    quoteHighlight: string;
+    intro: string;
+    highlightCard: string;
+    highlightCardHighlight: string;
+    process: {
+      title: string;
+      subtitle: string;
+      step1: { title: string; description: string; detail: string; };
+      step2: { title: string; description: string; detail: string; };
+      step3: { title: string; description: string; detail: string; };
+      step4: { title: string; description: string; detail: string; };
+      step5: { title: string; description: string; detail: string; };
+      step6: { title: string; description: string; detail: string; };
+    };
+    tags: string[];
+    cta: {
+      heading: string;
+      headingHighlight: string;
+      text: string;
+      button: string;
+      tagline: string;
+    };
+  };
+
+  // KI in Marketing & Sales Page
+  kiMarketingSalesPage: {
+    pageTitle: string;
+    metaDescription: string;
+    backToHome: string;
+    heroHeading: string;
+    quote: string;
+    quoteHighlight: string;
+    intro: string;
+    problemStatement: string;
+    problemHighlight: string;
+    themes: {
+      title: string;
+      subtitle: string;
+      theme1: { title: string; bullets: string[]; };
+      theme2: { title: string; bullets: string[]; };
+      theme3: { title: string; bullets: string[]; };
+      theme4: { title: string; bullets: string[]; };
+    };
+    resultStatement: string;
+    resultHighlight: string;
+    tags: string[];
+    cta: {
+      heading: string;
+      headingHighlight: string;
+      text: string;
+      button: string;
+      tagline: string;
+    };
+  };
+
+  // KI-Schulungen Page
+  kiSchulungenPage: {
+    pageTitle: string;
+    metaDescription: string;
+    backToHome: string;
+    heroHeading: string;
+    quote: string;
+    quoteHighlight: string;
+    intro: string;
+    problemStatement: string;
+    problemHighlight: string;
+    pillars: {
+      title: string;
+      subtitle: string;
+      pillar1: {
+        title: string;
+        heading: string;
+        items: { bold: string; text: string; }[];
+      };
+      pillar2: {
+        title: string;
+        heading: string;
+        items: { bold: string; text: string; }[];
+      };
+      pillar3: {
+        title: string;
+        heading: string;
+        items: { bold: string; text: string; }[];
+      };
+    };
+    resultStatement: string;
+    resultHighlight: string;
+    tags: string[];
+    cta: {
+      heading: string;
+      headingHighlight: string;
+      text: string;
+      button: string;
+      tagline: string;
+    };
+  };
+
+  // KI in Ausschreibungen Page
+  kiAusschreibungenPage: {
+    pageTitle: string;
+    metaDescription: string;
+    backToHome: string;
+    heroHeading: string;
+    quote: string;
+    quoteHighlight: string;
+    intro: string;
+    problemStatement: string;
+    problemHighlight: string;
+    painPoints: {
+      title: string;
+      items: string[];
+    };
+    sides: {
+      title: string;
+      subtitle: string;
+      customer: {
+        sideLabel: string;
+        title: string;
+        items: { heading: string; description: string; }[];
+      };
+      provider: {
+        sideLabel: string;
+        title: string;
+        items: { heading: string; description: string; }[];
+      };
+    };
+    resultStatement: string;
+    resultHighlight: string;
+    tags: string[];
+    cta: {
+      heading: string;
+      headingHighlight: string;
+      text: string;
+      button: string;
+      tagline: string;
+    };
+  };
 }
 
 export const translations: Record<Language, Translations> = {
@@ -536,7 +713,7 @@ export const translations: Record<Language, Translations> = {
           description: 'KI-gestützte Optimierung Ihrer Projektabläufe und Ressourcenplanung.'
         },
         prozessOptimierung: {
-          title: 'KI-Prozess-Optimierung',
+          title: 'KI-Geschäftsoptimierung',
           description: 'Automatisierung und Effizienzsteigerung durch intelligente Prozesse.'
         },
         marketingSales: {
@@ -544,7 +721,7 @@ export const translations: Record<Language, Translations> = {
           description: 'Revolutionieren Sie Ihre Vertriebsstrategien mit KI-Power.'
         },
         schulungen: {
-          title: 'KI-Schulungen',
+          title: 'KI-Schulungen & Transformation',
           description: 'Expertenwissen für Ihre Teams – praxisnah und nachhaltig.'
         },
         ausschreibungen: {
@@ -704,7 +881,252 @@ export const translations: Record<Language, Translations> = {
         button: 'Kostenloses Erstgespräch vereinbaren',
         tagline: 'Kostenlos · Unverbindlich · Persönlich',
       },
-    }
+    },
+    projektmanagementPage: {
+      pageTitle: 'Projektmanagement 3.0 | CPCC – Christian Plath Consulting Company',
+      metaDescription: 'Projektmanagement 3.0 vereint klassische PM-Frameworks mit Künstlicher Intelligenz. Entlasten Sie Ihr PMO, automatisieren Sie den Projektalltag und kaufen Sie sich Ihre Zeit zurück.',
+      backToHome: 'Zurück zur Startseite',
+      heroHeading: 'Projektmanagement 3.0',
+      quote: '„Stellen Sie sich vor, Ihre Projekte managen sich dank KI fast von selbst."',
+      intro: 'Klassische PM-Frameworks vereint mit modernster Künstlicher Intelligenz – damit Ihr Team endlich wieder Zeit für das hat, was wirklich zählt.',
+      problemStatement: 'Das PMO ist chronisch überlastet und Ihr Team verbringt den halben Tag in unproduktiven Meetings, statt das eigentliche Projekt voranzutreiben.',
+      problemHighlight: 'Projektmanagement 3.0 löst genau diese Pain Points durch intelligente Automatisierung des Projektalltags – und kauft Ihnen Ihre Zeit zurück.',
+      strips: {
+        focus: { label: 'Fokus', text: 'Befreiung Ihres Teams von administrativen PMO-Aufgaben durch intelligente Automatisierung des Projektalltags.' },
+        setup: { label: 'Setup', text: 'Integration smarter KI-Assistenten in Ihre bestehenden Meeting-Routinen und Projekt-Strukturen.' },
+        result: { label: 'Ergebnis', text: 'Drastische Zeitersparnis und spürbar effizientere Meetings – Sie kaufen sich Ihre Zeit mit der Hilfe von KI einfach zurück.' },
+      },
+      benefits: {
+        title: 'Ihre Vorteile auf einen Blick',
+        subtitle: 'Drei konkrete Hebel, mit denen KI Ihren Projektalltag sofort entlastet.',
+        card1: { title: 'Smarte Meeting-Kultur', description: 'Automatische Agenda-Erstellung und strukturierte Abläufe sorgen dafür, dass Sie nicht mehr den ganzen Tag in Calls festhängen.' },
+        card2: { title: 'Nahtlose Delegation', description: 'Automatische Aufgabenzuweisung direkt aus dem Gespräch heraus, ganz ohne händisches Protokollieren.' },
+        card3: { title: 'Lückenloses Tracking', description: 'Die automatische Deadline-Verfolgung übernimmt das lästige Follow-up und schont wertvolle PMO-Ressourcen.' },
+      },
+      tags: ['✓ Klassische Frameworks & KI vereint', '✓ Entlastung der PMO-Ressourcen', '✓ Mehr Zeit fürs Daily Business'],
+      cta: {
+        heading: 'Bereit, Ihr PMO zu ',
+        headingHighlight: 'entlasten?',
+        text: 'Lassen Sie uns gemeinsam herausfinden, wo KI in Ihrem Projektmanagement den größten Hebel bietet. Kostenlos und unverbindlich.',
+        button: 'Kostenloses Erstgespräch vereinbaren',
+        tagline: 'Kostenlos · Unverbindlich · Persönlich',
+      },
+    },
+    kiGeschaeftsoptimierungPage: {
+      pageTitle: 'KI-Geschäftsoptimierung | CPCC – Christian Plath Consulting Company',
+      metaDescription: 'KI-Prozess-Optimierung in 6 Schritten: Von der Use-Case-Identifikation über DSGVO-konforme Tool-Evaluierung bis zur reibungslosen Implementierung. Strukturiert, sicher, kostenbewusst.',
+      backToHome: 'Zurück zur Startseite',
+      heroHeading: 'KI-Geschäftsoptimierung',
+      quote: '„Nicht jeder Prozess muss zwanghaft automatisiert werden – ',
+      quoteHighlight: 'wir finden die, bei denen es sich wirklich lohnt."',
+      intro: 'Von der Use-Case-Identifikation über DSGVO-konforme Evaluierung bis zur begleiteten Implementierung – strukturiert, sicher und kostenbewusst.',
+      highlightCard: 'KI-Projekte scheitern nicht an der Technologie – sie scheitern an fehlender Struktur, Datenschutzrisiken und falsch gewählten Modellen.',
+      highlightCardHighlight: 'Unser 6-stufiger Prozess bringt Ordnung, Sicherheit und Kosteneffizienz in Ihre KI-Integration.',
+      process: {
+        title: 'Der 6-stufige Prozess',
+        subtitle: 'Von der ersten Analyse bis zum produktiven Betrieb – kein Schritt wird übersprungen.',
+        step1: {
+          title: 'Use-Case-Generierung',
+          description: 'Gezielte Identifikation der Use-Cases, die in Ihrem Unternehmen durch KI echten Mehrwert bieten. Wir analysieren Ihre Geschäftsbereiche und decken auf, wo KI Prozesse messbar beschleunigt, Fehlerquoten senkt oder Personal sinnvoll entlastet.',
+          detail: 'Nicht jeder Prozess muss zwanghaft automatisiert werden – wir fokussieren auf echten Mehrwert.',
+        },
+        step2: {
+          title: 'Daten- & Datenschutz-Klassifizierung',
+          description: 'Evaluierung der identifizierten Use-Cases nach Datenschutz-Klassen. Mit einer eigens entwickelten Checkliste und einem detaillierten Fragenkatalog prüfen wir jeden Prozessschritt auf DSGVO-Konformität und die Anforderungen des EU-AI-Acts.',
+          detail: 'Sicherheit ist das Fundament jeder KI-Integration.',
+        },
+        step3: {
+          title: 'Tool- & Modellevaluierung',
+          description: 'Marktstandard oder Maßanzug? Wir prüfen, ob DSGVO-konforme Lösungen in Ihrer eigenen Umgebung laufen müssen oder ob gehostete Services möglich sind – von ChatGPT und Claude bis zu On-Premise-Modellen wie Llama oder der europäischen Lösung Mistral.',
+          detail: 'Gezieltes Testing findet die technologisch perfekte Passform für Ihren Anwendungsfall.',
+        },
+        step4: {
+          title: 'Kostenevaluierung & Right-Sizing',
+          description: 'Die laufenden Kosten von LLMs sind extrem unterschiedlich. Einfache Use-Cases können durch kleine, hocheffiziente Modelle realisiert werden, die bis zu 90 % weniger kosten als große Modelle – bei vergleichbarer Qualität für die jeweilige Spezialaufgabe.',
+          detail: 'Wir berechnen diese Hebel für Sie und garantieren maximal effizienten Betrieb.',
+        },
+        step5: {
+          title: 'Fundierte Empfehlung',
+          description: 'Nach Abschluss der Evaluierung und Kostenkalkulation erhalten Sie eine glasklare, fundierte Handlungsempfehlung. Transparent, nachvollziehbar und auf Ihre spezifische Situation zugeschnitten.',
+          detail: 'Kein Vendor-Lock-in, keine versteckten Präferenzen – nur die beste Lösung für Sie.',
+        },
+        step6: {
+          title: 'Begleitete Implementierung',
+          description: 'Wir lassen Sie mit der Strategie nicht allein. Die gewählte Lösung wird reibungslos in Ihre bestehende Systemlandschaft integriert – mit aktiver Begleitung, bis sie sofort echten Mehrwert liefert.',
+          detail: 'Von der ersten Zeile bis zum produktiven Betrieb.',
+        },
+      },
+      tags: ['✓ DSGVO- & EU-AI-Act-konform', '✓ Right-Sizing für Ihr Budget', '✓ Von der Analyse bis zur Implementierung'],
+      cta: {
+        heading: 'Bereit für den ersten ',
+        headingHighlight: 'Use-Case?',
+        text: 'Lassen Sie uns gemeinsam herausfinden, welcher Prozess in Ihrem Unternehmen den größten KI-Hebel bietet. Strukturiert, sicher und mit glasklarer Kostentransparenz.',
+        button: 'Kostenloses Erstgespräch vereinbaren',
+        tagline: 'Kostenlos · Unverbindlich · Persönlich',
+      },
+    },
+    kiMarketingSalesPage: {
+      pageTitle: 'KI in Marketing & Sales | CPCC – Christian Plath Consulting Company',
+      metaDescription: 'KI-gestützter B2B-Vertrieb und Marketing: Echte Customer Insights, Echtzeit-Konkurrenzanalysen, automatisierte Lead-Generierung und skalierbare Content-Erstellung für mehr Pipeline und kürzere Sales-Cycles.',
+      backToHome: 'Zurück zur Startseite',
+      heroHeading: 'KI in Marketing & Sales',
+      quote: '„Ihr Vertrieb und Marketing auf dem nächsten Level. Von der Lead-Generierung bis zum Abschluss –',
+      quoteHighlight: ' KI-gestützt, zielgruppengenau und grenzenlos skalierbar."',
+      intro: 'Die Zeiten, in denen ein einfacher KI-Prompt für einen Wettbewerbsvorteil reichte, sind vorbei. Heute brauchen Sie exklusive Methoden und Datenquellen, um den entscheidenden Informationsvorsprung zu sichern.',
+      problemStatement: '„Wir brauchen mehr Pipeline, kürzere Sales-Cycles und bessere Conversion." – Sie haben ambitionierte OKRs, aber das operative Tagesgeschäft bremst Sie aus?',
+      problemHighlight: 'Wir zeigen Ihnen, wie KI Ihren gesamten B2B-Vertriebsprozess messbar beschleunigt. Nicht als theoretische Spielerei, sondern als echter Motor für Ihre KPIs.',
+      themes: {
+        title: 'Vier Hebel für Ihren Vertriebserfolg',
+        subtitle: 'Von der Marktanalyse bis zum Closing – KI greift an jedem entscheidenden Punkt ein.',
+        theme1: {
+          title: 'Deep Analytics & Strategie',
+          bullets: [
+            'Echte Customer Insights: Statt langweiliger Umfragen analysieren wir echte Marktdaten und zeigen Ihnen exakt, was Ihre Kunden lieben und was sie frustriert.',
+            'Unfairer Informationsvorsprung: Konkurrenz- und Marktanalysen basierend auf Live-Echtzeitdaten – auf einem Level, das Ihr Wettbewerb mit Standard-KI-Abfragen niemals erreichen kann.',
+            'Fundierte Planung: Entwicklung belastbarer, datengetriebener Marketing-Strategien statt Gießkannen-Prinzip.',
+          ],
+        },
+        theme2: {
+          title: 'Lead-Generierung & Conversion',
+          bullets: [
+            'Smarte Lead-Engine: KI-gestützte Lead-Generierung und Partner-Akquise, die exakt auf Deep Analytics aufbaut.',
+            'Globale Skalierung: Zielgruppenspezifische Angebotserstellung auf Knopfdruck – maßgeschneidert und in über 50 Sprachen.',
+            'Präzises Targeting: Datenbasierte Persona-Erstellung und tiefgreifende Zielgruppen-Segmentierung statt Bauchgefühl.',
+          ],
+        },
+        theme3: {
+          title: 'Content & Storytelling',
+          bullets: [
+            'Content auf Knopfdruck: Erstellung hochkonvertierender Werbetexte, Landing Pages und Newsletter in Minuten statt Tagen.',
+            'Storytelling, das verkauft: Inhalte, die exakt auf die analysierten echten Pain Points Ihrer B2B-Entscheider zugeschnitten sind.',
+          ],
+        },
+        theme4: {
+          title: 'Team-Enablement & Sales-Excellence',
+          bullets: [
+            'Live-Unterstützung: Echtzeit-Schulungen und smarte Einwandsbehandlung für Ihre Reps direkt während laufender Vertriebsgespräche.',
+            'Schneller produktiv: Radikal verkürztes Onboarding neuer Mitarbeiter durch KI-gestützte Wissensvermittlung.',
+          ],
+        },
+      },
+      resultStatement: 'Das Ergebnis: Mehr Pipeline, bessere Conversion, drastisch verkürzte Sales-Cycles – messbar an Ihren KPIs und mit einem',
+      resultHighlight: 'Team, das sich endlich wieder aufs Verkaufen konzentrieren kann.',
+      tags: ['✓ B2B-Fokus', '✓ Echte Insights statt Standard-KI', '✓ Skalierbar in 50+ Sprachen', '✓ Vom Content bis zum Closing'],
+      cta: {
+        heading: 'Bereit für mehr ',
+        headingHighlight: 'Pipeline?',
+        text: 'Lassen Sie uns in einem ersten Gespräch herausfinden, an welchem Punkt im Funnel KI den größten Hebel für Ihren Vertrieb bietet.',
+        button: 'Kostenloses Erstgespräch vereinbaren',
+        tagline: 'Kostenlos · Unverbindlich · Persönlich',
+      },
+    },
+    kiSchulungenPage: {
+      pageTitle: 'KI-Schulungen & Transformation | CPCC – Christian Plath Consulting Company',
+      metaDescription: 'KI-Schulungen und Transformation: Wir verwandeln Angst vor KI in Kompetenz. Maßgeschneiderte Schulungen, Kulturwandel und Integration – damit Ihr Team KI souverän beherrscht.',
+      backToHome: 'Zurück zur Startseite',
+      heroHeading: 'KI-Schulungen & Transformation',
+      quote: '„Schulungen, Kulturwandel und Integration –',
+      quoteHighlight: ' maßgeschneidert auf Ihre Organisation."',
+      intro: 'Wir bringen KI-Kompetenz in Ihr Unternehmen – nicht als abstraktes IT-Projekt, sondern als echten Kulturwandel, der jeden Mitarbeiter mitnimmt.',
+      problemStatement: '„Unsere Mitarbeiter haben Angst vor KI – und wir wissen nicht, wo wir anfangen sollen." Das ist normal. KI verändert nicht nur Prozesse, sondern auch die Art, wie wir arbeiten.',
+      problemHighlight: 'Die Frage ist nicht, ob KI kommt, sondern wie Sie Ihr Team darauf vorbereiten.',
+      pillars: {
+        title: 'Drei Säulen der KI-Transformation',
+        subtitle: 'Von der ersten Begegnung mit KI bis zur tief verankerten, souveränen Nutzung im Arbeitsalltag.',
+        pillar1: {
+          title: 'Säule 1',
+          heading: 'Kulturwandel & Mindset',
+          items: [
+            { bold: 'Angst in Neugier verwandeln', text: 'Wir holen Ihre Mitarbeiter und Führungskräfte dort ab, wo sie stehen. Wir bauen Vorbehalte gezielt ab und zeigen die immensen Chancen einer KI-freundlichen Unternehmenskultur auf.' },
+            { bold: 'Der neue „Way of Working"', text: 'KI wird nicht als lästiges IT-Sonderprojekt verstanden, sondern tief in der DNA Ihres Unternehmens und im täglichen Handeln etabliert.' },
+          ],
+        },
+        pillar2: {
+          title: 'Säule 2',
+          heading: 'Praxisnahe Schulungen',
+          items: [
+            { bold: 'Relevanz statt Theorie', text: 'Keine langweiligen Standard-Vorträge. Wir entwickeln unternehmens- und aufgabenbezogene Schulungen, die exakt auf die individuellen Herausforderungen Ihrer Abteilungen zugeschnitten sind.' },
+            { bold: 'Hands-on Umsetzung', text: 'Wir zeigen ganz konkret an Ihren eigenen Prozessen: Wie genau können Ihre Mitarbeiter KI ab sofort produktiv und sicher nutzen?' },
+          ],
+        },
+        pillar3: {
+          title: 'Säule 3',
+          heading: 'Integration & „Magie"',
+          items: [
+            { bold: 'Die richtige Dosis', text: 'Wir analysieren messerscharf: Wo ist KI lediglich eine sinnvolle Ergänzung? Wo wird sie zum integralen Bestandteil von dem, was bereits da ist?' },
+            { bold: 'Der Wow-Effekt', text: 'Wir identifizieren gemeinsam die speziellen Hebel und Prozesse in Ihrem Unternehmen, bei denen der gezielte KI-Einsatz echte „Magie" erzeugt und den Arbeitsalltag radikal erleichtert.' },
+          ],
+        },
+      },
+      resultStatement: 'Das Ergebnis: Ein Team, das KI nicht fürchtet, sondern souverän beherrscht – und ein Unternehmen, das',
+      resultHighlight: 'nie wieder durch veraltete Prozesse ausgebremst wird, sondern seine Ressourcen für echte Innovationen freispielt.',
+      tags: ['✓ Maßgeschneiderte Schulungen', '✓ Kulturwandel begleiten', '✓ Von der Angst zur Kompetenz'],
+      cta: {
+        heading: 'Bereit, Ihr Team zu ',
+        headingHighlight: 'befähigen?',
+        text: 'Lassen Sie uns gemeinsam herausfinden, welche Schulungsform und welcher Transformationsansatz am besten zu Ihrer Organisation und Ihren Mitarbeitern passt.',
+        button: 'Kostenloses Erstgespräch vereinbaren',
+        tagline: 'Kostenlos · Unverbindlich · Persönlich',
+      },
+    },
+    kiAusschreibungenPage: {
+      pageTitle: 'KI in Ausschreibungen | CPCC – Christian Plath Consulting Company',
+      metaDescription: 'KI in Ausschreibungen: Messerscharfe Analyse und wasserdichte Dokumentation für ausschreibende Organisationen und anbietende Unternehmen. DSGVO-konform, juristisch belastbar.',
+      backToHome: 'Zurück zur Startseite',
+      heroHeading: 'KI in Ausschreibungen',
+      quote: '„Messerscharfe Analyse. Wasserdichte Dokumentation.',
+      quoteHighlight: ' Für beide Seiten des Tisches."',
+      intro: 'Ob Sie ausschreiben oder sich bewerben: Wir bringen KI in den gesamten Ausschreibungsprozess – präziser, schneller und juristisch belastbar.',
+      problemStatement: '„Ausschreibungen sind ein Zeitfresser – und am Ende bleibt immer Unsicherheit." – Anforderungskataloge mit hunderten Kriterien, Lösungsdesigns, die interpretiert werden müssen, Bewertungen, die juristisch standhalten sollen.',
+      problemHighlight: 'Wir bringen KI in diesen Prozess – auf beiden Seiten.',
+      painPoints: {
+        title: 'Pain Points, die wir lösen',
+        items: [
+          'Unklare oder zu generische Leistungsbeschreibungen',
+          'Fehlende Vergleichbarkeit von Angeboten',
+          'Zeitaufwendige Erstellung und Abstimmung von Dokumenten',
+          'Schwierige Bewertung komplexer IT-/KI-/Cloud-Lösungen',
+          'Risiko von „Buzzword-Angeboten" ohne echte Substanz',
+          'Mangelnde Nachvollziehbarkeit von Entscheidungen',
+        ],
+      },
+      sides: {
+        title: 'Für jede Seite des Tisches',
+        subtitle: 'Unsere Unterstützung ist auf beide Rollen im Ausschreibungsprozess zugeschnitten.',
+        customer: {
+          sideLabel: 'Für ausschreibende Organisationen',
+          title: 'Als Kunde ausschreiben',
+          items: [
+            { heading: 'Leistungsbeschreibungen erstellen', description: 'Präzise, vollständige Anforderungskataloge – keine vergessenen Kriterien, keine Interpretationsspielräume.' },
+            { heading: 'Bewertungskriterien entwickeln', description: 'Objektive, nachvollziehbare Bewertungsmatrizen, die einer juristischen Prüfung standhalten.' },
+            { heading: 'Lösungsdesigns systematisch auswerten', description: 'Systematischer Abgleich der eingereichten Unterlagen gegen alle Anforderungen. Entscheidende Kleinigkeiten in Nebensätzen und Anhängen werden nicht mehr übersehen.' },
+            { heading: 'Buzzwords entlarven', description: 'KI-gestützte Extraktion von Kerninhalten und direkter Vergleich von Anbieterlösungen. Identifikation von Risiken, Schwächen oder reiner Marketing-Sprache ohne Substanz.' },
+            { heading: 'Vergabeentscheidungen absichern', description: 'Lückenlose Dokumentation jeder Bewertungsentscheidung – Audit-Trail inklusive.' },
+          ],
+        },
+        provider: {
+          sideLabel: 'Für anbietende Unternehmen',
+          title: 'Als Provider bewerben',
+          items: [
+            { heading: 'Ausschreibungen analysieren', description: 'Schnelle Extraktion der Kern-Anforderungen. Was wird wirklich verlangt? Wo liegen die Fallstricke?' },
+            { heading: 'Lückenlose Dokumente sicherstellen', description: 'Automatische Prüfung Ihrer Leistungsbeschreibungen und Lösungsdesigns auf Lücken, Widersprüche und Unklarheiten.' },
+            { heading: 'Präzisierung & Harmonisierung', description: 'Konkrete Vorschläge zur Präzisierung und Harmonisierung von Begriffen und Strukturen konsistent über alle Dokumente hinweg.' },
+            { heading: 'Effizienz auf Knopfdruck', description: 'Schnelle Erstellung von RFP-/RFI-Entwürfen auf Basis weniger Stichpunkte. Strukturierte Angebote, die alle Kriterien adressieren – nichts vergessen, nichts doppelt.' },
+            { heading: 'Vertragsverhandlungen vorbereiten', description: 'Analyse von Vertragsentwürfen auf Risiken und kritische Klauseln. Vorbereitung messerscharfer Verhandlungsargumente auf Basis identifizierter Schwächen.' },
+          ],
+        },
+      },
+      resultStatement: 'Das Ergebnis: Deutlich reduzierte Durchlaufzeiten, höhere Qualität und Klarheit der Anforderungen, bessere Vergleichbarkeit von Anbietern sowie',
+      resultHighlight: 'fundiertere, nachvollziehbare Entscheidungen mit drastisch reduziertem Risiko bei Vertragsabschluss – egal auf welcher Seite des Tisches Sie sitzen.',
+      tags: ['✓ Für Kunden und Provider', '✓ DSGVO-konform', '✓ Juristisch belastbare Dokumentation'],
+      cta: {
+        heading: 'Nächste Ausschreibung mit ',
+        headingHighlight: 'klarem Vorsprung?',
+        text: 'Lassen Sie uns besprechen, wie KI Ihre nächste Ausschreibung – ob als Auftraggeber oder Bieter – schneller, präziser und rechtssicherer macht.',
+        button: 'Kostenloses Erstgespräch vereinbaren',
+        tagline: 'Kostenlos · Unverbindlich · Persönlich',
+      },
+    },
   },
   en: {
     nav: {
@@ -903,7 +1325,7 @@ export const translations: Record<Language, Translations> = {
           description: 'AI-supported optimization of your project workflows and resource planning.'
         },
         prozessOptimierung: {
-          title: 'AI Process Optimization',
+          title: 'AI Business Optimisation',
           description: 'Automation and efficiency enhancement through intelligent processes.'
         },
         marketingSales: {
@@ -911,7 +1333,7 @@ export const translations: Record<Language, Translations> = {
           description: 'Revolutionize your sales strategies with AI power.'
         },
         schulungen: {
-          title: 'AI Training',
+          title: 'AI Training & Transformation',
           description: 'Expert knowledge for your teams – practical and sustainable.'
         },
         ausschreibungen: {
@@ -1071,7 +1493,252 @@ export const translations: Record<Language, Translations> = {
         button: 'Book a free initial consultation',
         tagline: 'Free · No obligation · Personal',
       },
-    }
+    },
+    projektmanagementPage: {
+      pageTitle: 'Project Management 3.0 | CPCC – Christian Plath Consulting Company',
+      metaDescription: 'Project Management 3.0 unites classical PM frameworks with Artificial Intelligence. Relieve your PMO, automate day-to-day project work and buy back your time.',
+      backToHome: 'Back to homepage',
+      heroHeading: 'Project Management 3.0',
+      quote: '"Imagine your projects practically managing themselves thanks to AI."',
+      intro: 'Classical PM frameworks combined with cutting-edge Artificial Intelligence – so your team finally has time for what truly matters.',
+      problemStatement: 'Your PMO is chronically overloaded and your team spends half the day in unproductive meetings instead of actually driving the project forward.',
+      problemHighlight: 'Project Management 3.0 solves exactly these pain points through intelligent automation of day-to-day project work – and buys back your time.',
+      strips: {
+        focus: { label: 'Focus', text: 'Freeing your team from administrative PMO tasks through intelligent automation of day-to-day project work.' },
+        setup: { label: 'Setup', text: 'Integrating smart AI assistants into your existing meeting routines and project structures.' },
+        result: { label: 'Result', text: 'Dramatic time savings and noticeably more efficient meetings – buy back your time with the help of AI.' },
+      },
+      benefits: {
+        title: 'Your benefits at a glance',
+        subtitle: 'Three concrete levers through which AI immediately relieves your project workload.',
+        card1: { title: 'Smart Meeting Culture', description: 'Automatic agenda creation and structured workflows ensure you no longer spend the entire day stuck in calls.' },
+        card2: { title: 'Seamless Delegation', description: 'Automatic task assignment directly from the conversation – no manual note-taking required.' },
+        card3: { title: 'Complete Tracking', description: 'Automatic deadline tracking takes over the tedious follow-up and preserves valuable PMO resources.' },
+      },
+      tags: ['✓ Classical frameworks & AI combined', '✓ Relief for PMO resources', '✓ More time for daily business'],
+      cta: {
+        heading: 'Ready to relieve your ',
+        headingHighlight: 'PMO?',
+        text: 'Let us find out together where AI offers the greatest leverage in your project management. Free and non-binding.',
+        button: 'Book a free initial consultation',
+        tagline: 'Free · No obligation · Personal',
+      },
+    },
+    kiGeschaeftsoptimierungPage: {
+      pageTitle: 'AI Business Optimisation | CPCC – Christian Plath Consulting Company',
+      metaDescription: 'AI process optimisation in 6 steps: From use-case identification through GDPR-compliant tool evaluation to seamless implementation. Structured, secure, cost-conscious.',
+      backToHome: 'Back to homepage',
+      heroHeading: 'AI Business Optimisation',
+      quote: '"Not every process needs to be forced into automation – ',
+      quoteHighlight: 'we find the ones where it genuinely pays off."',
+      intro: 'From use-case identification through GDPR-compliant evaluation to guided implementation – structured, secure and cost-conscious.',
+      highlightCard: 'AI projects don\'t fail because of the technology – they fail due to a lack of structure, data protection risks and poorly chosen models.',
+      highlightCardHighlight: 'Our 6-step process brings order, security and cost-efficiency to your AI integration.',
+      process: {
+        title: 'The 6-step process',
+        subtitle: 'From the first analysis through to live operation – no step is skipped.',
+        step1: {
+          title: 'Use-Case Generation',
+          description: 'Targeted identification of the use cases that deliver real value in your organisation through AI. We analyse your business areas and uncover where AI measurably accelerates processes, reduces error rates or meaningfully relieves your staff.',
+          detail: 'Not every process needs to be forced into automation – we focus on genuine value.',
+        },
+        step2: {
+          title: 'Data & Privacy Classification',
+          description: 'Evaluation of identified use cases against data protection classes. Using a purpose-built checklist and detailed questionnaire, we assess every process step for GDPR compliance and EU AI Act requirements.',
+          detail: 'Security is the foundation of every AI integration.',
+        },
+        step3: {
+          title: 'Tool & Model Evaluation',
+          description: 'Off-the-shelf or bespoke? We assess whether GDPR-compliant solutions must run in your own environment or whether hosted services are possible – from ChatGPT and Claude to on-premise models such as Llama or the European solution Mistral.',
+          detail: 'Targeted testing finds the technologically perfect fit for your use case.',
+        },
+        step4: {
+          title: 'Cost Evaluation & Right-Sizing',
+          description: 'The running costs of LLMs vary enormously. Simple use cases can be handled by small, highly efficient models that cost up to 90% less than large models – with comparable quality for the specific task.',
+          detail: 'We calculate these levers for you and guarantee maximally efficient operation.',
+        },
+        step5: {
+          title: 'Informed Recommendation',
+          description: 'After completing the evaluation and cost calculation, you receive a crystal-clear, well-founded recommendation. Transparent, comprehensible and tailored to your specific situation.',
+          detail: 'No vendor lock-in, no hidden preferences – only the best solution for you.',
+        },
+        step6: {
+          title: 'Guided Implementation',
+          description: 'We don\'t leave you alone with the strategy. The chosen solution is seamlessly integrated into your existing system landscape – with active support until it immediately delivers real value.',
+          detail: 'From the first line of code to live operation.',
+        },
+      },
+      tags: ['✓ GDPR & EU AI Act compliant', '✓ Right-sizing for your budget', '✓ From analysis to implementation'],
+      cta: {
+        heading: 'Ready for the first ',
+        headingHighlight: 'use case?',
+        text: 'Let us find out together which process in your organisation offers the greatest AI leverage. Structured, secure and with crystal-clear cost transparency.',
+        button: 'Book a free initial consultation',
+        tagline: 'Free · No obligation · Personal',
+      },
+    },
+    kiMarketingSalesPage: {
+      pageTitle: 'AI in Marketing & Sales | CPCC – Christian Plath Consulting Company',
+      metaDescription: 'AI-powered B2B sales and marketing: Real customer insights, real-time competitive analysis, automated lead generation and scalable content creation for more pipeline and shorter sales cycles.',
+      backToHome: 'Back to homepage',
+      heroHeading: 'AI in Marketing & Sales',
+      quote: '"Your sales and marketing at the next level. From lead generation to closing –',
+      quoteHighlight: ' AI-powered, audience-precise and infinitely scalable."',
+      intro: 'The days when a simple AI prompt was enough to gain a competitive advantage are over. Today you need exclusive methods and data sources to secure the decisive information edge.',
+      problemStatement: '"We need more pipeline, shorter sales cycles and better conversion." – You have ambitious OKRs, but day-to-day operations are slowing you down?',
+      problemHighlight: 'We show you how AI measurably accelerates your entire B2B sales process. Not as a theoretical exercise, but as a genuine driver for your KPIs.',
+      themes: {
+        title: 'Four levers for your sales success',
+        subtitle: 'From market analysis to closing – AI intervenes at every decisive point.',
+        theme1: {
+          title: 'Deep Analytics & Strategy',
+          bullets: [
+            'Real Customer Insights: Instead of dull surveys, we analyse real market data and show you exactly what your customers love and what frustrates them.',
+            'Unfair Information Advantage: Competitive and market analyses based on live real-time data – at a level your competitors can never reach with standard AI queries.',
+            'Informed Planning: Development of robust, data-driven marketing strategies instead of a scatter-gun approach.',
+          ],
+        },
+        theme2: {
+          title: 'Lead Generation & Conversion',
+          bullets: [
+            'Smart Lead Engine: AI-powered lead generation and partner acquisition that builds directly on deep analytics.',
+            'Global Scaling: Target-audience-specific proposal creation at the push of a button – tailored and in over 50 languages.',
+            'Precise Targeting: Data-driven persona creation and in-depth audience segmentation instead of gut instinct.',
+          ],
+        },
+        theme3: {
+          title: 'Content & Storytelling',
+          bullets: [
+            'Content at the Push of a Button: Creation of high-converting ad copy, landing pages and newsletters in minutes rather than days.',
+            'Storytelling that Sells: Content precisely tailored to the analysed real pain points of your B2B decision-makers.',
+          ],
+        },
+        theme4: {
+          title: 'Team Enablement & Sales Excellence',
+          bullets: [
+            'Live Support: Real-time coaching and smart objection handling for your reps directly during live sales conversations.',
+            'Faster to Productivity: Radically shortened onboarding of new staff through AI-powered knowledge transfer.',
+          ],
+        },
+      },
+      resultStatement: 'The result: More pipeline, better conversion, drastically shortened sales cycles – measurable against your KPIs and with a',
+      resultHighlight: 'team that can finally focus on selling again.',
+      tags: ['✓ B2B focus', '✓ Real insights instead of standard AI', '✓ Scalable in 50+ languages', '✓ From content to closing'],
+      cta: {
+        heading: 'Ready for more ',
+        headingHighlight: 'pipeline?',
+        text: 'Let us find out in an initial conversation at which point in the funnel AI offers the greatest leverage for your sales team.',
+        button: 'Book a free initial consultation',
+        tagline: 'Free · No obligation · Personal',
+      },
+    },
+    kiSchulungenPage: {
+      pageTitle: 'AI Training & Transformation | CPCC – Christian Plath Consulting Company',
+      metaDescription: 'AI training and transformation: We turn fear of AI into competence. Tailored training, cultural change and integration – so your team masters AI with confidence.',
+      backToHome: 'Back to homepage',
+      heroHeading: 'AI Training & Transformation',
+      quote: '"Training, cultural change and integration –',
+      quoteHighlight: ' tailored to your organisation."',
+      intro: 'We bring AI competence into your company – not as an abstract IT project, but as a genuine cultural transformation that brings every employee along.',
+      problemStatement: '"Our employees are afraid of AI – and we don\'t know where to start." That\'s normal. AI changes not only processes, but also the way we work.',
+      problemHighlight: 'The question is not whether AI is coming, but how you prepare your team for it.',
+      pillars: {
+        title: 'Three pillars of AI transformation',
+        subtitle: 'From the first encounter with AI to deeply embedded, confident use in daily work.',
+        pillar1: {
+          title: 'Pillar 1',
+          heading: 'Cultural Change & Mindset',
+          items: [
+            { bold: 'Turning fear into curiosity', text: 'We meet your employees and managers where they are. We proactively break down reservations and highlight the enormous opportunities of an AI-friendly corporate culture.' },
+            { bold: 'The new way of working', text: 'AI is not understood as a tiresome IT side project, but embedded deeply in the DNA of your organisation and in daily actions.' },
+          ],
+        },
+        pillar2: {
+          title: 'Pillar 2',
+          heading: 'Practical Training',
+          items: [
+            { bold: 'Relevance over theory', text: 'No boring standard presentations. We develop company- and task-specific training sessions precisely tailored to the individual challenges of your departments.' },
+            { bold: 'Hands-on implementation', text: 'We demonstrate concretely using your own processes: how exactly can your employees use AI productively and safely right away?' },
+          ],
+        },
+        pillar3: {
+          title: 'Pillar 3',
+          heading: 'Integration & "Magic"',
+          items: [
+            { bold: 'The right dose', text: 'We analyse with precision: where is AI merely a useful addition? Where does it become an integral part of what already exists?' },
+            { bold: 'The wow effect', text: 'Together we identify the specific levers and processes in your organisation where targeted AI deployment creates real "magic" and radically simplifies everyday working life.' },
+          ],
+        },
+      },
+      resultStatement: 'The result: A team that doesn\'t fear AI but masters it confidently – and an organisation that',
+      resultHighlight: 'is never again held back by outdated processes, but frees up its resources for genuine innovation.',
+      tags: ['✓ Tailored training programmes', '✓ Guiding cultural change', '✓ From fear to competence'],
+      cta: {
+        heading: 'Ready to empower your ',
+        headingHighlight: 'team?',
+        text: 'Let us find out together which training format and transformation approach best suits your organisation and your employees.',
+        button: 'Book a free initial consultation',
+        tagline: 'Free · No obligation · Personal',
+      },
+    },
+    kiAusschreibungenPage: {
+      pageTitle: 'AI in Tender Processes | CPCC – Christian Plath Consulting Company',
+      metaDescription: 'AI in tenders: Sharp analysis and watertight documentation for procuring organisations and bidding companies. GDPR-compliant, legally sound.',
+      backToHome: 'Back to homepage',
+      heroHeading: 'AI in Tender Processes',
+      quote: '"Sharp analysis. Watertight documentation.',
+      quoteHighlight: ' For both sides of the table."',
+      intro: 'Whether you are issuing or bidding on a tender: we bring AI into the entire tender process – more precise, faster and legally sound.',
+      problemStatement: '"Tenders are a time sink – and uncertainty always remains at the end." – Requirements catalogues with hundreds of criteria, solution designs that need interpreting, evaluations that must withstand legal scrutiny.',
+      problemHighlight: 'We bring AI into this process – on both sides.',
+      painPoints: {
+        title: 'Pain points we solve',
+        items: [
+          'Vague or overly generic service descriptions',
+          'Lack of comparability between tenders',
+          'Time-consuming creation and alignment of documents',
+          'Difficult evaluation of complex IT/AI/cloud solutions',
+          'Risk of "buzzword tenders" without real substance',
+          'Insufficient traceability of decisions',
+        ],
+      },
+      sides: {
+        title: 'For every side of the table',
+        subtitle: 'Our support is tailored to both roles in the tender process.',
+        customer: {
+          sideLabel: 'For procuring organisations',
+          title: 'Issuing as a client',
+          items: [
+            { heading: 'Creating service descriptions', description: 'Precise, complete requirements catalogues – no forgotten criteria, no room for interpretation.' },
+            { heading: 'Developing evaluation criteria', description: 'Objective, comprehensible scoring matrices that withstand legal scrutiny.' },
+            { heading: 'Systematically evaluating solution designs', description: 'Systematic comparison of submitted documents against all requirements. Critical details buried in subclauses and appendices are no longer overlooked.' },
+            { heading: 'Unmasking buzzwords', description: 'AI-powered extraction of key content and direct comparison of vendor solutions. Identification of risks, weaknesses or pure marketing language without substance.' },
+            { heading: 'Securing award decisions', description: 'Complete documentation of every evaluation decision – including a full audit trail.' },
+          ],
+        },
+        provider: {
+          sideLabel: 'For bidding companies',
+          title: 'Bidding as a provider',
+          items: [
+            { heading: 'Analysing tenders', description: 'Rapid extraction of core requirements. What is really being asked for? Where are the pitfalls?' },
+            { heading: 'Ensuring complete documents', description: 'Automatic review of your service descriptions and solution designs for gaps, contradictions and ambiguities.' },
+            { heading: 'Clarification & harmonisation', description: 'Concrete proposals to clarify and harmonise terms and structures consistently across all documents.' },
+            { heading: 'Efficiency at the push of a button', description: 'Rapid creation of RFP/RFI drafts from just a few bullet points. Structured proposals that address all criteria – nothing forgotten, nothing duplicated.' },
+            { heading: 'Preparing contract negotiations', description: 'Analysis of contract drafts for risks and critical clauses. Preparation of razor-sharp negotiation arguments based on identified weaknesses.' },
+          ],
+        },
+      },
+      resultStatement: 'The result: Significantly reduced turnaround times, higher quality and clarity of requirements, better comparability of vendors and',
+      resultHighlight: 'better-informed, traceable decisions with drastically reduced risk at contract signing – regardless of which side of the table you sit on.',
+      tags: ['✓ For clients and providers', '✓ GDPR-compliant', '✓ Legally sound documentation'],
+      cta: {
+        heading: 'Next tender with a ',
+        headingHighlight: 'clear advantage?',
+        text: 'Let us discuss how AI makes your next tender – whether as a client or bidder – faster, more precise and legally more secure.',
+        button: 'Book a free initial consultation',
+        tagline: 'Free · No obligation · Personal',
+      },
+    },
   },
   nl: {
     nav: {
@@ -1270,7 +1937,7 @@ export const translations: Record<Language, Translations> = {
           description: 'AI-ondersteunde optimalisatie van uw projectprocessen en resource-planning.'
         },
         prozessOptimierung: {
-          title: 'AI-Procesoptimalisatie',
+          title: 'AI-Bedrijfsoptimalisatie',
           description: 'Automatisering en efficiëntieverbetering door intelligente processen.'
         },
         marketingSales: {
@@ -1278,7 +1945,7 @@ export const translations: Record<Language, Translations> = {
           description: 'Revolutioneer uw verkoopstrategieën met AI-kracht.'
         },
         schulungen: {
-          title: 'AI-Trainingen',
+          title: 'AI-Training & Transformatie',
           description: 'Expertkennis voor uw teams – praktijkgericht en duurzaam.'
         },
         ausschreibungen: {
@@ -1438,7 +2105,252 @@ export const translations: Record<Language, Translations> = {
         button: 'Gratis kennismakingsgesprek inplannen',
         tagline: 'Gratis · Vrijblijvend · Persoonlijk',
       },
-    }
+    },
+    projektmanagementPage: {
+      pageTitle: 'Projectmanagement 3.0 | CPCC – Christian Plath Consulting Company',
+      metaDescription: 'Projectmanagement 3.0 combineert klassieke PM-frameworks met kunstmatige intelligentie. Ontlast uw PMO, automatiseer de dagelijkse projectroutine en koop uw tijd terug.',
+      backToHome: 'Terug naar homepage',
+      heroHeading: 'Projectmanagement 3.0',
+      quote: '"Stel u voor dat uw projecten zich dankzij AI bijna vanzelf managen."',
+      intro: 'Klassieke PM-frameworks gecombineerd met geavanceerde kunstmatige intelligentie – zodat uw team eindelijk weer tijd heeft voor wat er echt toe doet.',
+      problemStatement: 'Uw PMO is chronisch overbelast en uw team brengt de helft van de dag door in onproductieve vergaderingen in plaats van het project daadwerkelijk vooruit te helpen.',
+      problemHighlight: 'Projectmanagement 3.0 lost precies deze knelpunten op door intelligente automatisering van de dagelijkse projectroutine – en koopt uw tijd terug.',
+      strips: {
+        focus: { label: 'Focus', text: 'Uw team bevrijden van administratieve PMO-taken door intelligente automatisering van de dagelijkse projectroutine.' },
+        setup: { label: 'Setup', text: 'Integratie van slimme AI-assistenten in uw bestaande vergaderstructuren en projectprocessen.' },
+        result: { label: 'Resultaat', text: 'Drastische tijdsbesparing en merkbaar efficiëntere vergaderingen – koop uw tijd terug met behulp van AI.' },
+      },
+      benefits: {
+        title: 'Uw voordelen in één oogopslag',
+        subtitle: 'Drie concrete hefbomen waarmee AI uw dagelijkse projectwerk direct ontlast.',
+        card1: { title: 'Slimme vergadercultuur', description: 'Automatische agendasamenstelling en gestructureerde werkwijzen zorgen ervoor dat u niet meer de hele dag vastzit in calls.' },
+        card2: { title: 'Naadloze delegatie', description: 'Automatische taakverdeling direct vanuit het gesprek – geen handmatig notuleren meer nodig.' },
+        card3: { title: 'Volledige opvolging', description: 'Automatische deadlinetracking neemt de vervelende follow-up over en spaart waardevolle PMO-capaciteit.' },
+      },
+      tags: ['✓ Klassieke frameworks & AI gecombineerd', '✓ Ontlasting van PMO-capaciteit', '✓ Meer tijd voor dagelijkse werkzaamheden'],
+      cta: {
+        heading: 'Klaar om uw ',
+        headingHighlight: 'PMO te ontlasten?',
+        text: 'Laten we samen ontdekken waar AI in uw projectmanagement de grootste impact heeft. Gratis en vrijblijvend.',
+        button: 'Gratis kennismakingsgesprek inplannen',
+        tagline: 'Gratis · Vrijblijvend · Persoonlijk',
+      },
+    },
+    kiGeschaeftsoptimierungPage: {
+      pageTitle: 'AI-bedrijfsoptimalisatie | CPCC – Christian Plath Consulting Company',
+      metaDescription: 'AI-procesoptimalisatie in 6 stappen: Van use-caseidentificatie via AVG-conforme toolevaluatie tot soepele implementatie. Gestructureerd, veilig, kostensbewust.',
+      backToHome: 'Terug naar homepage',
+      heroHeading: 'AI-bedrijfsoptimalisatie',
+      quote: '"Niet elk proces hoeft geforceerd geautomatiseerd te worden – ',
+      quoteHighlight: 'wij vinden de processen waar het echt loont."',
+      intro: 'Van use-caseidentificatie via AVG-conforme evaluatie tot begeleide implementatie – gestructureerd, veilig en kostensbewust.',
+      highlightCard: 'AI-projecten mislukken niet door de technologie – ze mislukken door gebrek aan structuur, privacyrisico\'s en verkeerd gekozen modellen.',
+      highlightCardHighlight: 'Ons 6-stappenproces brengt orde, veiligheid en kostenefficiëntie in uw AI-integratie.',
+      process: {
+        title: 'Het 6-stappenproces',
+        subtitle: 'Van de eerste analyse tot productieve ingebruikname – geen enkele stap wordt overgeslagen.',
+        step1: {
+          title: 'Use-casegeneratie',
+          description: 'Gerichte identificatie van de use cases die in uw organisatie echte meerwaarde opleveren via AI. We analyseren uw bedrijfsonderdelen en ontdekken waar AI processen meetbaar versnelt, foutpercentages verlaagt of medewerkers zinvol ontlast.',
+          detail: 'Niet elk proces hoeft geforceerd geautomatiseerd te worden – wij focussen op echte meerwaarde.',
+        },
+        step2: {
+          title: 'Data- & privacyclassificatie',
+          description: 'Evaluatie van de geïdentificeerde use cases naar privacyclassen. Met een eigen checklist en een gedetailleerde vragenlijst toetsen we elke processtap op AVG-conformiteit en de vereisten van de EU AI Act.',
+          detail: 'Veiligheid is het fundament van elke AI-integratie.',
+        },
+        step3: {
+          title: 'Tool- & modelevaluatie',
+          description: 'Standaardoplossing of maatwerk? We onderzoeken of AVG-conforme oplossingen in uw eigen omgeving moeten draaien of dat gehoste diensten mogelijk zijn – van ChatGPT en Claude tot on-premise modellen zoals Llama of de Europese oplossing Mistral.',
+          detail: 'Gericht testen vindt de technologisch perfecte match voor uw use case.',
+        },
+        step4: {
+          title: 'Kostenevaluatie & right-sizing',
+          description: 'De lopende kosten van LLM\'s lopen sterk uiteen. Eenvoudige use cases kunnen worden gerealiseerd met kleine, hoogefficiënte modellen die tot 90% minder kosten dan grote modellen – bij vergelijkbare kwaliteit voor de specifieke taak.',
+          detail: 'Wij berekenen deze hefbomen voor u en garanderen maximaal efficiënte werking.',
+        },
+        step5: {
+          title: 'Onderbouwde aanbeveling',
+          description: 'Na afronding van de evaluatie en kostencalculatie ontvangt u een glashelder, onderbouwd advies. Transparant, navolgbaar en toegesneden op uw specifieke situatie.',
+          detail: 'Geen vendor lock-in, geen verborgen voorkeuren – alleen de beste oplossing voor u.',
+        },
+        step6: {
+          title: 'Begeleide implementatie',
+          description: 'We laten u niet alleen achter met de strategie. De gekozen oplossing wordt naadloos geïntegreerd in uw bestaande systeemlandschap – met actieve begeleiding totdat het direct echte meerwaarde levert.',
+          detail: 'Van de eerste regel code tot productieve ingebruikname.',
+        },
+      },
+      tags: ['✓ AVG- & EU AI Act-conform', '✓ Right-sizing voor uw budget', '✓ Van analyse tot implementatie'],
+      cta: {
+        heading: 'Klaar voor de eerste ',
+        headingHighlight: 'use case?',
+        text: 'Laten we samen ontdekken welk proces in uw organisatie de grootste AI-hefboom biedt. Gestructureerd, veilig en met volledige kostentransparantie.',
+        button: 'Gratis kennismakingsgesprek inplannen',
+        tagline: 'Gratis · Vrijblijvend · Persoonlijk',
+      },
+    },
+    kiMarketingSalesPage: {
+      pageTitle: 'AI in Marketing & Sales | CPCC – Christian Plath Consulting Company',
+      metaDescription: 'AI-ondersteunde B2B-verkoop en marketing: Echte klantinzichten, realtime concurrentieanalyses, geautomatiseerde leadgeneratie en schaalbare contentcreatie voor meer pipeline en kortere salescycli.',
+      backToHome: 'Terug naar homepage',
+      heroHeading: 'AI in Marketing & Sales',
+      quote: '"Uw verkoop en marketing naar het volgende niveau. Van leadgeneratie tot afsluiting –',
+      quoteHighlight: ' AI-ondersteund, doelgroepgericht en grenzeloos schaalbaar."',
+      intro: 'De tijd dat een eenvoudige AI-prompt volstond voor een concurrentievoordeel is voorbij. Vandaag heeft u exclusieve methoden en databronnen nodig om de beslissende informatievoorsprong te verzekeren.',
+      problemStatement: '"We hebben meer pipeline, kortere salescycli en betere conversie nodig." – U heeft ambitieuze OKR\'s, maar de dagelijkse operatie remt u af?',
+      problemHighlight: 'Wij laten u zien hoe AI uw volledige B2B-verkoopproces meetbaar versnelt. Niet als theoretisch experiment, maar als echte motor voor uw KPI\'s.',
+      themes: {
+        title: 'Vier hefbomen voor uw verkoopsucces',
+        subtitle: 'Van marktanalyse tot afsluiting – AI grijpt in op elk beslissend moment.',
+        theme1: {
+          title: 'Diepgaande analyses & strategie',
+          bullets: [
+            'Echte klantinzichten: In plaats van saaie enquêtes analyseren we echte marktdata en laten we u exact zien wat uw klanten waarderen en wat hen frustreert.',
+            'Oneerlijk informatievoorsprong: Concurrentie- en marktanalyses op basis van live realtimedata – op een niveau dat uw concurrenten met standaard-AI-zoekopdrachten nooit kunnen bereiken.',
+            'Onderbouwde planning: Ontwikkeling van robuuste, datagedreven marketingstrategieën in plaats van het gietertjesbeginsel.',
+          ],
+        },
+        theme2: {
+          title: 'Leadgeneratie & conversie',
+          bullets: [
+            'Slimme leadmotor: AI-ondersteunde leadgeneratie en partneracquisitie die exact voortbouwt op diepgaande analyses.',
+            'Wereldwijde schaalbaarheid: Doelgroepspecifieke aanbodcreatie op verzoek – op maat gemaakt en in meer dan 50 talen.',
+            'Precies targeting: Datagedreven personacreatie en diepgaande doelgroepsegmentatie in plaats van buikgevoel.',
+          ],
+        },
+        theme3: {
+          title: 'Content & storytelling',
+          bullets: [
+            'Content op verzoek: Creatie van hoogconverterende advertentieteksten, landingspagina\'s en nieuwsbrieven in minuten in plaats van dagen.',
+            'Storytelling dat verkoopt: Inhoud die precies is afgestemd op de geanalyseerde echte knelpunten van uw B2B-beslissers.',
+          ],
+        },
+        theme4: {
+          title: 'Teamontwikkeling & verkoopexcellentie',
+          bullets: [
+            'Live ondersteuning: Realtime training en slimme bezwaarbehandeling voor uw verkopers direct tijdens lopende verkoopgesprekken.',
+            'Sneller productief: Radicaal verkort onboarding van nieuwe medewerkers via AI-ondersteunde kennisoverdracht.',
+          ],
+        },
+      },
+      resultStatement: 'Het resultaat: Meer pipeline, betere conversie, drastisch verkorte salescycli – meetbaar aan uw KPI\'s en met een',
+      resultHighlight: 'team dat zich eindelijk weer kan concentreren op verkopen.',
+      tags: ['✓ B2B-focus', '✓ Echte inzichten in plaats van standaard-AI', '✓ Schaalbaar in 50+ talen', '✓ Van content tot afsluiting'],
+      cta: {
+        heading: 'Klaar voor meer ',
+        headingHighlight: 'pipeline?',
+        text: 'Laten we in een eerste gesprek ontdekken op welk punt in de funnel AI de grootste hefboom biedt voor uw verkoop.',
+        button: 'Gratis kennismakingsgesprek inplannen',
+        tagline: 'Gratis · Vrijblijvend · Persoonlijk',
+      },
+    },
+    kiSchulungenPage: {
+      pageTitle: 'AI-trainingen & transformatie | CPCC – Christian Plath Consulting Company',
+      metaDescription: 'AI-trainingen en transformatie: Wij zetten angst voor AI om in competentie. Maatgerichte trainingen, cultuurverandering en integratie – zodat uw team AI zelfverzekerd beheerst.',
+      backToHome: 'Terug naar homepage',
+      heroHeading: 'AI-trainingen & transformatie',
+      quote: '"Trainingen, cultuurverandering en integratie –',
+      quoteHighlight: ' op maat van uw organisatie."',
+      intro: 'Wij brengen AI-competentie in uw organisatie – niet als abstract IT-project, maar als echte cultuurverandering die elke medewerker meeneemt.',
+      problemStatement: '"Onze medewerkers zijn bang voor AI – en we weten niet waar we moeten beginnen." Dat is normaal. AI verandert niet alleen processen, maar ook de manier waarop we werken.',
+      problemHighlight: 'De vraag is niet óf AI komt, maar hoe u uw team erop voorbereidt.',
+      pillars: {
+        title: 'Drie pijlers van AI-transformatie',
+        subtitle: 'Van de eerste kennismaking met AI tot diep verankerd, zelfverzekerd gebruik in de dagelijkse praktijk.',
+        pillar1: {
+          title: 'Pijler 1',
+          heading: 'Cultuurverandering & mindset',
+          items: [
+            { bold: 'Angst omzetten in nieuwsgierigheid', text: 'We halen uw medewerkers en leidinggevenden op waar ze staan. We bouwen voorbehouden gericht af en laten de immense kansen van een AI-vriendelijke bedrijfscultuur zien.' },
+            { bold: 'De nieuwe manier van werken', text: 'AI wordt niet begrepen als een vervelend IT-nevenproject, maar diep verankerd in de DNA van uw organisatie en in het dagelijks handelen.' },
+          ],
+        },
+        pillar2: {
+          title: 'Pijler 2',
+          heading: 'Praktijkgerichte trainingen',
+          items: [
+            { bold: 'Relevantie boven theorie', text: 'Geen saaie standaardpresentaties. We ontwikkelen organisatie- en taakgerichte trainingen die precies zijn afgestemd op de individuele uitdagingen van uw afdelingen.' },
+            { bold: 'Hands-on uitvoering', text: 'We laten heel concreet aan de hand van uw eigen processen zien: hoe kunnen uw medewerkers AI direct productief en veilig inzetten?' },
+          ],
+        },
+        pillar3: {
+          title: 'Pijler 3',
+          heading: 'Integratie & "magie"',
+          items: [
+            { bold: 'De juiste dosis', text: 'We analyseren scherp: waar is AI slechts een zinvolle aanvulling? Waar wordt het een integraal onderdeel van wat er al is?' },
+            { bold: 'Het wow-effect', text: 'We identificeren samen de specifieke hefbomen en processen in uw organisatie waar gericht AI-gebruik echte "magie" creëert en de dagelijkse werkpraktijk radicaal verlicht.' },
+          ],
+        },
+      },
+      resultStatement: 'Het resultaat: Een team dat AI niet vreest, maar zelfverzekerd beheerst – en een organisatie die',
+      resultHighlight: 'nooit meer wordt afgeremd door verouderde processen, maar zijn middelen vrijmaakt voor echte innovaties.',
+      tags: ['✓ Maatgerichte trainingen', '✓ Cultuurverandering begeleiden', '✓ Van angst naar competentie'],
+      cta: {
+        heading: 'Klaar om uw team te ',
+        headingHighlight: 'bekwamen?',
+        text: 'Laten we samen ontdekken welke trainingsvorm en welke transformatieaanpak het beste past bij uw organisatie en uw medewerkers.',
+        button: 'Gratis kennismakingsgesprek inplannen',
+        tagline: 'Gratis · Vrijblijvend · Persoonlijk',
+      },
+    },
+    kiAusschreibungenPage: {
+      pageTitle: 'AI in aanbestedingen | CPCC – Christian Plath Consulting Company',
+      metaDescription: 'AI in aanbestedingen: Scherpe analyse en waterdichte documentatie voor aanbestedende organisaties en inschrijvende bedrijven. AVG-conform, juridisch solide.',
+      backToHome: 'Terug naar homepage',
+      heroHeading: 'AI in aanbestedingen',
+      quote: '"Scherpe analyse. Waterdichte documentatie.',
+      quoteHighlight: ' Voor beide kanten van de tafel."',
+      intro: 'Of u nu aanbesteedt of inschrijft: wij brengen AI in het volledige aanbestedingsproces – preciezer, sneller en juridisch solide.',
+      problemStatement: '"Aanbestedingen zijn een tijdvreter – en er blijft altijd onzekerheid." – Eisenlijsten met honderden criteria, oplossingsontwerpen die geïnterpreteerd moeten worden, beoordelingen die juridisch stand moeten houden.',
+      problemHighlight: 'Wij brengen AI in dit proces – aan beide kanten.',
+      painPoints: {
+        title: 'Knelpunten die wij oplossen',
+        items: [
+          'Onduidelijke of te generieke servicebeschrijvingen',
+          'Gebrek aan vergelijkbaarheid van offertes',
+          'Tijdrovende opstelling en afstemming van documenten',
+          'Moeilijke beoordeling van complexe IT-/AI-/cloudoplossingen',
+          'Risico op "buzzwordoffertes" zonder echte inhoud',
+          'Onvoldoende navolgbaarheid van beslissingen',
+        ],
+      },
+      sides: {
+        title: 'Voor elke kant van de tafel',
+        subtitle: 'Onze ondersteuning is afgestemd op beide rollen in het aanbestedingsproces.',
+        customer: {
+          sideLabel: 'Voor aanbestedende organisaties',
+          title: 'Aanbesteden als opdrachtgever',
+          items: [
+            { heading: 'Servicebeschrijvingen opstellen', description: 'Precieze, volledige eisenlijsten – geen vergeten criteria, geen interpretatieruimte.' },
+            { heading: 'Beoordelingscriteria ontwikkelen', description: 'Objectieve, navolgbare beoordelingsmatrices die een juridische toets doorstaan.' },
+            { heading: 'Oplossingsontwerpen systematisch evalueren', description: 'Systematische vergelijking van ingediende stukken met alle eisen. Cruciale details in bijzinnen en bijlagen worden niet meer over het hoofd gezien.' },
+            { heading: 'Buzzwords ontmaskeren', description: 'AI-ondersteunde extractie van kerninhoud en directe vergelijking van leveranciersoplossingen. Identificatie van risico\'s, zwaktes of pure marketingtaal zonder inhoud.' },
+            { heading: 'Gunningsbeslissingen borgen', description: 'Volledige documentatie van elke beoordelingsbeslissing – inclusief audittrail.' },
+          ],
+        },
+        provider: {
+          sideLabel: 'Voor inschrijvende bedrijven',
+          title: 'Inschrijven als aanbieder',
+          items: [
+            { heading: 'Aanbestedingen analyseren', description: 'Snelle extractie van de kernvereisten. Wat wordt er echt gevraagd? Waar liggen de valkuilen?' },
+            { heading: 'Volledige documenten waarborgen', description: 'Automatische controle van uw servicebeschrijvingen en oplossingsontwerpen op lacunes, tegenstrijdigheden en onduidelijkheden.' },
+            { heading: 'Verduidelijking & harmonisatie', description: 'Concrete voorstellen voor verduidelijking en harmonisatie van begrippen en structuren consistent door alle documenten heen.' },
+            { heading: 'Efficiëntie op verzoek', description: 'Snelle opstelling van RFP-/RFI-concepten op basis van enkele steekwoorden. Gestructureerde offertes die alle criteria adresseren – niets vergeten, niets dubbel.' },
+            { heading: 'Contractonderhandelingen voorbereiden', description: 'Analyse van contractontwerpen op risico\'s en kritische clausules. Voorbereiding van scherpe onderhandelingsargumenten op basis van geïdentificeerde zwaktes.' },
+          ],
+        },
+      },
+      resultStatement: 'Het resultaat: Aanzienlijk kortere doorlooptijden, hogere kwaliteit en helderheid van eisen, betere vergelijkbaarheid van aanbieders en',
+      resultHighlight: 'beter onderbouwde, navolgbare beslissingen met drastisch verminderd risico bij contractsluiting – ongeacht welke kant van de tafel u zit.',
+      tags: ['✓ Voor opdrachtgevers en aanbieders', '✓ AVG-conform', '✓ Juridisch solide documentatie'],
+      cta: {
+        heading: 'Volgende aanbesteding met een ',
+        headingHighlight: 'duidelijke voorsprong?',
+        text: 'Laten we bespreken hoe AI uw volgende aanbesteding – als opdrachtgever of inschrijver – sneller, preciezer en juridisch zekerder maakt.',
+        button: 'Gratis kennismakingsgesprek inplannen',
+        tagline: 'Gratis · Vrijblijvend · Persoonlijk',
+      },
+    },
   },
   ar: {
     nav: {
@@ -1637,7 +2549,7 @@ export const translations: Record<Language, Translations> = {
           description: 'تحسين سير العمل وتخطيط الموارد بدعم الذكاء الاصطناعي.'
         },
         prozessOptimierung: {
-          title: 'تحسين العمليات بالذكاء الاصطناعي',
+          title: 'تحسين الأعمال بالذكاء الاصطناعي',
           description: 'الأتمتة وتعزيز الكفاءة من خلال العمليات الذكية.'
         },
         marketingSales: {
@@ -1645,7 +2557,7 @@ export const translations: Record<Language, Translations> = {
           description: 'أحدث ثورة في استراتيجيات مبيعاتك بقوة الذكاء الاصطناعي.'
         },
         schulungen: {
-          title: 'تدريب الذكاء الاصطناعي',
+          title: 'تدريب الذكاء الاصطناعي والتحول',
           description: 'معرفة متخصصة لفرقك - عملية ومستدامة.'
         },
         ausschreibungen: {
@@ -1805,7 +2717,252 @@ export const translations: Record<Language, Translations> = {
         button: 'احجز استشارتك الأولى المجانية',
         tagline: 'مجاني · غير ملزم · شخصي',
       },
-    }
+    },
+    projektmanagementPage: {
+      pageTitle: 'إدارة المشاريع 3.0 | CPCC – Christian Plath Consulting Company',
+      metaDescription: 'إدارة المشاريع 3.0 تجمع بين أطر إدارة المشاريع الكلاسيكية والذكاء الاصطناعي. خففوا العبء عن مكتب إدارة المشاريع، وأتمتوا المهام اليومية، واستردوا وقتكم.',
+      backToHome: 'العودة إلى الصفحة الرئيسية',
+      heroHeading: 'إدارة المشاريع 3.0',
+      quote: '„تخيّلوا أن مشاريعكم تُدير نفسها تقريباً بفضل الذكاء الاصطناعي."',
+      intro: 'أطر إدارة المشاريع الكلاسيكية مدمجة مع أحدث تقنيات الذكاء الاصطناعي – لمنح فريقكم الوقت الذي يحتاجه للتركيز على ما يهم حقاً.',
+      problemStatement: 'مكتب إدارة المشاريع لديكم يعاني من إرهاق مزمن، وفريقكم يقضي نصف يومه في اجتماعات غير منتجة بدلاً من دفع المشروع نحو الأمام.',
+      problemHighlight: 'إدارة المشاريع 3.0 تحل هذه المشكلات تحديداً من خلال الأتمتة الذكية للمهام اليومية – وتستعيد وقتكم.',
+      strips: {
+        focus: { label: 'التركيز', text: 'تحرير فريقكم من المهام الإدارية لمكتب إدارة المشاريع من خلال الأتمتة الذكية للمهام اليومية.' },
+        setup: { label: 'الإعداد', text: 'دمج مساعدين ذكيين بالذكاء الاصطناعي في روتين اجتماعاتكم الحالية وهياكل مشاريعكم.' },
+        result: { label: 'النتيجة', text: 'توفير جذري للوقت واجتماعات أكثر كفاءة ملموسة – استردوا وقتكم بمساعدة الذكاء الاصطناعي.' },
+      },
+      benefits: {
+        title: 'مزاياكم في لمحة',
+        subtitle: 'ثلاثة محركات ملموسة يخفف بها الذكاء الاصطناعي أعباء مشاريعكم اليومية فوراً.',
+        card1: { title: 'ثقافة اجتماعات ذكية', description: 'إعداد جداول الأعمال تلقائياً وتسلسل عمل منظم يضمن عدم قضاء يومكم كله في المكالمات.' },
+        card2: { title: 'تفويض سلس', description: 'توزيع المهام تلقائياً مباشرة من المحادثة دون الحاجة إلى تدوين يدوي.' },
+        card3: { title: 'متابعة شاملة', description: 'تتبع المواعيد النهائية تلقائياً يتولى المتابعة المرهقة ويحافظ على موارد مكتب إدارة المشاريع الثمينة.' },
+      },
+      tags: ['✓ أطر كلاسيكية والذكاء الاصطناعي معاً', '✓ تخفيف العبء عن مكتب إدارة المشاريع', '✓ مزيد من الوقت للأعمال اليومية'],
+      cta: {
+        heading: 'مستعدون لتخفيف العبء عن ',
+        headingHighlight: 'مكتب إدارة مشاريعكم؟',
+        text: 'دعونا نكتشف معاً أين يقدم الذكاء الاصطناعي أكبر أثر في إدارة مشاريعكم. مجاناً وبدون التزام.',
+        button: 'احجز استشارتك الأولى المجانية',
+        tagline: 'مجاني · غير ملزم · شخصي',
+      },
+    },
+    kiGeschaeftsoptimierungPage: {
+      pageTitle: 'تحسين الأعمال بالذكاء الاصطناعي | CPCC – Christian Plath Consulting Company',
+      metaDescription: 'تحسين العمليات بالذكاء الاصطناعي في 6 خطوات: من تحديد حالات الاستخدام عبر تقييم الأدوات المتوافق مع DSGVO وصولاً إلى التنفيذ السلس. منظم، آمن، واعٍ للتكاليف.',
+      backToHome: 'العودة إلى الصفحة الرئيسية',
+      heroHeading: 'تحسين الأعمال بالذكاء الاصطناعي',
+      quote: '„ليس كل عملية بحاجة إلى أتمتة إجبارية – ',
+      quoteHighlight: 'نحن نجد تلك التي تستحق ذلك حقاً."',
+      intro: 'من تحديد حالات الاستخدام عبر التقييم المتوافق مع DSGVO وصولاً إلى التنفيذ المرافق – منظم، آمن وواعٍ للتكاليف.',
+      highlightCard: 'مشاريع الذكاء الاصطناعي لا تفشل بسبب التكنولوجيا – تفشل بسبب غياب الهيكل، ومخاطر حماية البيانات، والنماذج الخاطئة.',
+      highlightCardHighlight: 'عمليتنا المكونة من 6 خطوات تجلب النظام والأمان وكفاءة التكلفة إلى تكامل الذكاء الاصطناعي لديكم.',
+      process: {
+        title: 'العملية المكونة من 6 خطوات',
+        subtitle: 'من التحليل الأول حتى التشغيل الفعلي – لا تُتجاوز أي خطوة.',
+        step1: {
+          title: 'توليد حالات الاستخدام',
+          description: 'تحديد دقيق لحالات الاستخدام التي تحقق قيمة حقيقية في مؤسستكم من خلال الذكاء الاصطناعي. نحلل مجالات أعمالكم ونكشف أين يُسرّع الذكاء الاصطناعي العمليات بشكل قابل للقياس ويخفض معدلات الأخطاء أو يُخفف العبء بشكل ذي معنى.',
+          detail: 'ليست كل عملية بحاجة إلى أتمتة إجبارية – نحن نركز على القيمة الحقيقية.',
+        },
+        step2: {
+          title: 'تصنيف البيانات والخصوصية',
+          description: 'تقييم حالات الاستخدام المحددة وفق فئات حماية البيانات. باستخدام قائمة مراجعة معدة خصيصاً وكتالوج استفسارات مفصل، نفحص كل خطوة عملية للتوافق مع DSGVO ومتطلبات EU-AI-Act.',
+          detail: 'الأمان هو أساس أي تكامل للذكاء الاصطناعي.',
+        },
+        step3: {
+          title: 'تقييم الأدوات والنماذج',
+          description: 'معيار السوق أم حل مخصص؟ نفحص ما إذا كانت الحلول المتوافقة مع DSGVO يجب تشغيلها في بيئتكم الخاصة أم يمكن استخدام الخدمات المستضافة – من ChatGPT وClaude إلى النماذج المحلية كـ Llama أو الحل الأوروبي Mistral.',
+          detail: 'الاختبار الموجه يجد التناسب التقني المثالي لحالة استخدامكم.',
+        },
+        step4: {
+          title: 'تقييم التكاليف والتحجيم الصحيح',
+          description: 'تتفاوت التكاليف الجارية للـ LLMs تفاوتاً كبيراً. حالات الاستخدام البسيطة يمكن تحقيقها بنماذج صغيرة عالية الكفاءة تكلف ما يصل إلى 90% أقل من النماذج الكبيرة – بجودة مماثلة للمهمة المتخصصة.',
+          detail: 'نحسب هذه المحركات لكم ونضمن تشغيلاً بأقصى كفاءة.',
+        },
+        step5: {
+          title: 'توصية مدروسة',
+          description: 'بعد إتمام التقييم وحساب التكاليف، تحصلون على توصية واضحة ومدروسة. شفافة، مفهومة، ومصممة لوضعكم المحدد.',
+          detail: 'لا ارتباط بمورد واحد، لا تفضيلات خفية – فقط الحل الأفضل لكم.',
+        },
+        step6: {
+          title: 'تنفيذ مرافق',
+          description: 'لا نتركوكم وحدكم مع الاستراتيجية. يُدمج الحل المختار بسلاسة في مشهد أنظمتكم الحالية – مع دعم فعال حتى يقدم قيمة حقيقية فوراً.',
+          detail: 'من السطر الأول حتى التشغيل الإنتاجي.',
+        },
+      },
+      tags: ['✓ متوافق مع DSGVO وEU-AI-Act', '✓ تحجيم صحيح لميزانيتكم', '✓ من التحليل إلى التنفيذ'],
+      cta: {
+        heading: 'مستعدون لأول ',
+        headingHighlight: 'حالة استخدام؟',
+        text: 'دعونا نكتشف معاً أي عملية في مؤسستكم تحمل أكبر إمكانية للذكاء الاصطناعي. منظم، آمن، وبشفافية تامة في التكاليف.',
+        button: 'احجز استشارتك الأولى المجانية',
+        tagline: 'مجاني · غير ملزم · شخصي',
+      },
+    },
+    kiMarketingSalesPage: {
+      pageTitle: 'الذكاء الاصطناعي في التسويق والمبيعات | CPCC – Christian Plath Consulting Company',
+      metaDescription: 'مبيعات وتسويق B2B مدعوم بالذكاء الاصطناعي: رؤى عملاء حقيقية، تحليل تنافسي في الوقت الفعلي، توليد عملاء محتملين آلي ومحتوى قابل للتوسع لمزيد من الفرص ودورات مبيعات أقصر.',
+      backToHome: 'العودة إلى الصفحة الرئيسية',
+      heroHeading: 'الذكاء الاصطناعي في التسويق والمبيعات',
+      quote: '„مبيعاتكم وتسويقكم على المستوى التالي. من توليد العملاء المحتملين حتى الإغلاق –',
+      quoteHighlight: ' مدعوم بالذكاء الاصطناعي، دقيق للجمهور المستهدف وقابل للتوسع بلا حدود."',
+      intro: 'انتهت الأيام التي كان فيها موجه ذكاء اصطناعي بسيط كافياً لتحقيق ميزة تنافسية. اليوم تحتاجون إلى أساليب وبيانات حصرية لتأمين التفوق المعلوماتي الحاسم.',
+      problemStatement: '„نحتاج إلى مزيد من الفرص، ودورات مبيعات أقصر، وتحويل أفضل." – لديكم OKRs طموحة، لكن العمليات اليومية تعيقكم؟',
+      problemHighlight: 'نريكم كيف يُسرّع الذكاء الاصطناعي عملية B2B بأكملها بشكل قابل للقياس. ليس كتمرين نظري، بل كمحرك حقيقي لـ KPIs الخاصة بكم.',
+      themes: {
+        title: 'أربعة محركات لنجاح مبيعاتكم',
+        subtitle: 'من تحليل السوق حتى الإغلاق – يتدخل الذكاء الاصطناعي في كل نقطة حاسمة.',
+        theme1: {
+          title: 'التحليلات العميقة والاستراتيجية',
+          bullets: [
+            'رؤى عملاء حقيقية: بدلاً من الاستطلاعات المملة نحلل بيانات السوق الفعلية ونريكم بالضبط ما يحبه عملاؤكم وما يُحبطهم.',
+            'تفوق معلوماتي غير عادل: تحليلات تنافسية وسوقية مبنية على بيانات فعلية في الوقت الفعلي – على مستوى لا يمكن لمنافسيكم تحقيقه بالاستعلامات القياسية.',
+            'تخطيط مدروس: تطوير استراتيجيات تسويقية قوية مبنية على البيانات بدلاً من الأساليب العشوائية.',
+          ],
+        },
+        theme2: {
+          title: 'توليد العملاء المحتملين والتحويل',
+          bullets: [
+            'محرك عملاء ذكي: توليد عملاء محتملين واستقطاب شركاء مدعوم بالذكاء الاصطناعي مبني تماماً على التحليلات العميقة.',
+            'توسع عالمي: إنشاء عروض مخصصة للجمهور المستهدف بضغطة زر – مصممة خصيصاً وبأكثر من 50 لغة.',
+            'استهداف دقيق: إنشاء شخصيات مبنية على البيانات وتقسيم متعمق للجمهور بدلاً من الحدس.',
+          ],
+        },
+        theme3: {
+          title: 'المحتوى والسرد القصصي',
+          bullets: [
+            'محتوى بضغطة زر: إنشاء نصوص إعلانية عالية التحويل وصفحات هبوط ونشرات بريدية في دقائق بدلاً من أيام.',
+            'سرد قصصي يُقنع بالشراء: محتوى مصمم بدقة بناءً على نقاط الألم الحقيقية المحللة لمتخذي قرارات B2B لديكم.',
+          ],
+        },
+        theme4: {
+          title: 'تطوير الفريق وتميز المبيعات',
+          bullets: [
+            'دعم مباشر: تدريب في الوقت الفعلي ومعالجة اعتراضات ذكية لممثلي المبيعات مباشرة أثناء المحادثات الجارية.',
+            'إنتاجية أسرع: تأهيل موظفين جدد بشكل مختصر جذرياً عبر نقل المعرفة المدعوم بالذكاء الاصطناعي.',
+          ],
+        },
+      },
+      resultStatement: 'النتيجة: مزيد من الفرص، تحويل أفضل، دورات مبيعات أقصر جذرياً – قابلة للقياس على KPIs الخاصة بكم ومع',
+      resultHighlight: 'فريق يمكنه أخيراً التركيز على البيع مجدداً.',
+      tags: ['✓ تركيز على B2B', '✓ رؤى حقيقية بدلاً من AI قياسي', '✓ قابل للتوسع بأكثر من 50 لغة', '✓ من المحتوى حتى الإغلاق'],
+      cta: {
+        heading: 'مستعدون لمزيد من ',
+        headingHighlight: 'الفرص؟',
+        text: 'دعونا نكتشف في محادثة أولى في أي نقطة من مسار المبيعات يقدم الذكاء الاصطناعي أكبر أثر لفريق مبيعاتكم.',
+        button: 'احجز استشارتك الأولى المجانية',
+        tagline: 'مجاني · غير ملزم · شخصي',
+      },
+    },
+    kiSchulungenPage: {
+      pageTitle: 'تدريبات الذكاء الاصطناعي والتحول | CPCC – Christian Plath Consulting Company',
+      metaDescription: 'تدريبات الذكاء الاصطناعي والتحول: نحوّل الخوف من الذكاء الاصطناعي إلى كفاءة. تدريبات مخصصة، تغيير ثقافي وتكامل – حتى يتقن فريقكم الذكاء الاصطناعي بثقة.',
+      backToHome: 'العودة إلى الصفحة الرئيسية',
+      heroHeading: 'تدريبات الذكاء الاصطناعي والتحول',
+      quote: '„التدريبات، التغيير الثقافي والتكامل –',
+      quoteHighlight: ' مصممة خصيصاً لمؤسستكم."',
+      intro: 'نجلب كفاءة الذكاء الاصطناعي إلى مؤسستكم – ليس كمشروع تقنية معلومات مجرد، بل كتحول ثقافي حقيقي يصحب كل موظف.',
+      problemStatement: '„موظفونا يخافون من الذكاء الاصطناعي – ولا نعرف من أين نبدأ." هذا أمر طبيعي. الذكاء الاصطناعي لا يغير العمليات فحسب، بل يغير أسلوب عملنا أيضاً.',
+      problemHighlight: 'السؤال ليس ما إذا كان الذكاء الاصطناعي قادماً، بل كيف تُعدّون فريقكم له.',
+      pillars: {
+        title: 'ثلاثة ركائز للتحول نحو الذكاء الاصطناعي',
+        subtitle: 'من أول لقاء مع الذكاء الاصطناعي وصولاً إلى الاستخدام الواثق الراسخ في الحياة المهنية اليومية.',
+        pillar1: {
+          title: 'الركيزة الأولى',
+          heading: 'التغيير الثقافي وعقلية العمل',
+          items: [
+            { bold: 'تحويل الخوف إلى فضول', text: 'نستقبل موظفيكم وقياداتكم من حيث هم. نبني التحفظات تدريجياً ونُظهر الفرص الهائلة لثقافة مؤسسية صديقة للذكاء الاصطناعي.' },
+            { bold: 'أسلوب العمل الجديد', text: 'لا يُفهم الذكاء الاصطناعي على أنه مشروع تقنية معلومات ثانوي مزعج، بل يُرسّخ بعمق في هوية مؤسستكم وفي العمل اليومي.' },
+          ],
+        },
+        pillar2: {
+          title: 'الركيزة الثانية',
+          heading: 'تدريبات عملية',
+          items: [
+            { bold: 'الصلة بالواقع فوق النظرية', text: 'لا محاضرات قياسية مملة. نطور تدريبات مرتبطة بالمؤسسة والمهام مصممة بدقة لتلبية التحديات الفردية لأقسامكم.' },
+            { bold: 'تطبيق عملي', text: 'نُظهر بشكل ملموس باستخدام عملياتكم الخاصة: كيف يمكن لموظفيكم استخدام الذكاء الاصطناعي بإنتاجية وأمان فوراً؟' },
+          ],
+        },
+        pillar3: {
+          title: 'الركيزة الثالثة',
+          heading: 'التكامل والـ"سحر"',
+          items: [
+            { bold: 'الجرعة المناسبة', text: 'نحلل بدقة: أين يكون الذكاء الاصطناعي مجرد إضافة مفيدة؟ وأين يصبح جزءاً لا يتجزأ مما هو موجود بالفعل؟' },
+            { bold: 'أثر الإبهار', text: 'نحدد معاً المحركات والعمليات الخاصة في مؤسستكم حيث يُنتج الاستخدام الموجه للذكاء الاصطناعي "سحراً" حقيقياً ويُيسّر الحياة المهنية اليومية بشكل جذري.' },
+          ],
+        },
+      },
+      resultStatement: 'النتيجة: فريق لا يخشى الذكاء الاصطناعي بل يتقنه بثقة – ومؤسسة',
+      resultHighlight: 'لا تُعاق أبداً بعمليات قديمة، بل تحرر مواردها للابتكارات الحقيقية.',
+      tags: ['✓ تدريبات مخصصة', '✓ مرافقة التغيير الثقافي', '✓ من الخوف إلى الكفاءة'],
+      cta: {
+        heading: 'مستعدون لتمكين ',
+        headingHighlight: 'فريقكم؟',
+        text: 'دعونا نكتشف معاً أي شكل من أشكال التدريب وأي نهج للتحول يتناسب أكثر مع مؤسستكم وموظفيكم.',
+        button: 'احجز استشارتك الأولى المجانية',
+        tagline: 'مجاني · غير ملزم · شخصي',
+      },
+    },
+    kiAusschreibungenPage: {
+      pageTitle: 'الذكاء الاصطناعي في المناقصات | CPCC – Christian Plath Consulting Company',
+      metaDescription: 'الذكاء الاصطناعي في المناقصات: تحليل دقيق وتوثيق محكم للمنظمات المُعلنة والشركات المقدِّمة. متوافق مع DSGVO، صالح قانونياً.',
+      backToHome: 'العودة إلى الصفحة الرئيسية',
+      heroHeading: 'الذكاء الاصطناعي في المناقصات',
+      quote: '„تحليل دقيق. توثيق محكم.',
+      quoteHighlight: ' لكلا جانبي الطاولة."',
+      intro: 'سواء كنتم تُعلنون أو تتقدمون: نجلب الذكاء الاصطناعي إلى عملية المناقصة بأكملها – بدقة أعلى، وأسرع، وصالحاً قانونياً.',
+      problemStatement: '„المناقصات مضيعة للوقت – وتبقى الشكوك دائماً في النهاية." – كتالوجات متطلبات بمئات المعايير، تصاميم حلول تحتاج إلى تفسير، تقييمات يجب أن تصمد أمام الفحص القانوني.',
+      problemHighlight: 'نجلب الذكاء الاصطناعي إلى هذه العملية – على كلا الجانبين.',
+      painPoints: {
+        title: 'المشكلات التي نحلها',
+        items: [
+          'مواصفات الخدمات الغامضة أو العامة جداً',
+          'غياب إمكانية المقارنة بين العروض',
+          'الوقت الطويل في إعداد الوثائق والتنسيق',
+          'صعوبة تقييم حلول تكنولوجيا المعلومات/الذكاء الاصطناعي/السحابة المعقدة',
+          'خطر "عروض المصطلحات الرنانة" بدون جوهر حقيقي',
+          'ضعف إمكانية تتبع القرارات',
+        ],
+      },
+      sides: {
+        title: 'لكل جانب من الطاولة',
+        subtitle: 'دعمنا مصمم لكلا الدورين في عملية المناقصة.',
+        customer: {
+          sideLabel: 'للمنظمات المُعلنة عن المناقصات',
+          title: 'الإعلان كمشترٍ',
+          items: [
+            { heading: 'إعداد مواصفات الخدمة', description: 'كتالوجات متطلبات دقيقة وكاملة – لا معايير منسية، لا مجال للتفسير.' },
+            { heading: 'تطوير معايير التقييم', description: 'مصفوفات تقييم موضوعية ومفهومة تصمد أمام الفحص القانوني.' },
+            { heading: 'التقييم المنهجي لتصاميم الحلول', description: 'مقارنة منهجية للوثائق المقدمة مع جميع المتطلبات. التفاصيل الحاسمة في الجمل الفرعية والمرفقات لن تُغفل بعد الآن.' },
+            { heading: 'كشف المصطلحات الرنانة', description: 'استخراج المحتوى الأساسي بالذكاء الاصطناعي ومقارنة مباشرة لحلول المزودين. تحديد المخاطر والنقاط الضعيفة أو لغة التسويق البحتة بدون جوهر.' },
+            { heading: 'تأمين قرارات الترسية', description: 'توثيق كامل لكل قرار تقييمي – مع مسار تدقيق شامل.' },
+          ],
+        },
+        provider: {
+          sideLabel: 'للشركات المتقدمة بعروض',
+          title: 'التقديم كمزوّد',
+          items: [
+            { heading: 'تحليل المناقصات', description: 'استخراج سريع للمتطلبات الأساسية. ماذا يُطلب فعلاً؟ أين تكمن المزالق؟' },
+            { heading: 'ضمان اكتمال الوثائق', description: 'مراجعة تلقائية لمواصفات خدماتكم وتصاميم حلولكم بحثاً عن الثغرات والتناقضات والغموض.' },
+            { heading: 'التدقيق والتوحيد', description: 'مقترحات ملموسة لتدقيق المصطلحات والهياكل وتوحيدها بشكل متسق عبر جميع الوثائق.' },
+            { heading: 'الكفاءة بضغطة زر', description: 'إعداد سريع لمسودات RFP/RFI بناءً على نقاط محدودة. عروض منظمة تعالج جميع المعايير – لا شيء منسي، لا شيء مكرر.' },
+            { heading: 'الاستعداد لمفاوضات العقود', description: 'تحليل مسودات العقود بحثاً عن المخاطر والبنود الحرجة. إعداد حجج تفاوضية حادة مبنية على نقاط الضعف المحددة.' },
+          ],
+        },
+      },
+      resultStatement: 'النتيجة: أوقات معالجة أقصر بشكل ملحوظ، جودة ووضوح أعلى للمتطلبات، مقارنة أفضل للمزودين،',
+      resultHighlight: 'قرارات مدروسة وقابلة للتتبع مع مخاطر أدنى جذرياً عند إبرام العقود – بصرف النظر عن الجانب الذي تجلسون فيه.',
+      tags: ['✓ للمشترين والمزودين', '✓ متوافق مع DSGVO', '✓ توثيق صالح قانونياً'],
+      cta: {
+        heading: 'المناقصة القادمة مع ',
+        headingHighlight: 'تفوق واضح؟',
+        text: 'دعونا نناقش كيف يجعل الذكاء الاصطناعي مناقصتكم القادمة – سواء كمُعلِن أو مُقدِّم – أسرع، وأدق، وأكثر أماناً قانونياً.',
+        button: 'احجز استشارتك الأولى المجانية',
+        tagline: 'مجاني · غير ملزم · شخصي',
+      },
+    },
   },
   ru: {
     nav: {
@@ -2004,7 +3161,7 @@ export const translations: Record<Language, Translations> = {
           description: 'AI-оптимизация рабочих процессов и планирования ресурсов.'
         },
         prozessOptimierung: {
-          title: 'AI-оптимизация процессов',
+          title: 'AI-оптимизация бизнеса',
           description: 'Автоматизация и повышение эффективности через интеллектуальные процессы.'
         },
         marketingSales: {
@@ -2012,7 +3169,7 @@ export const translations: Record<Language, Translations> = {
           description: 'Революционизируйте ваши стратегии продаж с силой ИИ.'
         },
         schulungen: {
-          title: 'AI-обучение',
+          title: 'AI-обучение и трансформация',
           description: 'Экспертные знания для ваших команд — практично и устойчиво.'
         },
         ausschreibungen: {
@@ -2172,7 +3329,252 @@ export const translations: Record<Language, Translations> = {
         button: 'Записаться на бесплатную консультацию',
         tagline: 'Бесплатно · Без обязательств · Лично',
       },
-    }
+    },
+    projektmanagementPage: {
+      pageTitle: 'Управление проектами 3.0 | CPCC – Christian Plath Consulting Company',
+      metaDescription: 'Управление проектами 3.0 объединяет классические PM-фреймворки с искусственным интеллектом. Разгрузите PMO, автоматизируйте ежедневные проектные задачи и верните своё время.',
+      backToHome: 'На главную',
+      heroHeading: 'Управление проектами 3.0',
+      quote: '«Представьте, что ваши проекты управляются почти сами благодаря ИИ.»',
+      intro: 'Классические PM-фреймворки в сочетании с передовым искусственным интеллектом — чтобы ваша команда наконец получила время для того, что действительно важно.',
+      problemStatement: 'Ваш PMO хронически перегружен, а команда проводит полдня на непродуктивных совещаниях вместо того, чтобы двигать проект вперёд.',
+      problemHighlight: 'Управление проектами 3.0 решает именно эти болевые точки через интеллектуальную автоматизацию ежедневной рутины — и возвращает вам ваше время.',
+      strips: {
+        focus: { label: 'Фокус', text: 'Освобождение вашей команды от административных задач PMO через интеллектуальную автоматизацию ежедневной проектной рутины.' },
+        setup: { label: 'Настройка', text: 'Интеграция умных AI-ассистентов в существующие форматы совещаний и проектные структуры.' },
+        result: { label: 'Результат', text: 'Значительная экономия времени и заметно более эффективные совещания — верните своё время с помощью ИИ.' },
+      },
+      benefits: {
+        title: 'Ваши преимущества одним взглядом',
+        subtitle: 'Три конкретных рычага, которыми ИИ немедленно снижает нагрузку на ваши проекты.',
+        card1: { title: 'Умная культура совещаний', description: 'Автоматическое формирование повесток дня и структурированные процессы гарантируют, что вы больше не будете проводить весь день на звонках.' },
+        card2: { title: 'Плавное делегирование', description: 'Автоматическое распределение задач прямо из разговора — без ручного протоколирования.' },
+        card3: { title: 'Полное отслеживание', description: 'Автоматический контроль дедлайнов берёт на себя утомительный фоллоу-ап и сохраняет ценные ресурсы PMO.' },
+      },
+      tags: ['✓ Классические фреймворки и ИИ вместе', '✓ Разгрузка ресурсов PMO', '✓ Больше времени для ежедневных задач'],
+      cta: {
+        heading: 'Готовы разгрузить ваш ',
+        headingHighlight: 'PMO?',
+        text: 'Давайте вместе выясним, где ИИ предлагает наибольший рычаг в вашем управлении проектами. Бесплатно и без обязательств.',
+        button: 'Записаться на бесплатную консультацию',
+        tagline: 'Бесплатно · Без обязательств · Лично',
+      },
+    },
+    kiGeschaeftsoptimierungPage: {
+      pageTitle: 'Оптимизация бизнеса с ИИ | CPCC – Christian Plath Consulting Company',
+      metaDescription: 'Оптимизация процессов с ИИ в 6 шагов: от идентификации use-кейсов через GDPR-совместимую оценку инструментов до плавного внедрения. Структурированно, безопасно, с учётом затрат.',
+      backToHome: 'На главную',
+      heroHeading: 'Оптимизация бизнеса с ИИ',
+      quote: '«Не каждый процесс нужно принудительно автоматизировать — ',
+      quoteHighlight: 'мы находим те, где это действительно окупается.»',
+      intro: 'От идентификации use-кейсов через GDPR-совместимую оценку до сопровождаемого внедрения — структурированно, безопасно и с учётом затрат.',
+      highlightCard: 'AI-проекты терпят неудачу не из-за технологии — они терпят неудачу из-за отсутствия структуры, рисков защиты данных и неправильно выбранных моделей.',
+      highlightCardHighlight: 'Наш 6-шаговый процесс привносит порядок, безопасность и экономическую эффективность в вашу AI-интеграцию.',
+      process: {
+        title: '6-шаговый процесс',
+        subtitle: 'От первого анализа до промышленной эксплуатации — ни один шаг не пропускается.',
+        step1: {
+          title: 'Генерация use-кейсов',
+          description: 'Целенаправленное выявление use-кейсов, которые приносят реальную ценность в вашей организации благодаря ИИ. Мы анализируем ваши бизнес-области и обнаруживаем, где ИИ измеримо ускоряет процессы, снижает частоту ошибок или осмысленно разгружает персонал.',
+          detail: 'Не каждый процесс нужно принудительно автоматизировать — мы фокусируемся на реальной ценности.',
+        },
+        step2: {
+          title: 'Классификация данных и конфиденциальности',
+          description: 'Оценка выявленных use-кейсов по классам защиты данных. С помощью специально разработанного чек-листа и детального каталога вопросов мы проверяем каждый шаг процесса на соответствие DSGVO и требованиям EU-AI-Act.',
+          detail: 'Безопасность — это фундамент любой AI-интеграции.',
+        },
+        step3: {
+          title: 'Оценка инструментов и моделей',
+          description: 'Рыночный стандарт или индивидуальное решение? Мы проверяем, должны ли DSGVO-совместимые решения работать в вашей собственной среде или возможны hosted-сервисы — от ChatGPT и Claude до on-premise-моделей, таких как Llama или европейское решение Mistral.',
+          detail: 'Целенаправленное тестирование находит технологически идеальное соответствие для вашего use-кейса.',
+        },
+        step4: {
+          title: 'Оценка затрат и right-sizing',
+          description: 'Текущие затраты LLM крайне различаются. Простые use-кейсы могут быть реализованы с помощью небольших высокоэффективных моделей, которые стоят до 90% дешевле больших моделей — при сопоставимом качестве для конкретной специализированной задачи.',
+          detail: 'Мы рассчитываем эти рычаги для вас и гарантируем максимально эффективную эксплуатацию.',
+        },
+        step5: {
+          title: 'Обоснованная рекомендация',
+          description: 'После завершения оценки и расчёта затрат вы получаете кристально ясную, обоснованную рекомендацию. Прозрачную, понятную и адаптированную к вашей конкретной ситуации.',
+          detail: 'Никакого vendor lock-in, никаких скрытых предпочтений — только лучшее решение для вас.',
+        },
+        step6: {
+          title: 'Сопровождаемое внедрение',
+          description: 'Мы не оставляем вас наедине со стратегией. Выбранное решение плавно интегрируется в вашу существующую системную архитектуру — с активным сопровождением до момента, когда оно начнёт приносить реальную ценность.',
+          detail: 'От первой строки кода до промышленной эксплуатации.',
+        },
+      },
+      tags: ['✓ Соответствие DSGVO и EU-AI-Act', '✓ Right-sizing для вашего бюджета', '✓ От анализа до внедрения'],
+      cta: {
+        heading: 'Готовы к первому ',
+        headingHighlight: 'use-кейсу?',
+        text: 'Давайте вместе выясним, какой процесс в вашей организации предлагает наибольший AI-рычаг. Структурированно, безопасно и с полной прозрачностью затрат.',
+        button: 'Записаться на бесплатную консультацию',
+        tagline: 'Бесплатно · Без обязательств · Лично',
+      },
+    },
+    kiMarketingSalesPage: {
+      pageTitle: 'ИИ в маркетинге и продажах | CPCC – Christian Plath Consulting Company',
+      metaDescription: 'B2B-продажи и маркетинг с поддержкой ИИ: реальные клиентские инсайты, конкурентный анализ в реальном времени, автоматизированная лидогенерация и масштабируемое создание контента для большего пайплайна и коротких циклов продаж.',
+      backToHome: 'На главную',
+      heroHeading: 'ИИ в маркетинге и продажах',
+      quote: '«Ваши продажи и маркетинг на следующем уровне. От лидогенерации до закрытия сделки —',
+      quoteHighlight: ' с поддержкой ИИ, точно по целевой аудитории и безгранично масштабируемо.»',
+      intro: 'Времена, когда простой AI-промпт обеспечивал конкурентное преимущество, прошли. Сегодня вам нужны эксклюзивные методы и источники данных, чтобы обеспечить решающее информационное превосходство.',
+      problemStatement: '«Нам нужно больше пайплайна, более короткие циклы продаж и лучшая конверсия.» — У вас амбициозные OKR, но операционная ежедневность тормозит вас?',
+      problemHighlight: 'Мы покажем вам, как ИИ измеримо ускоряет весь ваш B2B-процесс продаж. Не как теоретическое упражнение, а как реальный драйвер ваших KPI.',
+      themes: {
+        title: 'Четыре рычага для вашего успеха в продажах',
+        subtitle: 'От анализа рынка до закрытия — ИИ вмешивается в каждой ключевой точке.',
+        theme1: {
+          title: 'Глубокая аналитика и стратегия',
+          bullets: [
+            'Реальные клиентские инсайты: Вместо скучных опросов мы анализируем реальные рыночные данные и показываем вам точно, что любят ваши клиенты и что их раздражает.',
+            'Несправедливое информационное преимущество: Конкурентный и рыночный анализ на основе живых данных в реальном времени — на уровне, которого ваши конкуренты никогда не достигнут со стандартными AI-запросами.',
+            'Обоснованное планирование: Разработка надёжных, data-driven маркетинговых стратегий вместо принципа лейки.',
+          ],
+        },
+        theme2: {
+          title: 'Лидогенерация и конверсия',
+          bullets: [
+            'Умный лидовый движок: AI-поддерживаемая лидогенерация и привлечение партнёров, которые точно строятся на глубокой аналитике.',
+            'Глобальное масштабирование: Создание предложений для целевой аудитории нажатием кнопки — персонализированно и на более чем 50 языках.',
+            'Точный таргетинг: Создание персон на основе данных и глубокая сегментация аудитории вместо интуиции.',
+          ],
+        },
+        theme3: {
+          title: 'Контент и сторителлинг',
+          bullets: [
+            'Контент нажатием кнопки: Создание высококонвертирующих рекламных текстов, лендингов и рассылок за минуты вместо дней.',
+            'Сторителлинг, который продаёт: Контент, точно настроенный на проанализированные реальные болевые точки ваших B2B-лиц, принимающих решения.',
+          ],
+        },
+        theme4: {
+          title: 'Развитие команды и превосходство в продажах',
+          bullets: [
+            'Живая поддержка: Обучение в реальном времени и умная обработка возражений для ваших сейлз-менеджеров прямо во время текущих переговоров.',
+            'Быстрее к продуктивности: Радикально сокращённый онбординг новых сотрудников через AI-поддерживаемую передачу знаний.',
+          ],
+        },
+      },
+      resultStatement: 'Результат: Больше пайплайна, лучшая конверсия, резко сокращённые циклы продаж — измеримо по вашим KPI и с',
+      resultHighlight: 'командой, которая наконец снова может сосредоточиться на продажах.',
+      tags: ['✓ B2B-фокус', '✓ Реальные инсайты вместо стандартного ИИ', '✓ Масштабируемо на 50+ языках', '✓ От контента до закрытия'],
+      cta: {
+        heading: 'Готовы к большему ',
+        headingHighlight: 'пайплайну?',
+        text: 'Давайте в первом разговоре выясним, в какой точке воронки ИИ предлагает наибольший рычаг для вашего отдела продаж.',
+        button: 'Записаться на бесплатную консультацию',
+        tagline: 'Бесплатно · Без обязательств · Лично',
+      },
+    },
+    kiSchulungenPage: {
+      pageTitle: 'AI-обучение и трансформация | CPCC – Christian Plath Consulting Company',
+      metaDescription: 'AI-обучение и трансформация: мы превращаем страх перед ИИ в компетентность. Индивидуальные программы обучения, культурные изменения и интеграция — чтобы ваша команда уверенно владела ИИ.',
+      backToHome: 'На главную',
+      heroHeading: 'AI-обучение и трансформация',
+      quote: '«Обучение, культурные изменения и интеграция —',
+      quoteHighlight: ' адаптировано под вашу организацию.»',
+      intro: 'Мы привносим AI-компетентность в вашу организацию — не как абстрактный IT-проект, а как подлинное культурное изменение, которое охватывает каждого сотрудника.',
+      problemStatement: '«Наши сотрудники боятся ИИ — и мы не знаем, с чего начать.» Это нормально. ИИ меняет не только процессы, но и то, как мы работаем.',
+      problemHighlight: 'Вопрос не в том, придёт ли ИИ, а в том, как вы подготовите к нему свою команду.',
+      pillars: {
+        title: 'Три столпа AI-трансформации',
+        subtitle: 'От первого знакомства с ИИ до глубоко укоренившегося уверенного использования в рабочей жизни.',
+        pillar1: {
+          title: 'Столп 1',
+          heading: 'Культурные изменения и мышление',
+          items: [
+            { bold: 'Превращение страха в любопытство', text: 'Мы встречаем ваших сотрудников и руководителей там, где они находятся. Мы целенаправленно разрушаем предубеждения и показываем огромные возможности AI-дружественной корпоративной культуры.' },
+            { bold: 'Новый способ работы', text: 'ИИ воспринимается не как надоедливый IT-побочный проект, а глубоко укореняется в ДНК вашей организации и в ежедневных действиях.' },
+          ],
+        },
+        pillar2: {
+          title: 'Столп 2',
+          heading: 'Практическое обучение',
+          items: [
+            { bold: 'Актуальность важнее теории', text: 'Никаких скучных стандартных презентаций. Мы разрабатываем корпоративные и задачно-ориентированные программы обучения, точно адаптированные к индивидуальным вызовам ваших подразделений.' },
+            { bold: 'Практическое применение', text: 'Мы показываем конкретно на ваших собственных процессах: как именно ваши сотрудники могут использовать ИИ продуктивно и безопасно уже сейчас?' },
+          ],
+        },
+        pillar3: {
+          title: 'Столп 3',
+          heading: 'Интеграция и «магия»',
+          items: [
+            { bold: 'Правильная дозировка', text: 'Мы анализируем точно: где ИИ является лишь полезным дополнением? Где он становится неотъемлемой частью того, что уже есть?' },
+            { bold: 'Эффект восхищения', text: 'Мы совместно определяем особые рычаги и процессы в вашей организации, где целенаправленное использование ИИ создаёт настоящую «магию» и радикально облегчает рабочую жизнь.' },
+          ],
+        },
+      },
+      resultStatement: 'Результат: Команда, которая не боится ИИ, а уверенно им владеет — и организация, которая',
+      resultHighlight: 'никогда больше не будет тормозиться устаревшими процессами, а высвобождает свои ресурсы для подлинных инноваций.',
+      tags: ['✓ Индивидуальные программы обучения', '✓ Сопровождение культурных изменений', '✓ От страха к компетентности'],
+      cta: {
+        heading: 'Готовы развить свою ',
+        headingHighlight: 'команду?',
+        text: 'Давайте вместе выясним, какой формат обучения и какой подход к трансформации лучше всего подходит для вашей организации и ваших сотрудников.',
+        button: 'Записаться на бесплатную консультацию',
+        tagline: 'Бесплатно · Без обязательств · Лично',
+      },
+    },
+    kiAusschreibungenPage: {
+      pageTitle: 'ИИ в тендерах | CPCC – Christian Plath Consulting Company',
+      metaDescription: 'ИИ в тендерах: точный анализ и надёжная документация для организаций-заказчиков и компаний-участников. Совместимость с DSGVO, юридически обоснованно.',
+      backToHome: 'На главную',
+      heroHeading: 'ИИ в тендерах',
+      quote: '«Точный анализ. Надёжная документация.',
+      quoteHighlight: ' Для обеих сторон стола.»',
+      intro: 'Будете ли вы проводить или участвовать в тендере: мы вносим ИИ во весь тендерный процесс — точнее, быстрее и юридически обоснованно.',
+      problemStatement: '«Тендеры — это пожиратель времени, и в конце всегда остаётся неопределённость.» — Каталоги требований с сотнями критериев, проектные решения, которые нужно интерпретировать, оценки, которые должны выдержать юридическую проверку.',
+      problemHighlight: 'Мы вносим ИИ в этот процесс — с обеих сторон.',
+      painPoints: {
+        title: 'Болевые точки, которые мы решаем',
+        items: [
+          'Нечёткие или слишком общие описания услуг',
+          'Отсутствие сопоставимости предложений',
+          'Трудоёмкое составление и согласование документов',
+          'Сложная оценка комплексных IT/AI/облачных решений',
+          'Риск «тендеров-пустышек» без реального содержания',
+          'Недостаточная прослеживаемость решений',
+        ],
+      },
+      sides: {
+        title: 'Для каждой стороны стола',
+        subtitle: 'Наша поддержка адаптирована к обеим ролям в тендерном процессе.',
+        customer: {
+          sideLabel: 'Для организаций-заказчиков',
+          title: 'Проведение тендера как заказчик',
+          items: [
+            { heading: 'Составление описаний услуг', description: 'Точные, полные каталоги требований — никаких забытых критериев, никаких полей для интерпретации.' },
+            { heading: 'Разработка критериев оценки', description: 'Объективные, понятные матрицы оценки, выдерживающие юридическую проверку.' },
+            { heading: 'Систематическая оценка проектных решений', description: 'Систематическое сравнение представленных документов со всеми требованиями. Критические детали в подпунктах и приложениях больше не будут упущены.' },
+            { heading: 'Разоблачение buzzword-предложений', description: 'AI-поддерживаемое извлечение ключевого содержания и прямое сравнение решений поставщиков. Идентификация рисков, слабостей или чистого маркетингового языка без содержания.' },
+            { heading: 'Защита решений о присуждении', description: 'Полная документация каждого решения об оценке — включая полный аудиторский след.' },
+          ],
+        },
+        provider: {
+          sideLabel: 'Для компаний-участников тендеров',
+          title: 'Участие в тендере как поставщик',
+          items: [
+            { heading: 'Анализ тендеров', description: 'Быстрое извлечение основных требований. Что действительно запрашивается? Где подводные камни?' },
+            { heading: 'Обеспечение полноты документов', description: 'Автоматическая проверка ваших описаний услуг и проектных решений на предмет пробелов, противоречий и неясностей.' },
+            { heading: 'Уточнение и гармонизация', description: 'Конкретные предложения по уточнению и гармонизации терминов и структур последовательно по всем документам.' },
+            { heading: 'Эффективность нажатием кнопки', description: 'Быстрое составление черновиков RFP/RFI на основе нескольких ключевых пунктов. Структурированные предложения, охватывающие все критерии — ничего не забыто, ничего не дублировано.' },
+            { heading: 'Подготовка к переговорам по контракту', description: 'Анализ проектов контрактов на предмет рисков и критических положений. Подготовка острых аргументов для переговоров на основе выявленных слабостей.' },
+          ],
+        },
+      },
+      resultStatement: 'Результат: Значительно сокращённые сроки обработки, более высокое качество и чёткость требований, лучшая сопоставимость поставщиков, а также',
+      resultHighlight: 'более обоснованные, прослеживаемые решения с резко сниженным риском при заключении контракта — независимо от того, на какой стороне стола вы сидите.',
+      tags: ['✓ Для заказчиков и поставщиков', '✓ Соответствие DSGVO', '✓ Юридически обоснованная документация'],
+      cta: {
+        heading: 'Следующий тендер с ',
+        headingHighlight: 'явным преимуществом?',
+        text: 'Давайте обсудим, как ИИ сделает ваш следующий тендер — будь вы заказчиком или участником — быстрее, точнее и юридически надёжнее.',
+        button: 'Записаться на бесплатную консультацию',
+        tagline: 'Бесплатно · Без обязательств · Лично',
+      },
+    },
   }
 };
 

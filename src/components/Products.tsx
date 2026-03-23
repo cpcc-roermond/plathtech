@@ -19,27 +19,32 @@ const Products = () => {
     {
       icon: LayoutDashboard,
       title: t.products.items.projektmanagement.title,
-      description: t.products.items.projektmanagement.description
+      description: t.products.items.projektmanagement.description,
+      link: '/projektmanagement'
     },
     {
       icon: TrendingUp,
       title: t.products.items.prozessOptimierung.title,
-      description: t.products.items.prozessOptimierung.description
+      description: t.products.items.prozessOptimierung.description,
+      link: '/ki-prozess-optimierung'
     },
     {
       icon: Megaphone,
       title: t.products.items.marketingSales.title,
-      description: t.products.items.marketingSales.description
+      description: t.products.items.marketingSales.description,
+      link: '/ki-marketing-sales'
     },
     {
       icon: GraduationCap,
       title: t.products.items.schulungen.title,
-      description: t.products.items.schulungen.description
+      description: t.products.items.schulungen.description,
+      link: '/ki-schulungen'
     },
     {
       icon: FileText,
       title: t.products.items.ausschreibungen.title,
-      description: t.products.items.ausschreibungen.description
+      description: t.products.items.ausschreibungen.description,
+      link: '/ki-ausschreibungen'
     }
   ];
 

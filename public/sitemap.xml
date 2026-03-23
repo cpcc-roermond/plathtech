@@ -58,6 +58,76 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cp-cc.com/ki-starthilfe?lang=de"/>
   </url>
 
+  <!-- Projektmanagement 3.0 -->
+  <url>
+    <loc>https://cp-cc.com/projektmanagement?lang=de</loc>
+    <lastmod>2026-03-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="de"        href="https://cp-cc.com/projektmanagement?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://cp-cc.com/projektmanagement?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="nl"        href="https://cp-cc.com/projektmanagement?lang=nl"/>
+    <xhtml:link rel="alternate" hreflang="ar"        href="https://cp-cc.com/projektmanagement?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="ru"        href="https://cp-cc.com/projektmanagement?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cp-cc.com/projektmanagement?lang=de"/>
+  </url>
+
+  <!-- KI-Geschäftsoptimierung -->
+  <url>
+    <loc>https://cp-cc.com/ki-prozess-optimierung?lang=de</loc>
+    <lastmod>2026-03-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="de"        href="https://cp-cc.com/ki-prozess-optimierung?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://cp-cc.com/ki-prozess-optimierung?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="nl"        href="https://cp-cc.com/ki-prozess-optimierung?lang=nl"/>
+    <xhtml:link rel="alternate" hreflang="ar"        href="https://cp-cc.com/ki-prozess-optimierung?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="ru"        href="https://cp-cc.com/ki-prozess-optimierung?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cp-cc.com/ki-prozess-optimierung?lang=de"/>
+  </url>
+
+  <!-- KI in Marketing & Sales -->
+  <url>
+    <loc>https://cp-cc.com/ki-marketing-sales?lang=de</loc>
+    <lastmod>2026-03-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="de"        href="https://cp-cc.com/ki-marketing-sales?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://cp-cc.com/ki-marketing-sales?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="nl"        href="https://cp-cc.com/ki-marketing-sales?lang=nl"/>
+    <xhtml:link rel="alternate" hreflang="ar"        href="https://cp-cc.com/ki-marketing-sales?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="ru"        href="https://cp-cc.com/ki-marketing-sales?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cp-cc.com/ki-marketing-sales?lang=de"/>
+  </url>
+
+  <!-- KI-Schulungen & Transformation -->
+  <url>
+    <loc>https://cp-cc.com/ki-schulungen?lang=de</loc>
+    <lastmod>2026-03-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="de"        href="https://cp-cc.com/ki-schulungen?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://cp-cc.com/ki-schulungen?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="nl"        href="https://cp-cc.com/ki-schulungen?lang=nl"/>
+    <xhtml:link rel="alternate" hreflang="ar"        href="https://cp-cc.com/ki-schulungen?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="ru"        href="https://cp-cc.com/ki-schulungen?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cp-cc.com/ki-schulungen?lang=de"/>
+  </url>
+
+  <!-- KI in Ausschreibungen -->
+  <url>
+    <loc>https://cp-cc.com/ki-ausschreibungen?lang=de</loc>
+    <lastmod>2026-03-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="de"        href="https://cp-cc.com/ki-ausschreibungen?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://cp-cc.com/ki-ausschreibungen?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="nl"        href="https://cp-cc.com/ki-ausschreibungen?lang=nl"/>
+    <xhtml:link rel="alternate" hreflang="ar"        href="https://cp-cc.com/ki-ausschreibungen?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="ru"        href="https://cp-cc.com/ki-ausschreibungen?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cp-cc.com/ki-ausschreibungen?lang=de"/>
+  </url>
+
   <!-- Landing Page Sections (Scroll-Anker) -->
 
   <!-- Produkte -->

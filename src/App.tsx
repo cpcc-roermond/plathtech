@@ -11,6 +11,11 @@ import Privacy from "./pages/Privacy";
 import ContactForm from "./pages/ContactForm";
 import AboutMe from "./pages/AboutMe";
 import KIStarthilfe from "./pages/KIStarthilfe";
+import Projektmanagement from "./pages/Projektmanagement";
+import KIProzessOptimierung from "./pages/KIProzessOptimierung";
+import KIMarketingSales from "./pages/KIMarketingSales";
+import KISchulungen from "./pages/KISchulungen";
+import KIAusschreibungen from "./pages/KIAusschreibungen";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -41,6 +46,11 @@ const App = () => (
               <Route path="/kontakt" element={<ContactForm />} />
               <Route path="/ueber-mich" element={<AboutMe />} />
               <Route path="/ki-starthilfe" element={<KIStarthilfe />} />
+              <Route path="/projektmanagement" element={<Projektmanagement />} />
+              <Route path="/ki-prozess-optimierung" element={<KIProzessOptimierung />} />
+              <Route path="/ki-marketing-sales" element={<KIMarketingSales />} />
+              <Route path="/ki-schulungen" element={<KISchulungen />} />
+              <Route path="/ki-ausschreibungen" element={<KIAusschreibungen />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
