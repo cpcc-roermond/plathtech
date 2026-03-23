@@ -6,10 +6,10 @@ const LanguageSwitcher = () => {
   const { language, setLanguage } = useLanguage();
 
   return (
-    <div className="flex items-center space-x-3" role="group" aria-label="Sprachwahl">
+    <div className="flex items-center space-x-1 md:space-x-3" role="group" aria-label="Sprachwahl">
       <button
         onClick={() => setLanguage('de')}
-        className={`flex items-center justify-center w-10 h-7 rounded-md transition-all duration-300 transform hover:scale-110 ${
+        className={`flex items-center justify-center w-7 h-5 md:w-10 md:h-7 rounded-md transition-all duration-300 transform hover:scale-110 ${
           language === 'de'
             ? 'ring-2 ring-gold ring-opacity-80 scale-110 shadow-lg'
             : 'hover:scale-105 opacity-80 hover:opacity-100 hover:shadow-md'
@@ -27,7 +27,7 @@ const LanguageSwitcher = () => {
 
       <button
         onClick={() => setLanguage('en')}
-        className={`flex items-center justify-center w-10 h-7 rounded-md transition-all duration-300 transform hover:scale-110 ${
+        className={`flex items-center justify-center w-7 h-5 md:w-10 md:h-7 rounded-md transition-all duration-300 transform hover:scale-110 ${
           language === 'en'
             ? 'ring-2 ring-gold ring-opacity-80 scale-110 shadow-lg'
             : 'hover:scale-105 opacity-80 hover:opacity-100 hover:shadow-md'
@@ -69,7 +69,7 @@ const LanguageSwitcher = () => {
 
       <button
         onClick={() => setLanguage('nl')}
-        className={`flex items-center justify-center w-10 h-7 rounded-md transition-all duration-300 transform hover:scale-110 ${
+        className={`flex items-center justify-center w-7 h-5 md:w-10 md:h-7 rounded-md transition-all duration-300 transform hover:scale-110 ${
           language === 'nl'
             ? 'ring-2 ring-gold ring-opacity-80 scale-110 shadow-lg'
             : 'hover:scale-105 opacity-80 hover:opacity-100 hover:shadow-md'
@@ -87,7 +87,7 @@ const LanguageSwitcher = () => {
 
       <button
         onClick={() => setLanguage('ar')}
-        className={`flex items-center justify-center w-10 h-7 rounded-md transition-all duration-300 transform hover:scale-110 ${
+        className={`flex items-center justify-center w-7 h-5 md:w-10 md:h-7 rounded-md transition-all duration-300 transform hover:scale-110 ${
           language === 'ar'
             ? 'ring-2 ring-gold ring-opacity-80 scale-110 shadow-lg'
             : 'hover:scale-105 opacity-80 hover:opacity-100 hover:shadow-md'
@@ -108,7 +108,7 @@ const LanguageSwitcher = () => {
 
       <button
         onClick={() => setLanguage('ru')}
-        className={`flex items-center justify-center w-10 h-7 rounded-md transition-all duration-300 transform hover:scale-110 ${
+        className={`flex items-center justify-center w-7 h-5 md:w-10 md:h-7 rounded-md transition-all duration-300 transform hover:scale-110 ${
           language === 'ru'
             ? 'ring-2 ring-gold ring-opacity-80 scale-110 shadow-lg'
             : 'hover:scale-105 opacity-80 hover:opacity-100 hover:shadow-md'
