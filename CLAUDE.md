@@ -56,7 +56,7 @@ This is a **React 18 + TypeScript + Vite** single-page application for Christian
 
 ### Key Directories
 
-- `src/pages/` - Route components (Index, ContactForm, Privacy, AboutMe, KIStarthilfe, NotFound)
+- `src/pages/` - Route components (Index, ContactForm, Privacy, AboutMe, KIStarthilfe, Projektmanagement, KIProzessOptimierung, KIMarketingSales, KISchulungen, KIAusschreibungen, NotFound)
 - `src/components/` - Landing page sections (Header, Hero, About, KISparring, Products, Contact, Footer)
 - `src/components/ui/` - shadcn/ui components (60+ pre-built components)
 - `src/contexts/` - React Context (LanguageContext for i18n)
@@ -67,12 +67,17 @@ This is a **React 18 + TypeScript + Vite** single-page application for Christian
 ### Routing (React Router v6)
 
 ```
-/              → Index (one-page landing with scroll sections)
-/datenschutz   → Privacy policy
-/kontakt       → Contact form
-/ueber-mich    → AboutMe (founder profile, project experience timeline)
-/ki-starthilfe → KIStarthilfe (service detail page, fully multilingual)
-*              → NotFound (404)
+/                        → Index (one-page landing with scroll sections)
+/datenschutz             → Privacy policy
+/kontakt                 → Contact form
+/ueber-mich              → AboutMe (founder profile, project experience timeline)
+/ki-starthilfe           → KIStarthilfe (service detail page, fully multilingual)
+/projektmanagement       → Projektmanagement (service detail page, fully multilingual)
+/ki-prozess-optimierung  → KIProzessOptimierung (service detail page, fully multilingual)
+/ki-marketing-sales      → KIMarketingSales (service detail page, fully multilingual)
+/ki-schulungen           → KISchulungen (service detail page, fully multilingual)
+/ki-ausschreibungen      → KIAusschreibungen (service detail page, fully multilingual)
+*                        → NotFound (404)
 ```
 
 Section IDs for scroll navigation: `about`, `ki-sparring`, `products`, `contact`
@@ -82,12 +87,17 @@ Section IDs for scroll navigation: `about`, `ki-sparring`, `products`, `contact`
 All pages support a `?lang=` query parameter that skips the LoadingScreen and sets the language directly:
 
 ```
-https://cp-cc.com/?lang=de          → German homepage (no LoadingScreen)
-https://cp-cc.com/?lang=en          → English homepage
-https://cp-cc.com/?lang=nl          → Dutch homepage
-https://cp-cc.com/?lang=ar          → Arabic homepage (RTL)
-https://cp-cc.com/?lang=ru          → Russian homepage
-https://cp-cc.com/ki-starthilfe?lang=en  → English KI-Starthilfe directly
+https://cp-cc.com/?lang=de                       → German homepage (no LoadingScreen)
+https://cp-cc.com/?lang=en                       → English homepage
+https://cp-cc.com/?lang=nl                       → Dutch homepage
+https://cp-cc.com/?lang=ar                       → Arabic homepage (RTL)
+https://cp-cc.com/?lang=ru                       → Russian homepage
+https://cp-cc.com/ki-starthilfe?lang=en          → English KI-Starthilfe directly
+https://cp-cc.com/projektmanagement?lang=en      → English Projektmanagement directly
+https://cp-cc.com/ki-prozess-optimierung?lang=en → English KI-Geschäftsoptimierung directly
+https://cp-cc.com/ki-marketing-sales?lang=en     → English KI in Marketing & Sales directly
+https://cp-cc.com/ki-schulungen?lang=en          → English KI-Schulungen directly
+https://cp-cc.com/ki-ausschreibungen?lang=en     → English KI in Ausschreibungen directly
 ```
 
 Section anchors work combined with `?lang=`:
@@ -114,7 +124,9 @@ Custom strongly-typed i18n implementation (no external library):
 ```tsx
 const { language } = useLanguage();
 const t = useTranslations(language);
-// Access: t.hero.title, t.nav.about, t.contactForm.fields.name, t.aboutMe.projects.*, t.kiStarthilfePage.*, etc.
+// Access: t.hero.title, t.nav.about, t.contactForm.fields.name, t.aboutMe.projects.*,
+// t.kiStarthilfePage.*, t.projektmanagementPage.*, t.kiGeschaeftsoptimierungPage.*,
+// t.kiMarketingSalesPage.*, t.kiSchulungenPage.*, t.kiAusschreibungenPage.*, etc.
 ```
 
 Supported languages:
@@ -267,8 +279,8 @@ Subpages update `document.title` and `meta[name="description"]` dynamically via 
 `index.html` includes comprehensive schema.org markup:
 - **Organization** - Company info, founder, contact points
 - **ProfessionalService** - Local business with geo coordinates
-- **Service** - Service catalog with all offerings, including `/ki-starthilfe` URL
-- **FAQPage** - Common questions for AI search optimization, including KI-Starthilfe FAQ entries
+- **Service** - Service catalog with all 6 offerings, each with URL and full description
+- **FAQPage** - Common questions for AI search optimization; includes FAQ entries for all 6 product pages (16 questions total)
 - **WebSite** - Site metadata
 
 ### Semantic HTML
@@ -294,7 +306,7 @@ Subpages update `document.title` and `meta[name="description"]` dynamically via 
 
 ### Files
 - `public/robots.txt` - Crawler permissions
-- `public/sitemap.xml` - Site structure for search engines; includes `/`, `/kontakt`, `/datenschutz`, `/ki-starthilfe` (priority 0.9), `/ueber-mich`
+- `public/sitemap.xml` - Site structure for search engines; includes `/`, `/kontakt`, `/datenschutz`, `/ueber-mich`, all 6 product detail pages (priority 0.9: `/ki-starthilfe`, `/projektmanagement`, `/ki-prozess-optimierung`, `/ki-marketing-sales`, `/ki-schulungen`, `/ki-ausschreibungen`) and all 4 landing page scroll anchors; every entry has 5 language variants + `x-default`
 
 ## Content Guidelines
 
@@ -310,7 +322,7 @@ Subpages update `document.title` and `meta[name="description"]` dynamically via 
 ## Project-Specific Notes
 
 - `References.tsx` and `Resources.tsx` exist but are not integrated in Index.tsx (German-only, not in i18n)
-- Product cards in `Products.tsx`: **KI-Starthilfe** links to `/ki-starthilfe` (fully built, multilingual); all other product cards are still display-only (no detail pages yet)
+- Product cards in `Products.tsx`: **all 6 products** are now linked and fully multilingual. The hover label "Mehr erfahren" uses `t.aboutMe.learnMore` (already translated in all 5 languages).
 - Language defaults to 'de' and is not persisted across page reloads
 - `LoadingScreen.tsx` shows initial splash with language selection (5 flags: DE, EN, NL, AR, RU) before main content; only displays once per session (controlled by `hasCompletedLoading` in LanguageContext) - navigating back from subpages skips the loading screen
 - `Hero.tsx` has dynamic mouse-position-based gradient background via useEffect; founder description text is left-aligned for better readability
@@ -319,7 +331,12 @@ Subpages update `document.title` and `meta[name="description"]` dynamically via 
 - `AboutMe.tsx` features an interactive project timeline with scroll animations, expandable items, and mouse-tracking gradient; linked from Hero.tsx founder card via "Mehr erfahren". **Note**: Uses inline language ternaries (not `t.*`) for translations — all 5 languages (de/en/nl/ar/ru) must be explicitly handled; missing cases fall through to the last branch (previously caused Dutch to show for Arabic/Russian)
 - `Header.tsx` uses `useLocation()` to detect the current route; navigation links and CTA button are only shown on the homepage (`/`), while the LanguageSwitcher remains visible on all pages
 - `Contact.tsx` dialog description text is left-aligned within centered card for better readability
-- `KIStarthilfe.tsx` is the **reference implementation** for all future product detail pages. Uses: mouse-tracking gradient, IntersectionObserver scroll animations, inline SVG decorations (NeuralNet, Circuit, Compass), `t.kiStarthilfePage.*` namespace, dynamic `document.title`/meta-description per language, `<Link>` card in Products.tsx with hover arrow indicator. Use the `/new-product-page` skill to create further product pages following this pattern.
+- `KIStarthilfe.tsx` is the **reference implementation** for product detail pages. Uses: mouse-tracking gradient, IntersectionObserver scroll animations, inline SVG decorations, translation namespace `t.kiStarthilfePage.*`, dynamic `document.title`/meta-description per language, `<Link>` card in Products.tsx with hover arrow indicator. Use the `/new-product-page` skill to create further product pages following this pattern.
+- `Projektmanagement.tsx` – `/projektmanagement` – DashboardSVG + 3 Benefit-Cards + Fokus/Setup/Ergebnis-Strip. Namespace: `t.projektmanagementPage.*`
+- `KIProzessOptimierung.tsx` – `/ki-prozess-optimierung` – FlowSVG + GearSVG + 6-stufiger nummerierter Prozess (2×3 Grid). Namespace: `t.kiGeschaeftsoptimierungPage.*`
+- `KIMarketingSales.tsx` – `/ki-marketing-sales` – FunnelSVG + MegaphoneAccentSVG + 4 thematische Blöcke mit Sub-Bullets (2×2 Grid). Namespace: `t.kiMarketingSalesPage.*`
+- `KISchulungen.tsx` – `/ki-schulungen` – GrowthTreeSVG + BookAccentSVG + 3 Säulen (Kulturwandel, Schulungen, Integration). Namespace: `t.kiSchulungenPage.*`
+- `KIAusschreibungen.tsx` – `/ki-ausschreibungen` – DocumentStackSVG + ScaleAccentSVG + Pain-Points-Grid + 2 Seiten-Karten (Kunde / Provider). Namespace: `t.kiAusschreibungenPage.*`
 
 ### Language Switcher Flags
 
@@ -339,9 +356,9 @@ Icons are chosen to semantically match their context:
 **Products.tsx** (service cards):
 - KI-Starthilfe → `Rocket` (launch/start metaphor)
 - Projektmanagement 3.0 → `LayoutDashboard` (PM dashboard)
-- KI-Prozess-Optimierung → `TrendingUp` (optimization/growth)
+- KI-Geschäftsoptimierung → `TrendingUp` (optimization/growth)
 - KI in Marketing & Sales → `Megaphone` (marketing)
-- KI-Schulungen → `GraduationCap` (education)
+- KI-Schulungen & Transformation → `GraduationCap` (education)
 - KI in Ausschreibungen → `FileText` (documents)
 - CTA Button → 📅 emoji (scheduling appointment)
 
@@ -363,3 +380,42 @@ Icons are chosen to semantically match their context:
 - Core questions → `Target` (needs), `TrendingUp` (strategy), `Users` (enablement)
 - Benefits section → `CheckCircle2`, `Brain`
 - CTA section → `Rocket`, `ChevronRight`
+
+**Projektmanagement.tsx** (service detail page):
+- Hero background → inline `DashboardSVG` (grid + cards, 6% opacity)
+- Hero decorative element → `LayoutDashboard` (oversized, 5% opacity)
+- Highlight card corner → inline `CalendarCornerSVG`
+- Benefits → `Clock` (Meetings), `Zap` (Delegation), `CheckSquare` (Tracking)
+- CTA section → `LayoutDashboard`, `ChevronRight`
+
+**KIProzessOptimierung.tsx** (service detail page):
+- Hero background → inline `ProcessFlowSVG` (6 nodes with arrows, 6% opacity)
+- Hero decorative element → `TrendingUp` (oversized, 5% opacity)
+- Highlight card corner → inline `GearSVG`
+- Process steps → `Search`, `Shield`, `Wrench`, `Calculator`, `Lightbulb`, `Rocket`
+- CTA section → `TrendingUp`, `ChevronRight`
+
+**KIMarketingSales.tsx** (service detail page):
+- Hero background → inline `FunnelSVG` (funnel + trend line, 6% opacity)
+- Hero decorative element → `Megaphone` (oversized, 5% opacity)
+- Highlight card corner → inline `MegaphoneAccentSVG`
+- Theme blocks → `BarChart2` (Analytics), `Zap` (Lead-Gen), `FileText` (Content), `Users` (Enablement)
+- Result section → `TrendingUp`
+- CTA section → `Megaphone`, `ChevronRight`
+
+**KISchulungen.tsx** (service detail page):
+- Hero background → inline `GrowthTreeSVG` (tree with branches, 6% opacity)
+- Hero decorative element → `GraduationCap` (oversized, 5% opacity)
+- Highlight card corner → inline `BookAccentSVG`
+- Pillars → `RefreshCw` (Kulturwandel), `BookOpen` (Schulungen), `Sparkles` (Integration)
+- Result section → `Brain`
+- CTA section → `GraduationCap`, `ChevronRight`
+
+**KIAusschreibungen.tsx** (service detail page):
+- Hero background → inline `DocumentStackSVG` (stacked documents + scale, 6% opacity)
+- Hero decorative element → `FileText` (oversized, 5% opacity)
+- Highlight card corner → inline `ScaleAccentSVG`
+- Pain points → `AlertCircle`
+- Side cards → `Building2` (Kunde), `Briefcase` (Provider), `CheckCircle2` (items)
+- Result section → `ShieldCheck`
+- CTA section → `Scale`, `ChevronRight`
