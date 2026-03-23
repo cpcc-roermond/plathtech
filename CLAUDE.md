@@ -77,6 +77,25 @@ This is a **React 18 + TypeScript + Vite** single-page application for Christian
 
 Section IDs for scroll navigation: `about`, `ki-sparring`, `products`, `contact`
 
+### URL Language Parameter (`?lang=`)
+
+All pages support a `?lang=` query parameter that skips the LoadingScreen and sets the language directly:
+
+```
+https://cp-cc.com/?lang=de          → German homepage (no LoadingScreen)
+https://cp-cc.com/?lang=en          → English homepage
+https://cp-cc.com/?lang=nl          → Dutch homepage
+https://cp-cc.com/?lang=ar          → Arabic homepage (RTL)
+https://cp-cc.com/?lang=ru          → Russian homepage
+https://cp-cc.com/ki-starthilfe?lang=en  → English KI-Starthilfe directly
+```
+
+This is implemented in `LanguageContext.tsx`: on init, `getUrlLanguage()` reads `?lang=` from `window.location.search`. If valid, language is set and `hasCompletedLoading` is initialized to `true` (bypasses LoadingScreen). Works on all routes/subpages.
+
+### SPA Routing (vercel.json)
+
+`vercel.json` in the root configures Vercel to rewrite all routes to `index.html`, enabling React Router to handle client-side navigation. Without this, direct URL access to subpages (e.g. `/ki-starthilfe`) returns 404.
+
 ### Multi-Language System (DE/EN/NL/AR/RU)
 
 Custom strongly-typed i18n implementation (no external library):
