@@ -18,13 +18,13 @@ No test framework is currently configured.
 ### Production Environment
 
 - **Hosting**: Vercel (free tier)
-- **Domain**: cp-cc.com (registered at Wix, DNS points to Vercel)
-- **GitHub Repository**: https://github.com/cpcc-roermond/cpcc-homepage
+- **Domain**: plath-tech.com (registered at IONOS, DNS points to Vercel)
+- **GitHub Repository**: https://github.com/cpcc-roermond/plathtech
 
 ### Deployment Workflow
 
 ```
-Local changes → git push → Vercel auto-deploys → Live on cp-cc.com
+Local changes → git push → Vercel auto-deploys → Live on plath-tech.com
 ```
 
 To deploy changes:
@@ -36,23 +36,23 @@ git push
 
 Vercel automatically builds and deploys on every push to `main`. No manual deployment needed.
 
-### DNS Configuration (at Wix)
+### DNS Configuration (at IONOS)
 
 | Type | Host | Value |
 |------|------|-------|
-| A | cp-cc.com | 216.198.79.1 |
-| CNAME | www.cp-cc.com | e24821f476c068a7.vercel-dns-017.com |
+| A | @ | 76.76.21.21 |
+| CNAME | www | cname.vercel-dns.com |
 
 ### History
 
-- Originally created with Wix (domain registration)
-- Rebuilt with Lovable (React/Vite app)
-- Exported from Lovable to GitHub
-- Now hosted on Vercel with custom domain
+- Originally created as CPCC homepage (cp-cc.com, GitHub: cpcc-roermond/cpcc-homepage)
+- Rebranded to PLATHTECH in March 2026; new repo and domain created
+- Built with Lovable (React/Vite app), exported to GitHub
+- Now hosted on Vercel with custom domain plath-tech.com
 
 ## Architecture Overview
 
-This is a **React 18 + TypeScript + Vite** single-page application for Christian Plath Consulting Company B.V. - a boutique consulting firm landing page.
+This is a **React 18 + TypeScript + Vite** single-page application for **PLATHTECH INNOVATION & ARTIFICIAL INTELLIGENCE RESEARCH & CONSULTANCIES L.L.C S.O.C** (short: **PLATHTECH**) - a boutique AI consulting firm landing page. Managing Director: Christian Plath. Address: Office S1-252, Dubai Investment Park First, Dubai, UAE. Contact: info@plath-tech.com | +49-152-05198771.
 
 ### Key Directories
 
@@ -87,26 +87,26 @@ Section IDs for scroll navigation: `about`, `ki-sparring`, `products`, `contact`
 All pages support a `?lang=` query parameter that skips the LoadingScreen and sets the language directly:
 
 ```
-https://cp-cc.com/?lang=de                       → German homepage (no LoadingScreen)
-https://cp-cc.com/?lang=en                       → English homepage
-https://cp-cc.com/?lang=nl                       → Dutch homepage
-https://cp-cc.com/?lang=ar                       → Arabic homepage (RTL)
-https://cp-cc.com/?lang=ru                       → Russian homepage
-https://cp-cc.com/ki-starthilfe?lang=en          → English KI-Starthilfe directly
-https://cp-cc.com/projektmanagement?lang=en      → English Projektmanagement directly
-https://cp-cc.com/ki-prozess-optimierung?lang=en → English KI-Geschäftsoptimierung directly
-https://cp-cc.com/ki-marketing-sales?lang=en     → English KI in Marketing & Sales directly
-https://cp-cc.com/ki-schulungen?lang=en          → English KI-Schulungen directly
-https://cp-cc.com/ki-ausschreibungen?lang=en     → English KI in Ausschreibungen directly
+https://plath-tech.com/?lang=de                       → German homepage (no LoadingScreen)
+https://plath-tech.com/?lang=en                       → English homepage
+https://plath-tech.com/?lang=nl                       → Dutch homepage
+https://plath-tech.com/?lang=ar                       → Arabic homepage (RTL)
+https://plath-tech.com/?lang=ru                       → Russian homepage
+https://plath-tech.com/ki-starthilfe?lang=en          → English KI-Starthilfe directly
+https://plath-tech.com/projektmanagement?lang=en      → English Projektmanagement directly
+https://plath-tech.com/ki-prozess-optimierung?lang=en → English KI-Geschäftsoptimierung directly
+https://plath-tech.com/ki-marketing-sales?lang=en     → English KI in Marketing & Sales directly
+https://plath-tech.com/ki-schulungen?lang=en          → English KI-Schulungen directly
+https://plath-tech.com/ki-ausschreibungen?lang=en     → English KI in Ausschreibungen directly
 ```
 
 Section anchors work combined with `?lang=`:
 
 ```
-https://cp-cc.com/?lang=de#products    → German homepage, scrolled to products
-https://cp-cc.com/?lang=de#about       → scrolled to about section
-https://cp-cc.com/?lang=de#ki-sparring → scrolled to KI-Sparring section
-https://cp-cc.com/?lang=de#contact     → scrolled to contact section
+https://plath-tech.com/?lang=de#products    → German homepage, scrolled to products
+https://plath-tech.com/?lang=de#about       → scrolled to about section
+https://plath-tech.com/?lang=de#ki-sparring → scrolled to KI-Sparring section
+https://plath-tech.com/?lang=de#contact     → scrolled to contact section
 ```
 
 All section anchor links are included in `public/sitemap.xml` for all 5 languages with appropriate priorities (products: 0.8, ki-sparring: 0.7, about/contact: 0.6).
@@ -324,12 +324,12 @@ Subpages update `document.title` and `meta[name="description"]` dynamically via 
 - `References.tsx` and `Resources.tsx` exist but are not integrated in Index.tsx (German-only, not in i18n)
 - Product cards in `Products.tsx`: **all 6 products** are now linked and fully multilingual. The hover label "Mehr erfahren" uses `t.aboutMe.learnMore` (already translated in all 5 languages).
 - Language defaults to 'de' and is not persisted across page reloads
-- `LoadingScreen.tsx` shows initial splash with language selection (5 flags: DE, EN, NL, AR, RU) before main content; only displays once per session (controlled by `hasCompletedLoading` in LanguageContext) - navigating back from subpages skips the loading screen
-- `Hero.tsx` has dynamic mouse-position-based gradient background via useEffect; founder description text is left-aligned for better readability
+- `LoadingScreen.tsx` shows initial splash with language selection (5 flags: DE, EN, NL, AR, RU) before main content; only displays once per session (controlled by `hasCompletedLoading` in LanguageContext) - navigating back from subpages skips the loading screen. Logo: `/logos/logo1.jpg`
+- `Hero.tsx` has dynamic mouse-position-based gradient background via useEffect; founder description text is left-aligned for better readability. Background watermark logo: `/logos/logo2.jpg` (light ghost variant, blurred)
 - `App.css` contains legacy Vite template styles (mostly unused, can be ignored)
 - `NotFound.tsx` uses the site's design system with Header/Footer and supports all five languages
 - `AboutMe.tsx` features an interactive project timeline with scroll animations, expandable items, and mouse-tracking gradient; linked from Hero.tsx founder card via "Mehr erfahren". **Note**: Uses inline language ternaries (not `t.*`) for translations — all 5 languages (de/en/nl/ar/ru) must be explicitly handled; missing cases fall through to the last branch (previously caused Dutch to show for Arabic/Russian)
-- `Header.tsx` uses `useLocation()` to detect the current route; navigation links and CTA button are only shown on the homepage (`/`), while the LanguageSwitcher remains visible on all pages
+- `Header.tsx` uses `useLocation()` to detect the current route; navigation links and CTA button are only shown on the homepage (`/`), while the LanguageSwitcher remains visible on all pages. Logo: `/logos/logo1.jpg` (dark navy variant)
 - `Contact.tsx` dialog description text is left-aligned within centered card for better readability
 - `KIStarthilfe.tsx` is the **reference implementation** for product detail pages. Uses: mouse-tracking gradient, IntersectionObserver scroll animations, inline SVG decorations, translation namespace `t.kiStarthilfePage.*`, dynamic `document.title`/meta-description per language, `<Link>` card in Products.tsx with hover arrow indicator. Use the `/new-product-page` skill to create further product pages following this pattern.
 - `Projektmanagement.tsx` – `/projektmanagement` – DashboardSVG + 3 Benefit-Cards + Fokus/Setup/Ergebnis-Strip. Namespace: `t.projektmanagementPage.*`
@@ -337,6 +337,16 @@ Subpages update `document.title` and `meta[name="description"]` dynamically via 
 - `KIMarketingSales.tsx` – `/ki-marketing-sales` – FunnelSVG + MegaphoneAccentSVG + 4 thematische Blöcke mit Sub-Bullets (2×2 Grid). Namespace: `t.kiMarketingSalesPage.*`
 - `KISchulungen.tsx` – `/ki-schulungen` – GrowthTreeSVG + BookAccentSVG + 3 Säulen (Kulturwandel, Schulungen, Integration). Namespace: `t.kiSchulungenPage.*`
 - `KIAusschreibungen.tsx` – `/ki-ausschreibungen` – DocumentStackSVG + ScaleAccentSVG + Pain-Points-Grid + 2 Seiten-Karten (Kunde / Provider). Namespace: `t.kiAusschreibungenPage.*`
+
+### Logo Assets
+
+Logos are stored in `public/logos/` (served as static assets):
+
+| File | Description | Used in |
+|------|-------------|---------|
+| `logo1.jpg` | Dark navy background, gold lion, white CPCC monogram, gold PLATHTECH text | Header, LoadingScreen, Footer, Favicon |
+| `logo2.jpg` | White background, ghost/faded CPCC, gold lion, gold PLATHTECH text | Hero background watermark (blurred) |
+| `logo3.jpg` | White background, black CPCC, grey lion, grey PLATHTECH text | Reserve / print use |
 
 ### Language Switcher Flags
 
