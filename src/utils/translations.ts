@@ -836,7 +836,7 @@ export const translations: Record<Language, Translations> = {
       aiConsultingCta: 'Kostenlose KI-Beratung starten'
     },
     footer: {
-      rights: '© 2025 Christian Plath Consulting Company. Alle Rechte vorbehalten.',
+      rights: '© 2025 PLATHTECH. Alle Rechte vorbehalten.',
       privacy: 'Datenschutz'
     },
     notFound: {
@@ -845,8 +845,8 @@ export const translations: Record<Language, Translations> = {
       backToHome: 'Zurück zur Startseite'
     },
     kiStarthilfePage: {
-      pageTitle: 'KI-Starthilfe & Potentialanalyse | CPCC – Christian Plath Consulting Company',
-      metaDescription: 'CPCC KI-Starthilfe: Individuelle Potentialanalyse für Ihr Unternehmen. Wir identifizieren echte Pain Points, analysieren Ihren KI-Status-Quo und liefern einen klaren, realistischen KI-Fahrplan – ohne falsche Versprechen.',
+      pageTitle: 'KI-Starthilfe & Potentialanalyse | PLATHTECH',
+      metaDescription: 'PLATHTECH KI-Starthilfe: Individuelle Potentialanalyse für Ihr Unternehmen. Wir identifizieren echte Pain Points, analysieren Ihren KI-Status-Quo und liefern einen klaren, realistischen KI-Fahrplan – ohne falsche Versprechen.',
       backToHome: 'Zurück zur Startseite',
       heroHeading: 'KI-Starthilfe',
       quote: '„Wir wissen, dass KI wichtig ist – aber ',
@@ -883,7 +883,7 @@ export const translations: Record<Language, Translations> = {
       },
     },
     projektmanagementPage: {
-      pageTitle: 'Projektmanagement 3.0 | CPCC – Christian Plath Consulting Company',
+      pageTitle: 'Projektmanagement 3.0 | PLATHTECH',
       metaDescription: 'Projektmanagement 3.0 vereint klassische PM-Frameworks mit Künstlicher Intelligenz. Entlasten Sie Ihr PMO, automatisieren Sie den Projektalltag und kaufen Sie sich Ihre Zeit zurück.',
       backToHome: 'Zurück zur Startseite',
       heroHeading: 'Projektmanagement 3.0',
@@ -913,7 +913,7 @@ export const translations: Record<Language, Translations> = {
       },
     },
     kiGeschaeftsoptimierungPage: {
-      pageTitle: 'KI-Geschäftsoptimierung | CPCC – Christian Plath Consulting Company',
+      pageTitle: 'KI-Geschäftsoptimierung | PLATHTECH',
       metaDescription: 'KI-Prozess-Optimierung in 6 Schritten: Von der Use-Case-Identifikation über DSGVO-konforme Tool-Evaluierung bis zur reibungslosen Implementierung. Strukturiert, sicher, kostenbewusst.',
       backToHome: 'Zurück zur Startseite',
       heroHeading: 'KI-Geschäftsoptimierung',
@@ -966,7 +966,7 @@ export const translations: Record<Language, Translations> = {
       },
     },
     kiMarketingSalesPage: {
-      pageTitle: 'KI in Marketing & Sales | CPCC – Christian Plath Consulting Company',
+      pageTitle: 'KI in Marketing & Sales | PLATHTECH',
       metaDescription: 'KI-gestützter B2B-Vertrieb und Marketing: Echte Customer Insights, Echtzeit-Konkurrenzanalysen, automatisierte Lead-Generierung und skalierbare Content-Erstellung für mehr Pipeline und kürzere Sales-Cycles.',
       backToHome: 'Zurück zur Startseite',
       heroHeading: 'KI in Marketing & Sales',
@@ -1021,7 +1021,7 @@ export const translations: Record<Language, Translations> = {
       },
     },
     kiSchulungenPage: {
-      pageTitle: 'KI-Schulungen & Transformation | CPCC – Christian Plath Consulting Company',
+      pageTitle: 'KI-Schulungen & Transformation | PLATHTECH',
       metaDescription: 'KI-Schulungen und Transformation: Wir verwandeln Angst vor KI in Kompetenz. Maßgeschneiderte Schulungen, Kulturwandel und Integration – damit Ihr Team KI souverän beherrscht.',
       backToHome: 'Zurück zur Startseite',
       heroHeading: 'KI-Schulungen & Transformation',
@@ -1070,7 +1070,7 @@ export const translations: Record<Language, Translations> = {
       },
     },
     kiAusschreibungenPage: {
-      pageTitle: 'KI in Ausschreibungen | CPCC – Christian Plath Consulting Company',
+      pageTitle: 'KI in Ausschreibungen | PLATHTECH',
       metaDescription: 'KI in Ausschreibungen: Messerscharfe Analyse und wasserdichte Dokumentation für ausschreibende Organisationen und anbietende Unternehmen. DSGVO-konform, juristisch belastbar.',
       backToHome: 'Zurück zur Startseite',
       heroHeading: 'KI in Ausschreibungen',
@@ -1448,7 +1448,7 @@ export const translations: Record<Language, Translations> = {
       aiConsultingCta: 'Start free AI consultation'
     },
     footer: {
-      rights: '© 2025 Christian Plath Consulting Company. All rights reserved.',
+      rights: '© 2025 PLATHTECH. All rights reserved.',
       privacy: 'Privacy'
     },
     notFound: {
@@ -1457,8 +1457,8 @@ export const translations: Record<Language, Translations> = {
       backToHome: 'Back to homepage'
     },
     kiStarthilfePage: {
-      pageTitle: 'AI Kickstart & Potential Analysis | CPCC – Christian Plath Consulting Company',
-      metaDescription: 'CPCC AI Kickstart: Individual AI potential analysis for your business. We identify real pain points, assess your current AI landscape and deliver a clear, realistic AI roadmap – no empty promises.',
+      pageTitle: 'AI Kickstart & Potential Analysis | PLATHTECH',
+      metaDescription: 'PLATHTECH AI Kickstart: Individual AI potential analysis for your business. We identify real pain points, assess your current AI landscape and deliver a clear, realistic AI roadmap – no empty promises.',
       backToHome: 'Back to homepage',
       heroHeading: 'AI Kickstart',
       quote: '"We know AI matters – but ',
@@ -1495,7 +1495,7 @@ export const translations: Record<Language, Translations> = {
       },
     },
     projektmanagementPage: {
-      pageTitle: 'Project Management 3.0 | CPCC – Christian Plath Consulting Company',
+      pageTitle: 'Project Management 3.0 | PLATHTECH',
       metaDescription: 'Project Management 3.0 unites classical PM frameworks with Artificial Intelligence. Relieve your PMO, automate day-to-day project work and buy back your time.',
       backToHome: 'Back to homepage',
       heroHeading: 'Project Management 3.0',
@@ -1525,7 +1525,7 @@ export const translations: Record<Language, Translations> = {
       },
     },
     kiGeschaeftsoptimierungPage: {
-      pageTitle: 'AI Business Optimisation | CPCC – Christian Plath Consulting Company',
+      pageTitle: 'AI Business Optimisation | PLATHTECH',
       metaDescription: 'AI process optimisation in 6 steps: From use-case identification through GDPR-compliant tool evaluation to seamless implementation. Structured, secure, cost-conscious.',
       backToHome: 'Back to homepage',
       heroHeading: 'AI Business Optimisation',
@@ -1578,7 +1578,7 @@ export const translations: Record<Language, Translations> = {
       },
     },
     kiMarketingSalesPage: {
-      pageTitle: 'AI in Marketing & Sales | CPCC – Christian Plath Consulting Company',
+      pageTitle: 'AI in Marketing & Sales | PLATHTECH',
       metaDescription: 'AI-powered B2B sales and marketing: Real customer insights, real-time competitive analysis, automated lead generation and scalable content creation for more pipeline and shorter sales cycles.',
       backToHome: 'Back to homepage',
       heroHeading: 'AI in Marketing & Sales',
@@ -1633,7 +1633,7 @@ export const translations: Record<Language, Translations> = {
       },
     },
     kiSchulungenPage: {
-      pageTitle: 'AI Training & Transformation | CPCC – Christian Plath Consulting Company',
+      pageTitle: 'AI Training & Transformation | PLATHTECH',
       metaDescription: 'AI training and transformation: We turn fear of AI into competence. Tailored training, cultural change and integration – so your team masters AI with confidence.',
       backToHome: 'Back to homepage',
       heroHeading: 'AI Training & Transformation',
@@ -1682,7 +1682,7 @@ export const translations: Record<Language, Translations> = {
       },
     },
     kiAusschreibungenPage: {
-      pageTitle: 'AI in Tender Processes | CPCC – Christian Plath Consulting Company',
+      pageTitle: 'AI in Tender Processes | PLATHTECH',
       metaDescription: 'AI in tenders: Sharp analysis and watertight documentation for procuring organisations and bidding companies. GDPR-compliant, legally sound.',
       backToHome: 'Back to homepage',
       heroHeading: 'AI in Tender Processes',
@@ -2060,7 +2060,7 @@ export const translations: Record<Language, Translations> = {
       aiConsultingCta: 'Gratis AI-advies starten'
     },
     footer: {
-      rights: '© 2025 Christian Plath Consulting Company. Alle rechten voorbehouden.',
+      rights: '© 2025 PLATHTECH. Alle rechten voorbehouden.',
       privacy: 'Privacy'
     },
     notFound: {
@@ -2069,8 +2069,8 @@ export const translations: Record<Language, Translations> = {
       backToHome: 'Terug naar homepage'
     },
     kiStarthilfePage: {
-      pageTitle: 'AI-Starthulp & Potentiaalanalyse | CPCC – Christian Plath Consulting Company',
-      metaDescription: 'CPCC AI-Starthulp: Individuele potentiaalanalyse voor uw organisatie. Wij identificeren echte knelpunten, analyseren uw huidige AI-situatie en leveren een helder, realistisch AI-stappenplan – zonder loze beloften.',
+      pageTitle: 'AI-Starthulp & Potentiaalanalyse | PLATHTECH',
+      metaDescription: 'PLATHTECH AI-Starthulp: Individuele potentiaalanalyse voor uw organisatie. Wij identificeren echte knelpunten, analyseren uw huidige AI-situatie en leveren een helder, realistisch AI-stappenplan – zonder loze beloften.',
       backToHome: 'Terug naar de startpagina',
       heroHeading: 'AI-Starthulp',
       quote: '"We weten dat AI belangrijk is – maar ',
@@ -2107,7 +2107,7 @@ export const translations: Record<Language, Translations> = {
       },
     },
     projektmanagementPage: {
-      pageTitle: 'Projectmanagement 3.0 | CPCC – Christian Plath Consulting Company',
+      pageTitle: 'Projectmanagement 3.0 | PLATHTECH',
       metaDescription: 'Projectmanagement 3.0 combineert klassieke PM-frameworks met kunstmatige intelligentie. Ontlast uw PMO, automatiseer de dagelijkse projectroutine en koop uw tijd terug.',
       backToHome: 'Terug naar homepage',
       heroHeading: 'Projectmanagement 3.0',
@@ -2137,7 +2137,7 @@ export const translations: Record<Language, Translations> = {
       },
     },
     kiGeschaeftsoptimierungPage: {
-      pageTitle: 'AI-bedrijfsoptimalisatie | CPCC – Christian Plath Consulting Company',
+      pageTitle: 'AI-bedrijfsoptimalisatie | PLATHTECH',
       metaDescription: 'AI-procesoptimalisatie in 6 stappen: Van use-caseidentificatie via AVG-conforme toolevaluatie tot soepele implementatie. Gestructureerd, veilig, kostensbewust.',
       backToHome: 'Terug naar homepage',
       heroHeading: 'AI-bedrijfsoptimalisatie',
@@ -2190,7 +2190,7 @@ export const translations: Record<Language, Translations> = {
       },
     },
     kiMarketingSalesPage: {
-      pageTitle: 'AI in Marketing & Sales | CPCC – Christian Plath Consulting Company',
+      pageTitle: 'AI in Marketing & Sales | PLATHTECH',
       metaDescription: 'AI-ondersteunde B2B-verkoop en marketing: Echte klantinzichten, realtime concurrentieanalyses, geautomatiseerde leadgeneratie en schaalbare contentcreatie voor meer pipeline en kortere salescycli.',
       backToHome: 'Terug naar homepage',
       heroHeading: 'AI in Marketing & Sales',
@@ -2245,7 +2245,7 @@ export const translations: Record<Language, Translations> = {
       },
     },
     kiSchulungenPage: {
-      pageTitle: 'AI-trainingen & transformatie | CPCC – Christian Plath Consulting Company',
+      pageTitle: 'AI-trainingen & transformatie | PLATHTECH',
       metaDescription: 'AI-trainingen en transformatie: Wij zetten angst voor AI om in competentie. Maatgerichte trainingen, cultuurverandering en integratie – zodat uw team AI zelfverzekerd beheerst.',
       backToHome: 'Terug naar homepage',
       heroHeading: 'AI-trainingen & transformatie',
@@ -2294,7 +2294,7 @@ export const translations: Record<Language, Translations> = {
       },
     },
     kiAusschreibungenPage: {
-      pageTitle: 'AI in aanbestedingen | CPCC – Christian Plath Consulting Company',
+      pageTitle: 'AI in aanbestedingen | PLATHTECH',
       metaDescription: 'AI in aanbestedingen: Scherpe analyse en waterdichte documentatie voor aanbestedende organisaties en inschrijvende bedrijven. AVG-conform, juridisch solide.',
       backToHome: 'Terug naar homepage',
       heroHeading: 'AI in aanbestedingen',
@@ -2672,7 +2672,7 @@ export const translations: Record<Language, Translations> = {
       aiConsultingCta: 'ابدأ استشارتك المجانية'
     },
     footer: {
-      rights: '© 2025 Christian Plath Consulting Company. جميع الحقوق محفوظة.',
+      rights: '© 2025 PLATHTECH. جميع الحقوق محفوظة.',
       privacy: 'الخصوصية'
     },
     notFound: {
@@ -2681,8 +2681,8 @@ export const translations: Record<Language, Translations> = {
       backToHome: 'العودة للصفحة الرئيسية'
     },
     kiStarthilfePage: {
-      pageTitle: 'بداية ذكية مع الذكاء الاصطناعي | CPCC',
-      metaDescription: 'CPCC: تحليل إمكانات الذكاء الاصطناعي لمؤسستك. نحدد نقاط الألم الحقيقية، ونحلل وضعكم الحالي، ونقدم خارطة طريق واقعية وواضحة – بدلاً من الوعود الفارغة.',
+      pageTitle: 'بداية ذكية مع الذكاء الاصطناعي | PLATHTECH',
+      metaDescription: 'PLATHTECH: تحليل إمكانات الذكاء الاصطناعي لمؤسستك. نحدد نقاط الألم الحقيقية، ونحلل وضعكم الحالي، ونقدم خارطة طريق واقعية وواضحة – بدلاً من الوعود الفارغة.',
       backToHome: 'العودة إلى الصفحة الرئيسية',
       heroHeading: 'الانطلاقة الذكية',
       quote: '«نعلم أن الذكاء الاصطناعي مهم – لكن ',
@@ -2719,7 +2719,7 @@ export const translations: Record<Language, Translations> = {
       },
     },
     projektmanagementPage: {
-      pageTitle: 'إدارة المشاريع 3.0 | CPCC – Christian Plath Consulting Company',
+      pageTitle: 'إدارة المشاريع 3.0 | PLATHTECH',
       metaDescription: 'إدارة المشاريع 3.0 تجمع بين أطر إدارة المشاريع الكلاسيكية والذكاء الاصطناعي. خففوا العبء عن مكتب إدارة المشاريع، وأتمتوا المهام اليومية، واستردوا وقتكم.',
       backToHome: 'العودة إلى الصفحة الرئيسية',
       heroHeading: 'إدارة المشاريع 3.0',
@@ -2749,7 +2749,7 @@ export const translations: Record<Language, Translations> = {
       },
     },
     kiGeschaeftsoptimierungPage: {
-      pageTitle: 'تحسين الأعمال بالذكاء الاصطناعي | CPCC – Christian Plath Consulting Company',
+      pageTitle: 'تحسين الأعمال بالذكاء الاصطناعي | PLATHTECH',
       metaDescription: 'تحسين العمليات بالذكاء الاصطناعي في 6 خطوات: من تحديد حالات الاستخدام عبر تقييم الأدوات المتوافق مع DSGVO وصولاً إلى التنفيذ السلس. منظم، آمن، واعٍ للتكاليف.',
       backToHome: 'العودة إلى الصفحة الرئيسية',
       heroHeading: 'تحسين الأعمال بالذكاء الاصطناعي',
@@ -2802,7 +2802,7 @@ export const translations: Record<Language, Translations> = {
       },
     },
     kiMarketingSalesPage: {
-      pageTitle: 'الذكاء الاصطناعي في التسويق والمبيعات | CPCC – Christian Plath Consulting Company',
+      pageTitle: 'الذكاء الاصطناعي في التسويق والمبيعات | PLATHTECH',
       metaDescription: 'مبيعات وتسويق B2B مدعوم بالذكاء الاصطناعي: رؤى عملاء حقيقية، تحليل تنافسي في الوقت الفعلي، توليد عملاء محتملين آلي ومحتوى قابل للتوسع لمزيد من الفرص ودورات مبيعات أقصر.',
       backToHome: 'العودة إلى الصفحة الرئيسية',
       heroHeading: 'الذكاء الاصطناعي في التسويق والمبيعات',
@@ -2857,7 +2857,7 @@ export const translations: Record<Language, Translations> = {
       },
     },
     kiSchulungenPage: {
-      pageTitle: 'تدريبات الذكاء الاصطناعي والتحول | CPCC – Christian Plath Consulting Company',
+      pageTitle: 'تدريبات الذكاء الاصطناعي والتحول | PLATHTECH',
       metaDescription: 'تدريبات الذكاء الاصطناعي والتحول: نحوّل الخوف من الذكاء الاصطناعي إلى كفاءة. تدريبات مخصصة، تغيير ثقافي وتكامل – حتى يتقن فريقكم الذكاء الاصطناعي بثقة.',
       backToHome: 'العودة إلى الصفحة الرئيسية',
       heroHeading: 'تدريبات الذكاء الاصطناعي والتحول',
@@ -2906,7 +2906,7 @@ export const translations: Record<Language, Translations> = {
       },
     },
     kiAusschreibungenPage: {
-      pageTitle: 'الذكاء الاصطناعي في المناقصات | CPCC – Christian Plath Consulting Company',
+      pageTitle: 'الذكاء الاصطناعي في المناقصات | PLATHTECH',
       metaDescription: 'الذكاء الاصطناعي في المناقصات: تحليل دقيق وتوثيق محكم للمنظمات المُعلنة والشركات المقدِّمة. متوافق مع DSGVO، صالح قانونياً.',
       backToHome: 'العودة إلى الصفحة الرئيسية',
       heroHeading: 'الذكاء الاصطناعي في المناقصات',
@@ -3284,7 +3284,7 @@ export const translations: Record<Language, Translations> = {
       aiConsultingCta: 'Начать бесплатную AI-консультацию'
     },
     footer: {
-      rights: '© 2025 Christian Plath Consulting Company. Все права защищены.',
+      rights: '© 2025 PLATHTECH. Все права защищены.',
       privacy: 'Конфиденциальность'
     },
     notFound: {
@@ -3293,8 +3293,8 @@ export const translations: Record<Language, Translations> = {
       backToHome: 'Вернуться на главную'
     },
     kiStarthilfePage: {
-      pageTitle: 'AI-Старт и анализ потенциала | CPCC – Christian Plath Consulting Company',
-      metaDescription: 'CPCC AI-Старт: индивидуальный анализ AI-потенциала вашего бизнеса. Выявляем реальные болевые точки, анализируем текущее состояние и предоставляем чёткую, реалистичную AI-дорожную карту — без пустых обещаний.',
+      pageTitle: 'AI-Старт и анализ потенциала | PLATHTECH',
+      metaDescription: 'PLATHTECH AI-Старт: индивидуальный анализ AI-потенциала вашего бизнеса. Выявляем реальные болевые точки, анализируем текущее состояние и предоставляем чёткую, реалистичную AI-дорожную карту — без пустых обещаний.',
       backToHome: 'На главную',
       heroHeading: 'AI-Старт',
       quote: '«Мы понимаем, что ИИ важен – но ',
@@ -3331,7 +3331,7 @@ export const translations: Record<Language, Translations> = {
       },
     },
     projektmanagementPage: {
-      pageTitle: 'Управление проектами 3.0 | CPCC – Christian Plath Consulting Company',
+      pageTitle: 'Управление проектами 3.0 | PLATHTECH',
       metaDescription: 'Управление проектами 3.0 объединяет классические PM-фреймворки с искусственным интеллектом. Разгрузите PMO, автоматизируйте ежедневные проектные задачи и верните своё время.',
       backToHome: 'На главную',
       heroHeading: 'Управление проектами 3.0',
@@ -3361,7 +3361,7 @@ export const translations: Record<Language, Translations> = {
       },
     },
     kiGeschaeftsoptimierungPage: {
-      pageTitle: 'Оптимизация бизнеса с ИИ | CPCC – Christian Plath Consulting Company',
+      pageTitle: 'Оптимизация бизнеса с ИИ | PLATHTECH',
       metaDescription: 'Оптимизация процессов с ИИ в 6 шагов: от идентификации use-кейсов через GDPR-совместимую оценку инструментов до плавного внедрения. Структурированно, безопасно, с учётом затрат.',
       backToHome: 'На главную',
       heroHeading: 'Оптимизация бизнеса с ИИ',
@@ -3414,7 +3414,7 @@ export const translations: Record<Language, Translations> = {
       },
     },
     kiMarketingSalesPage: {
-      pageTitle: 'ИИ в маркетинге и продажах | CPCC – Christian Plath Consulting Company',
+      pageTitle: 'ИИ в маркетинге и продажах | PLATHTECH',
       metaDescription: 'B2B-продажи и маркетинг с поддержкой ИИ: реальные клиентские инсайты, конкурентный анализ в реальном времени, автоматизированная лидогенерация и масштабируемое создание контента для большего пайплайна и коротких циклов продаж.',
       backToHome: 'На главную',
       heroHeading: 'ИИ в маркетинге и продажах',
@@ -3469,7 +3469,7 @@ export const translations: Record<Language, Translations> = {
       },
     },
     kiSchulungenPage: {
-      pageTitle: 'AI-обучение и трансформация | CPCC – Christian Plath Consulting Company',
+      pageTitle: 'AI-обучение и трансформация | PLATHTECH',
       metaDescription: 'AI-обучение и трансформация: мы превращаем страх перед ИИ в компетентность. Индивидуальные программы обучения, культурные изменения и интеграция — чтобы ваша команда уверенно владела ИИ.',
       backToHome: 'На главную',
       heroHeading: 'AI-обучение и трансформация',
@@ -3518,7 +3518,7 @@ export const translations: Record<Language, Translations> = {
       },
     },
     kiAusschreibungenPage: {
-      pageTitle: 'ИИ в тендерах | CPCC – Christian Plath Consulting Company',
+      pageTitle: 'ИИ в тендерах | PLATHTECH',
       metaDescription: 'ИИ в тендерах: точный анализ и надёжная документация для организаций-заказчиков и компаний-участников. Совместимость с DSGVO, юридически обоснованно.',
       backToHome: 'На главную',
       heroHeading: 'ИИ в тендерах',

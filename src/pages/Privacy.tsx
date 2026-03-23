@@ -51,11 +51,13 @@ const Privacy = () => {
                 <div className="body-style space-y-2">
                   <p>{t.privacy.sections.responsible.content}</p>
                   <div className="bg-navy/30 p-4 rounded-lg mt-4">
-                    <p className="font-medium">Christian Plath Consulting Company B.V.</p>
-                    <p>Geschäftsführung: Christian Plath</p>
-                    <p>Kapellerpoort 1</p>
-                    <p>6041 HZ Roermond</p>
-                    <p>Netherlands</p>
+                    <p className="font-medium">PLATHTECH INNOVATION & ARTIFICIAL INTELLIGENCE RESEARCH & CONSULTANCIES L.L.C S.O.C</p>
+                    <p>Managing Director: Christian Plath</p>
+                    <p>Office S1-252</p>
+                    <p>PROPERTY INVESTMENT OFFICE 4-S1</p>
+                    <p>Dubai Investment Park First</p>
+                    <p>Dubai, United Arab Emirates</p>
+                    <p>Makani No: 14468 66589</p>
                     <p>E-Mail: info@cp-cc.nl</p>
                     <p>Telefon: +31-641-280719</p>
                   </div>

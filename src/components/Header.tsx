@@ -45,7 +45,7 @@ const Header = () => {
                 <div className="relative mb-2">
                   <img
                     src="/lovable-uploads/325e69e6-0dbf-4f73-8aef-4571fd10e222.png"
-                    alt="CPCC - Christian Plath Consulting Company Logo"
+                    alt="PLATHTECH - Innovation & AI Consultancy Logo"
                     className="h-20 w-auto opacity-90 group-hover:opacity-100 transition-all duration-300 filter drop-shadow-lg"
                   />
                   <div className="absolute inset-0 bg-gold/20 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" aria-hidden="true"></div>

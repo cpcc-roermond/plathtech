@@ -71,7 +71,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold mb-1">{t.contact.locations}</h4>
-                  <p className="body-style">Roermond (NL) | bei Düsseldorf</p>
+                  <p className="body-style">Dubai Investment Park, Dubai (UAE)</p>
                 </div>
               </div>
             </address>

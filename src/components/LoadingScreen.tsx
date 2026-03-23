@@ -39,7 +39,7 @@ const LoadingScreen = ({ onLoadingComplete }: { onLoadingComplete: () => void })
       <div className="absolute top-12 left-1/2 transform -translate-x-1/2 z-10">
         <img
           src="/lovable-uploads/325e69e6-0dbf-4f73-8aef-4571fd10e222.png"
-          alt="CPCC - Christian Plath Consulting Company Logo"
+          alt="PLATHTECH - Innovation & AI Consultancy Logo"
           className="w-96 h-96 object-contain animate-pulse"
         />
       </div>

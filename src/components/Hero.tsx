@@ -125,7 +125,7 @@ const Hero = () => {
             <div className="glass-morphism rounded-xl p-8">
               <div className="flex items-center mb-6">
                 <div className="w-20 h-20 rounded-full overflow-hidden mr-6">
-                  <img src="/lovable-uploads/a475cb2a-a5db-4345-8e08-2e4dc3215d2d.png" alt="Christian Plath - Gründer und Geschäftsführer CPCC" className="w-full h-full object-cover" loading="lazy" />
+                  <img src="/lovable-uploads/a475cb2a-a5db-4345-8e08-2e4dc3215d2d.png" alt="Christian Plath - Gründer und Managing Director PLATHTECH" className="w-full h-full object-cover" loading="lazy" />
                 </div>
                 <div>
                   <h3 className="text-2xl font-semibold mb-2">{t.about.founderTitle}</h3>

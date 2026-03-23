@@ -26,7 +26,7 @@ const References = () => {
 
   const testimonials = [
     {
-      quote: "CPCC hat unsere Erwartungen übertroffen. Die KI-Implementierung war nahtlos und die Ergebnisse beeindruckend.",
+      quote: "PLATHTECH hat unsere Erwartungen übertroffen. Die KI-Implementierung war nahtlos und die Ergebnisse beeindruckend.",
       author: "Dr. Michael Weber",
       position: "CEO, TechCorp AG",
       company: "TechCorp AG"
