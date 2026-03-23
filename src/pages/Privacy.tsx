@@ -59,7 +59,7 @@ const Privacy = () => {
                     <p>Dubai, United Arab Emirates</p>
                     <p>Makani No: 14468 66589</p>
                     <p>E-Mail: info@cp-cc.nl</p>
-                    <p>Telefon: +31-641-280719</p>
+                    <p>Telefon: +49-152-05198771</p>
                   </div>
                 </div>
               </section>

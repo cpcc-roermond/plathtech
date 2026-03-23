@@ -42,9 +42,6 @@ const Contact = () => {
                 <div>
                   <h4 className="font-semibold mb-1">{t.contact.phone}</h4>
                   <p className="body-style">
-                    <a href="tel:+31641280719" className="hover:text-primary transition-colors">+31-641-280719 (NL)</a>
-                  </p>
-                  <p className="body-style">
                     <a href="tel:+4915205198771" className="hover:text-primary transition-colors">+49-152-05198771 (DE)</a>
                   </p>
                 </div>
@@ -104,7 +101,6 @@ const Contact = () => {
               <div className="border-t border-white/20 pt-6">
                 <p className="text-sm body-style">
                   {t.contact.orCallDirectly}<br />
-                  <span className="text-primary font-medium">+31-641-280719 (NL)</span><br />
                   <span className="text-primary font-medium">+49-152-05198771 (DE)</span>
                 </p>
               </div>
