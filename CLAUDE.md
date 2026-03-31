@@ -352,8 +352,8 @@ Logos are stored in `public/logos/` (served as static assets):
 
 | File | Description | Used in |
 |------|-------------|---------|
-| `logo1111.png` | Transparent, outlined CPCC monogram, gold lion, gold PLATHTECH text | Header, LoadingScreen, Favicon |
-| `logo2222.png` | Transparent, ghost/faded CPCC, gold lion, gold PLATHTECH text | Footer large decorative logo, Hero background watermark (4% opacity, blur-md) |
+| `logo1fffff.png` | Transparent, outlined CPCC monogram, gold lion, gold PLATHTECH text | Header, LoadingScreen, Favicon |
+| `logo2fff.png` | Transparent, ghost/faded CPCC, gold lion, gold PLATHTECH text | Footer large decorative logo, Hero background watermark (15% opacity, blur-sm) |
 | `logo33.png` | Transparent, black CPCC, grey lion — for light backgrounds | Reserve / print use |
 
 ### Language Switcher Flags

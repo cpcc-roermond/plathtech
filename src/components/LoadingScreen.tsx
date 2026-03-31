@@ -38,7 +38,7 @@ const LoadingScreen = ({ onLoadingComplete }: { onLoadingComplete: () => void })
       {/* Company Logo */}
       <div className="absolute top-12 left-1/2 transform -translate-x-1/2 z-10">
         <img
-          src="/logos/logo1111.png"
+          src="/logos/logo1fffff.png"
           alt="PLATHTECH - Innovation & AI Consultancy Logo"
           className="w-96 h-96 object-contain animate-pulse"
         />

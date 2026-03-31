@@ -44,7 +44,7 @@ const Header = () => {
                 {/* Lion Logo - Made twice as large */}
                 <div className="relative mb-2">
                   <img
-                    src="/logos/logo1111.png"
+                    src="/logos/logo1fffff.png"
                     alt="PLATHTECH - Innovation & AI Consultancy Logo"
                     className="h-40 w-auto opacity-90 group-hover:opacity-100 transition-all duration-300 filter drop-shadow-lg"
                   />

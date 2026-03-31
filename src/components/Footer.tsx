@@ -41,7 +41,7 @@ const Footer = () => {
             {/* Large PLATHTECH Logo - Right Side - Moved further to center-left */}
             <div className="flex justify-center lg:justify-start lg:pl-8 items-center">
               <img
-                src="/logos/logo2222.png"
+                src="/logos/logo2fff.png"
                 alt="PLATHTECH - Innovation & AI Consultancy"
                 className="h-160 w-auto opacity-70 hover:opacity-90 transition-opacity duration-300"
                 loading="lazy"
