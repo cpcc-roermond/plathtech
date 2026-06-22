@@ -262,7 +262,8 @@ const ContactForm = () => {
                 <p className="text-sm body-style text-white/80">
                   {t.contactForm.orContactDirectly}<br />
                   <span className="text-gold">info@plath-tech.com</span> |
-                  <span className="text-gold"> +49-152-05198771 (DE)</span>
+                  <span className="text-gold"> +49-152-05198771 (DE)</span> |
+                  <span className="text-gold"> +971 58 519 3697 (UAE)</span>
                 </p>
               </div>
             </div>

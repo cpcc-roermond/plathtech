@@ -59,7 +59,8 @@ const Privacy = () => {
                     <p>Dubai, United Arab Emirates</p>
                     <p>Makani No: 14468 66589</p>
                     <p>E-Mail: info@plath-tech.com</p>
-                    <p>Telefon: +49-152-05198771</p>
+                    <p>Telefon: +49-152-05198771 (DE)</p>
+                    <p>Telefon: +971 58 519 3697 (UAE)</p>
                   </div>
                 </div>
               </section>
