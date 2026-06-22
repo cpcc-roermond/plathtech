@@ -52,7 +52,7 @@ Vercel automatically builds and deploys on every push to `main`. No manual deplo
 
 ## Architecture Overview
 
-This is a **React 18 + TypeScript + Vite** single-page application for **PLATHTECH INNOVATION & ARTIFICIAL INTELLIGENCE RESEARCH & CONSULTANCIES L.L.C S.O.C** (short: **PLATHTECH**) - a boutique AI consulting firm landing page. Managing Director: Christian Plath. Address: Office S1-252, Dubai Investment Park First, Dubai, UAE. Contact: info@plath-tech.com | +49-152-05198771.
+This is a **React 18 + TypeScript + Vite** single-page application for **PLATHTECH INNOVATION & ARTIFICIAL INTELLIGENCE RESEARCH & CONSULTANCIES L.L.C S.O.C** (short: **PLATHTECH**) - a boutique AI consulting firm landing page. Managing Director: Christian Plath. Address: Office S1-252, Dubai Investment Park First, Dubai, UAE. Contact: info@plath-tech.com | +49-152-05198771 (DE) | +971 58 519 3697 (UAE).
 
 ### Key Directories
 
