@@ -5,6 +5,104 @@
   "buildCommand": null,
   "installCommand": null,
   "outputDirectory": ".",
+  "redirects": [
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "de"
+        }
+      ],
+      "destination": "/de",
+      "permanent": true
+    },
+    {
+      "source": "/:page((?!de|nl|ar|ru)[a-z0-9-]+)",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "de"
+        }
+      ],
+      "destination": "/de/:page",
+      "permanent": true
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "nl"
+        }
+      ],
+      "destination": "/nl",
+      "permanent": true
+    },
+    {
+      "source": "/:page((?!de|nl|ar|ru)[a-z0-9-]+)",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "nl"
+        }
+      ],
+      "destination": "/nl/:page",
+      "permanent": true
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "ar"
+        }
+      ],
+      "destination": "/ar",
+      "permanent": true
+    },
+    {
+      "source": "/:page((?!de|nl|ar|ru)[a-z0-9-]+)",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "ar"
+        }
+      ],
+      "destination": "/ar/:page",
+      "permanent": true
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "ru"
+        }
+      ],
+      "destination": "/ru",
+      "permanent": true
+    },
+    {
+      "source": "/:page((?!de|nl|ar|ru)[a-z0-9-]+)",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "ru"
+        }
+      ],
+      "destination": "/ru/:page",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
       "source": "/assets/(.*)",

@@ -12,13 +12,29 @@
   function closeNav(){ document.body.classList.remove('nav-open'); if (burger) burger.setAttribute('aria-expanded', 'false'); }
   if (burger) burger.addEventListener('click', function(){ var o = document.body.classList.toggle('nav-open'); burger.setAttribute('aria-expanded', o); });
   document.querySelectorAll('.mobile-nav a').forEach(function(a){ a.addEventListener('click', closeNav); });
-  window.addEventListener('resize', function(){ if (window.innerWidth > 1099) closeNav(); });
-  var lang = document.querySelector('.lang'), langBtn = lang && lang.querySelector('.lang-btn');
-  function setLang(o){ lang.classList.toggle('open', o); langBtn.setAttribute('aria-expanded', o); }
-  if (lang) {
-    langBtn.addEventListener('click', function(e){ e.stopPropagation(); setLang(!lang.classList.contains('open')); });
-    document.addEventListener('click', function(e){ if (!lang.contains(e.target)) setLang(false); });
-    document.addEventListener('keydown', function(e){ if (e.key === 'Escape') { setLang(false); closeNav(); } });
+  window.addEventListener('resize', function(){ if (burger && getComputedStyle(burger).display === 'none') closeNav(); });
+  var langs = document.querySelectorAll('.lang');
+  function setLang(l, o){ l.classList.toggle('open', o); l.querySelector('.lang-btn').setAttribute('aria-expanded', o); }
+  langs.forEach(function(l){
+    l.querySelector('.lang-btn').addEventListener('click', function(e){ e.stopPropagation(); var o = !l.classList.contains('open'); langs.forEach(function(x){ setLang(x, false); }); setLang(l, o); });
+  });
+  document.addEventListener('click', function(e){ langs.forEach(function(l){ if (!l.contains(e.target)) setLang(l, false); }); });
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape') { langs.forEach(function(l){ setLang(l, false); }); closeNav(); } });
+  // hint: browser language differs from the page language -> offer it once (no automatic redirect)
+  function store(k, v){ try { if (v === undefined) return localStorage.getItem(k); localStorage.setItem(k, v); } catch(e){ return null; } }
+  document.querySelectorAll('.lang-menu a, .mlang a, .flang a').forEach(function(a){ a.addEventListener('click', function(){ store('pt-lang', a.getAttribute('hreflang')); }); });
+  var hint = document.querySelector('.lang-hint');
+  if (hint && !store('pt-lang') && !store('pt-lang-hint')) {
+    var cur = root.getAttribute('lang'), want = null;
+    (navigator.languages || [navigator.language || '']).some(function(x){ var c = (x || '').slice(0,2).toLowerCase(); if (document.querySelector('.lang-menu a[hreflang="' + c + '"]')) { want = c; return true; } return false; });
+    if (want && want !== cur) {
+      var a = document.querySelector('.lang-menu a[hreflang="' + want + '"]'), link = hint.querySelector('.go');
+      link.href = a.getAttribute('href'); link.setAttribute('hreflang', want); link.setAttribute('lang', want); if (want === 'ar') link.setAttribute('dir', 'rtl');
+      link.querySelector('.ph').textContent = a.dataset.phrase; link.querySelector('.nm').textContent = a.dataset.name;
+      hint.hidden = false; requestAnimationFrame(function(){ hint.classList.add('show'); });
+      link.addEventListener('click', function(){ store('pt-lang', want); });
+      hint.querySelector('.x').addEventListener('click', function(){ store('pt-lang-hint', '1'); hint.classList.remove('show'); setTimeout(function(){ hint.hidden = true; }, 300); });
+    }
   }
 
   // reveal
@@ -26,7 +42,7 @@
   document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
 
   // KPI counters
-  var counters = document.querySelectorAll('.kpi .val[data-final]'), counted = false;
+  var counters = document.querySelectorAll('.kpi .n[data-final]'), counted = false;
   function tween(dur, cb, done){ var s0 = performance.now(); function f(n){ var t = Math.min(1,(n-s0)/dur); cb(1-Math.pow(1-t,3)); if (t<1) requestAnimationFrame(f); else if (done) done(); } requestAnimationFrame(f); }
   function runCounters(){ if (counted) return; counted = true; counters.forEach(function(el){
     var fin = el.dataset.final;
