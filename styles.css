@@ -367,6 +367,11 @@ html:not(.js) .wdots{display:none}
 .contact .card .btn{margin:28px 0 24px}
 .contact .card .meta{color:var(--muted)}
 .contact .phones{color:var(--ink);line-height:1.9;margin-top:4px}
+.wa{display:inline-flex;align-items:center;gap:6px;margin-inline-start:6px;padding:3px 10px 3px 8px;border:1px solid #25d366;border-radius:999px;font:500 13px/1.4 var(--sans);letter-spacing:.02em;color:#128c4b;vertical-align:middle;white-space:nowrap;transition:background .25s,color .25s}
+.wa svg{width:15px;height:15px;flex:none}
+.wa:hover,.contact dd a.wa:hover{background:#25d366;color:#fff}
+.nowrap{white-space:nowrap}
+@media (max-width:420px){.nowrap{white-space:normal}}
 .contact .frame{margin-top:30px;aspect-ratio:1344/752}
 @media (max-width:900px){.contact .grid{grid-template-columns:1fr}.contact .card .btn{width:100%}}
 
