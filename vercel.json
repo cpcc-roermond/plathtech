@@ -7,6 +7,21 @@
   "outputDirectory": ".",
   "redirects": [
     {
+      "source": "/nl/onboardai",
+      "destination": "/onboardai",
+      "permanent": false
+    },
+    {
+      "source": "/ar/onboardai",
+      "destination": "/onboardai",
+      "permanent": false
+    },
+    {
+      "source": "/ru/onboardai",
+      "destination": "/onboardai",
+      "permanent": false
+    },
+    {
       "source": "/",
       "has": [
         {

@@ -13,6 +13,10 @@ PLATHTECH INNOVATION & ARTIFICIAL INTELLIGENCE RESEARCH & CONSULTANCIES L.L.C S.
 - [AI Training & Transformation](https://www.plath-tech.com/ki-schulungen): Expert knowledge for your teams – practical and sustainable.
 - [AI in Tender Processes](https://www.plath-tech.com/ki-ausschreibungen): Optimized tender and bidding processes through intelligent automation.
 
+## AI Tools
+
+- [DAVAI OnboardAI](https://www.plath-tech.com/onboardai): New team members fully effective from day one. This tool instills the entire project knowledge – history, decisions, pain points, and goals – in minutes. No more being thrown in at the deep end or shaky first appearances.
+
 ## About Us
 
 - [Why we are different](https://www.plath-tech.com/ueber-mich): Consultant DNA meets AI Lab – Over 10 years of expertise in IT consulting and AI transformation

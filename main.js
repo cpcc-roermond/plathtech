@@ -91,6 +91,7 @@
 (function(){
   var form = document.getElementById('contact-form'); if (!form) return;
   var endpoint = form.getAttribute('data-endpoint') || '';
+  try { var sub = new URLSearchParams(location.search).get('subject'); if (sub && form.subject) { form.subject.value = sub.slice(0, 120); form.subject.defaultValue = form.subject.value; } } catch (e) {}
   var rules = { name: function(v){ return v.trim().length >= 2; }, email: function(v){ return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim()); },
     subject: function(v){ return v.trim().length >= 5; }, message: function(v){ return v.trim().length >= 10; } };
   function validate(f){ var r = rules[f.name]; if (!r) return true; var ok = r(f.value), e = document.getElementById('err-' + f.name); if (e) e.hidden = ok; f.classList.toggle('invalid', !ok); return ok; }
